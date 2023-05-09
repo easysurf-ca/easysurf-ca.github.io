@@ -5,30 +5,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>Home - Easy Surf</title>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <img src="assets/easy-surf-black-logo.svg" alt="" id="logo-with-name">
-       <img src="assets/easy-surf-logo-only-black.svg" alt="" id="logo-without-name">
-       <ul class="menu">
-        <li><a href="index.html" class="current">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+  
 
-    </nav>
-    <main>
+    <header>
+
+        <div class="skip">
+            <a href="#content">Skip to main content.</a>
+        </div>
+        <!-- Main nav (desktop menu) -->
+        <nav class="navbar" aria-label="Main">
+
+            <a href="index.html" class="link-logo-with-name" aria-label="Go to home page"><img
+                    src="assets/easy-surf-black-logo.svg" alt="" id="logo-with-name"></a>
+            <a href="index.html" class="link-logo-without-name" aria-label="Go to home page"><img
+                    src="assets/easy-surf-logo-only-black.svg" alt="" id="logo-without-name"></a>
+
+            <ul class="menu" aria-label="Main menu">
+                <li><a href="index.html" class="current" aria-current="page">Home</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="accessibility.html">Accessibility statement</a></li>
+            </ul>
+
+            <!-- Main nav (mobile menu) -->
+
+
+            <button id="menu-button" class="primary-button navbar-button" onclick="openNav();"
+                aria-label="Open main menu" aria-expanded="false">
+                <img src="assets/menu-icon.svg" alt="" id="menu-icon">
+                <span>Menu</span>
+            </button>
+
+            <!-- Side nav (mobile menu) -->
+
+            <nav id="sidenav" class="sidenav" aria-label="Side">
+                <button href="javascript:void(0)" id="close-menu-button" class="closebtn displayNone"
+                    onclick="closeNav()" aria-label="Close menu">&times;</button>
+                <ul id="menu-mobile" class="displayNone" aria-label="Main menu">
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="accessibility.html">Accessibility statement</a></li>
+                </ul>
+            </nav>
+
+
+
+        </nav>
+    </header>
+
+    <main id="content">
         <!-- GRADIENT BACKGROUND -->
-        <canvas id="gradient-canvas" aria-role="img" aria-label="The background of Easy Surf's hero banner is a gradient of blue and turquoise. The colours move and change slowly to resemble moving water."></canvas>
-        
+        <canvas id="gradient-canvas" aria-role="img"
+            aria-label="The background of Easy Surf's hero banner is an animated gradient of blue and turquoise. The colours move and change slowly to resemble moving water."></canvas>
+
         <!-- Hero Section -->
 
         <!-- <section class="hero-section" title="Hero"> -->
@@ -40,19 +80,33 @@
                         Make your website or online store welcoming to people with disabilities.
                     </p>
                     <div class="button-container">
-                        <a class="link-button with-icon" href="contact.html#consultation" aria-label="Go to the consulation section of the contact us page.">
+                        <a class="link-button with-icon" href="contact.html#consultation">
                             Book a consultation
                             <img src="assets/arrow-right-dark.svg" alt="">
                         </a>
-                        
                     </div>
+                    
+                    <button id="pause-button-mobile"
+                    class="primary-button navbar-button play-pause-button-mobile displayNoneMobile"
+                     aria-label="Pause animation" role="button" onclick="playPauseMobile();" type="button"><img src="assets/pause-button.svg"
+                        alt="" id="pause-icon-mobile" class=""><img src="assets/play-button.svg"
+                        alt="" id="play-icon-mobile" class="displayNone"></button>
+                 
+
+
+
                 </div>
                 <div class="col-right hero-phone-container">
-                    
+                    <div>
+                        <button id="pause-button" class="primary-button navbar-button play-pause-button"
+                        aria-label="Pause animation" role="button" onclick="playPause();" type="button"><img src="assets/pause-button.svg"
+                                alt="" id="pause-icon"><img src="assets/play-button.svg"
+                                alt="" id="play-icon" class="displayNone"></button>
+                    </div>
                 </div>
             </div>
         </div>
-    <!-- </section> -->
+        <!-- </section> -->
         <!-- WHAT WE DO -->
         <section class="what-section" title="What we do">
             <div class="section-container">
@@ -60,57 +114,64 @@
 
                 <div class="two-column">
                     <div class="col-left">
-                        <p>We help businesses create websites and online stores that welcome people with disabilities—because surfing the web should be easy for everyone.</p>
-                    <p>We act as an extension of your team and offer these services:
-                    <ul>
-                    <li>Auditing</li>
-                    <li>Remediating</li>
-                    <li>Testing</li>
-                    <li>Consulting</li>
-                </ul>
-                </p>
+                        <p>We help businesses create websites and online stores that welcome people with
+                            disabilities—because surfing the web should be easy for everyone.</p>
+                        <p>We act as an extension of your team and offer these services:
+                        <ul>
+                            <li>Auditing</li>
+                            <li>Remediating</li>
+                            <li>Testing</li>
+                            <li>Consulting</li>
+                        </ul>
+                        </p>
 
-                    
+
                     </div>
                     <div class="col-right">
-                        <img id="what-image" src="assets/accessibility-3.jpg" alt="An over-the-shoulder shot of a man using a braille keyboard." class="section-image">
+                        <img id="what-image" src="assets/accessibility-3.jpg"
+                            alt="An over-the-shoulder shot of a man using a braille keyboard." class="section-image">
                     </div>
                 </div>
-               
+
             </div>
         </section>
         <!-- WHO WE ARE -->
         <section class="who-section" title="Who we are">
             <div class="section-container">
-                
+
 
                 <div class="two-column">
-                    
+
 
                     <div class="col-left">
                         <!-- <div class="who-card">
                             <div class="card-top"> -->
-                                
-                                <img id="who-image" src="assets/tofino-beach-5.jpg" alt="A bird's-eye-view of Chesterman beach and the pine trees and mountains surrounding it in Tofino, British Columbia." class="section-image">
-                                
-                            <!-- </div>
+
+                        <img id="who-image" src="assets/tofino-beach-5.jpg"
+                            alt="A bird's-eye-view of Chesterman beach and the pine trees and mountains surrounding it in Tofino, British Columbia."
+                            class="section-image">
+
+                        <!-- </div>
                             </div> -->
-                            </div>
+                    </div>
 
 
                     <div class="col-right">
                         <h2>Who we are</h2>
                         <p>
-                            Easy Surf is a web accessibility consulting company. Our team includes an Accessibility Specialist, and all audits and remediations are tested by a community of Accessibility Testers who identify as having a disability. Our small team's attentive, thorough, and inclusive approach is what sets us apart. We operate out of Vancouver, British Columbia.</p>
-    
+                            Easy Surf is a web accessibility consulting company. Our team includes an Accessibility
+                            Specialist, and all audits and remediations are tested by a community of Accessibility
+                            Testers who identify as having a disability. Our small team's attentive, thorough, and
+                            inclusive approach is what sets us apart. We operate out of Vancouver, British Columbia.</p>
+
                     </div>
                 </div>
-                
+
             </div>
         </section>
-       
 
-        
+
+
 
         <!-- WHY SECTION -->
         <section class="why-section" title="Why work with us">
@@ -120,73 +181,79 @@
                     <div class="card">
                         <img src="assets/boost.png" alt="" class="icon">
                         <h3>Boost your brand value</h3>
-                    
-                        <p><span>52% of Americans</span> actively consider company values before making a purchase</p>
-                        <p><span>62% of Canadians</span> say they would be more likely to give their business to a company if they knew they supported people with disabilities.
-                        </p>
-    
-                        
 
-                        
-                   
+                        <p><span>52% of Americans</span> actively consider company values before making a purchase</p>
+                        <p><span>62% of Canadians</span> say they would be more likely to give their business to a
+                            company if they knew they supported people with disabilities.
+                        </p>
+
+
+
+
+
                     </div>
                     <div class="card">
                         <img src="assets/increase.png" alt="" class="icon">
                         <h3>Expand your market</h3>
                         <p>
-                        
-                        <span>22% of Canadians</span> have a disability. That’s about 6.2 million people.
+
+                            <span>22% of Canadians</span> have a disability. That’s about 6.2 million people.
                         </p>
-                      
+
                         <p>
-                            Making websites and online stores accessible benefits people without disabilities, too—like the <span>aging population</span>.
+                            Making websites and online stores accessible benefits people without disabilities, too—like
+                            the <span>aging population</span>.
                         </p>
                     </div>
                     <div class="card">
                         <img src="assets/risk.png" alt="" class="icon">
                         <h3>Reduce legal risks</h3>
                         <p>
-                            In 2022, there were <span>3,255 lawsuits</span> against inaccessible websites filed under the Americans with Disability Act—a <span>12% increase</span> since 2021.
+                            In 2022, there were <span>3,255 lawsuits</span> against inaccessible websites filed under
+                            the Americans with Disability Act—a <span>12% increase</span> since 2021.
                         </p>
                         <p>
                             Desktop websites represent <span>97%</span> of digital accessibility lawsuits under ADA.
                         </p>
-                       
+
                     </div>
                     <div class="card">
                         <img src="assets/innovation.png" alt="" class="icon">
                         <h3>Push innovation</h3>
                         <p>
-                            Accessibility doesn’t hinder innovation. <span>It is innovation</span>. Everyday inventions that benefit everyone—like <span>typewriters, emails, video captions, and curb cuts</span>—were originally created for people with disabilities.
+                            Accessibility doesn’t hinder innovation. <span>It is innovation</span>. Everyday inventions
+                            that benefit everyone—like <span>typewriters, emails, video captions, and curb
+                                cuts</span>—were originally created for people with disabilities.
                         </p>
                     </div>
 
                 </div>
-               
+
             </div>
         </section>
 
-      
-        
+
+
 
         <footer class="footer">
             <div class="section-container">
                 <div class="col">
-                   <img src="assets/easy-surf-black-logo.svg" alt="" id="footer-logo-with-text">
-                   <img src="assets/easy-surf-logo-only-black.svg" alt="" id="footer-logo-without-text">
-                   
+                    <img src="assets/easy-surf-black-logo.svg" alt="" id="footer-logo-with-text">
+                    <img src="assets/easy-surf-logo-only-black.svg" alt="" id="footer-logo-without-text">
+
                 </div>
                 <div class="col" id="pages-column">
                     <h2>Pages</h2>
                     <ul>
-                        <li><a href="index.html" class="pages">Home</a></li>
+                        <li><a href="index.html" class="pages" aria-current="page">Home</a></li>
                         <li><a href="contact.html" class="pages">Contact us</a></li>
+                        <li><a href="accessibility.html" class="pages">Accessibility statement</a></li>
                     </ul>
-                    
+
                 </div>
-        
+
                 <div class="col">
-                    
+
                 </div>
             </div>
 
@@ -195,7 +262,7 @@
     </main>
 
 
-    <script src="gradient.js"></script>
+    <script src="styles-index.js"></script>
 </body>
 
 </html>

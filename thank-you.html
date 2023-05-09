@@ -12,8 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="contact.css">
-    <title>Contact us - Easy Surf</title>
+    <link rel="stylesheet" href="thank-you.css">
+    <title>Thank you - Easy Surf</title>
 </head>
 
 <body>
@@ -111,74 +111,9 @@
         <!-- EMAIL SECTION -->
         <section class="why-section" title="Email us">
             <div class="section-container">
-                <h2>Email us</h2>
+                <h2 id="thank-you">Thanks for getting in touch</h2>
+<p>We'll get back to you as soon as we can.</p>
                 
-                    <div id="error-message" tabindex="-1"></div>
-                    <p>To better understand how we can help you, please fill out every field.</p>
-                    <form id="email-us" action="https://formsubmit.co/laetitia@easysurf.ca" method="post">
-                      <div class="container">
-                        <div class="item">
-                          <label for="name">Name</label>
-                          <p id="error1" class="error"></p>
-                          <input type="text" id="name" name="name" required aria-describedby="error1">
-                          <label for="email">Email</label>
-                          <p id="error2" class="error"></p>
-                          <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="error2">
-                          <label for="message">How can we help you?</label>
-                          <p id="error3" class="error"></p>
-                          <input type="text" id="message" name="message" required aria-describedby="error3">
-                          <input type="hidden" name="_next" value="thank-you.html#thank-you">
-                          <input type="hidden" name="_subject" value="Thanks for getting in touch with Easy Surf! (subject)">
-                          <input type="hidden" name="_cc" value="laetitiabonaldo@gmail.com">
-                          <input type="hidden" name="_captcha" value="false">
-                          <input type="hidden" name="_autoresponse" value="Thanks for getting in touch with Easy Surf! (response)">
-                          <button type="submit" class="link-button with-icon" id="send">Send
-                            <img src="assets/arrow-right-dark.svg" alt="">
-                          </button>
-                        </div>
-                      </div>
-                    
-
-                  
-
-                    </form>
-                  
-
-
-
-
-                <!-- <div id="error-message" tabindex="-1"></div>
-  <p>To better understand how we can help you, please fill out every field.</p>
-  <form id="email" action="thank-you.html" method="post">
-    <div class="container">
-      <div class="item">
-        <label for="name">Name</label>
-        
-        <input type="text" id="name" name="name" aria-required="true" aria-describedby="nameError">
-        <span>
-            <p id="nameError">Please enter your name.</p>
-          </span>
-
-        <label for="email">Email</label>
-       
-        <input type="email" id="email" name="email" autocomplete="email" aria-required="true" aria-describedby="emailError">
-
-        <span>
-            <p id="emailError">Please enter your email.</p>
-          </span>
-        <label for="message">How can we help you?</label>
-        
-        <textarea id="message" name="message" aria-required="true" aria-describedby="messageError"></textarea>
-        <span>
-            <p id="messageError">Please enter a message.</p>
-          </span>
-        
-      </div>
-     
-      </div>
-      <button type="submit" class="link-button with-icon" id="send">Send
-        <img src="assets/arrow-right-dark.svg" alt="">
-      </button>
     </div>
     
   </form>
@@ -187,7 +122,7 @@
 
 
 
-            </div> -->
+            </div>
 
         </section>
 
@@ -205,7 +140,7 @@
                     <h2>Pages</h2>
                     <ul>
                         <li><a href="index.html" class="pages">Home</a></li>
-                        <li><a href="contact.html" class="pages">Contact us</a></li>
+                        <li><a href="contact.html" class="pages" aria-current="page">Contact us</a></li>
                         <li><a href="accessibility.html" class="pages">Accessibility statement</a></li>
                     </ul>
 
@@ -221,8 +156,7 @@
     </main>
 
 
-    <script src="styles_contact-us.js"></script>
-    <script src="https://kit.fontawesome.com/127c73a8ed.js" crossorigin="anonymous"></script>
+    <script src="styles_thank-you.js"></script>
 </body>
 
 </html>
