@@ -25,6 +25,7 @@
   /* SPACING VARIABLES */
   --spacing-sm: 8px;
   --spacing-md: 16px;
+  --spacing-wcag: 24px;
   --spacing-lg: 32px;
   --spacing-xl: 64px;
   --standard-width: 1144px;
@@ -193,6 +194,7 @@ ul {
   height: 24px;
   vertical-align: middle;
   margin: var(--spacing-md) 0 var(--spacing-md) 0;
+  font-size: 45px;
 }
 
 .card h3 {
@@ -861,7 +863,7 @@ form button {
 
 
 
-/* FOOTER STYLES */
+/* FOOTER STYLES for socials update */
 
 .footer {
   display: flex;
@@ -926,10 +928,35 @@ form button {
   outline: none;
 }
 
-#pages-column {
+.pages-column {
   padding-top: 8px;
 }
 
+.socials {
+  display: flex;
+  margin-top: 4px;
+}
+
+.icons {
+  padding-left: 24px;
+  vertical-align: top;
+}
+
+footer .mobile {
+  display: none;
+}
+
+.footer div.logo {
+  display: none;
+}
+
+i {
+  font-size: 45px;
+}
+
+.footer .col ul li {
+  margin: var(--spacing-wcag) 0;
+}
 
 /* CUSTOM BREAKPOINT */
 @media only screen and (max-width: 1144px) {
@@ -1002,7 +1029,43 @@ form button {
 }
 
 
-
+/* CUSTOM BREAKPOINT (1045px) */
+@media only screen and (max-width: 1045px) {
+  /* Mobile hamburger menu */
+ 
+  .navbar ul.menu {
+   display: none;
+ }
+ 
+ /* .sidenav {
+   display: block;
+ } */
+ 
+ .hamburger-button .bar {
+   width: 18px;
+   height: 2px;
+   background-color: var(--bg-white);
+   margin: 1px 0;
+ }
+ 
+ .navbar #menu-button {
+   display: inline-flex;
+   justify-content:center;
+   /* center the content horizontally */
+   align-items: center;
+   /* center the content vertically */
+   align-content: center;
+   
+ 
+ }
+ 
+ .play-pause-button {
+ 
+   margin-bottom: 20px;
+   margin-right: 0px;
+ 
+ }
+ }
 
 
 
@@ -1049,7 +1112,7 @@ form button {
     width: 40%;
   }
 
-  #footer-logo-with-text {
+  /* #footer-logo-with-text {
     display: none;
   }
 
@@ -1058,7 +1121,44 @@ form button {
     max-height: 45px;
     margin: 0 0 var(--spacing-md) 0;
     padding-right: 6px;
+  } */
+
+  .footer .section-container {
+    display: none;
+      
+    
   }
+  .footer div.mobile {
+    display: grid;
+   justify-items: center;
+  }
+  
+   .footer div.col.pages-column{
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+   }
+  
+  #pages-mobile {
+   margin-top: 4px;
+   }
+  
+  
+  .footer {
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    
+  }
+  .footer div.logo {
+    display: grid;
+  }
+  
+  .socials {
+    margin-top: 16px;
+  }
+
 }
 
 /* TABLET SIZE STYLES */
@@ -1357,12 +1457,12 @@ form button {
 
   .footer .col {
     width: 50%;
-    margin: var(--spacing-md) 0;
+    margin: 0;
   }
 
 
   .footer a {
-    font-size: 16px;
+    font-size: var(--p-size);
     text-decoration: underline;
     color: var(--blue-2);
   }
