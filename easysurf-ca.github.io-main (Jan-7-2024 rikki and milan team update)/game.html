@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="game.css">
+    <title>Game accessibility services - Easy Surf</title>
+</head>
+
+<body>
+
+
+    <header>
+
+        <div class="skip">
+            <a href="#content">Skip to main content.</a>
+        </div>
+        <!-- Main nav (desktop menu) -->
+        <nav class="navbar" aria-label="Main">
+
+            <a href="index.html" class="link-logo-with-name" aria-label="Easy Surf" aria-description="Goes to home page"><img
+                    src="assets/easy-surf-black-logo.svg" alt="" id="logo-with-name"></a>
+            <a href="index.html" class="link-logo-without-name" aria-label="Easy Surf logo" aria-description="Goes to home page"><img
+                    src="assets/easy-surf-logo-only-black.svg" alt="" id="logo-without-name"></a>
+
+                    <ul class="menu" aria-label="Main menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="web.html">Web</a></li>
+                        <li><a href="game.html" class="current" aria-current="page">Game</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="accessibility.html">Accessibility statement</a></li>
+                    </ul>
+
+            <!-- Main nav (mobile menu) -->
+
+
+            <button id="menu-button" class="primary-button navbar-button" onclick="openNav();"
+                aria-label="Menu" aria-description="Opens menu" aria-expanded="false">
+                <img src="assets/menu-icon.svg" alt="" id="menu-icon">
+                <span>Menu</span>
+            </button>
+
+            <!-- Side nav (mobile menu) -->
+
+            <nav id="sidenav" class="sidenav displayNone" aria-label="Side">
+                <button href="javascript:void(0)" id="close-menu-button" class="closebtn displayNone"
+                    onclick="closeNav()" aria-label="Close menu">&times;</button>
+                <ul id="menu-mobile" class="displayNone" aria-label="Main menu">
+                    <li><a href="index.html">Home</a></li>
+                        <li><a href="web.html">Web</a></li>
+                        <li><a href="game.html" class="current" aria-current="page">Game</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="accessibility.html">Accessibility statement</a></li>
+                </ul>
+            </nav>
+
+
+
+        </nav>
+    </header>
+
+    <main id="content">
+        <!-- GRADIENT BACKGROUND -->
+        <canvas id="gradient-canvas" role="img"
+            aria-label="The background of Easy Surf's hero banner is an animated gradient of blue and turquoise. The colours move and change slowly to resemble moving water."></canvas>
+
+        <!-- Hero Section -->
+
+        <!-- <section class="hero-section" title="Hero"> -->
+        <div class="hero">
+            <div class="section-container two-column">
+                <div class="col-left">
+                    <h1>Spread joy through play</h1>
+                    <p>
+                        Open up a world of experiences through the joy of playing video games.
+                    </p>
+                    <div class="button-container">
+
+                    </div>
+
+                    <button id="pause-button-mobile"
+                        class="primary-button navbar-button play-pause-button-mobile displayNoneMobile"
+                         aria-label="Pause" aria-description="This button pauses and plays the background animation of the hero banner." role="button" onclick="playPauseMobile();" type="button"><img src="assets/pause-button.svg"
+                            alt="" id="pause-icon-mobile" class=""><img src="assets/play-button.svg"
+                            alt="" id="play-icon-mobile" class="displayNone"></button>
+
+                   
+
+
+
+
+                </div>
+                <div class="col-right hero-phone-container">
+                    <div>
+                        <button id="pause-button" class="primary-button navbar-button play-pause-button"
+                        aria-label="Pause" aria-description="This button pauses and plays the background animation of the hero banner." role="button" onclick="playPause();" type="button"><img src="assets/pause-button.svg"
+                                alt="" id="pause-icon"><img src="assets/play-button.svg"
+                                alt="" id="play-icon" class="displayNone"></button>
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+        <!-- </section> -->
+    <!-- WCAG SECTION -->
+        <section class="what-section">
+            <div class="section-container">
+                <h2 id="thank-you">How we can help</h2>
+
+                
+                     
+                        <p>Games matter. They're not just entertainment—they build worlds, forge friendships, and enrich lives. This is especially true for players with disabilities, who often face the challenge of isolation.</p>
+                        <p>At Easy Surf, we understand the power of games because we're players too—players with disabilities. We use our lived experiences, knowledge of successes, and community connections to help make accessibility a pillar of your game. Our approach? Incorporate accessibility early and steadily. We don't chase perfection, we aim for meaningful progress, knowing each step welcomes more players and raises expectations. Because the future of gaming welcomes everyone.</p>
+
+
+                   
+
+            </div>
+        </section>
+
+<!-- WHY SECTION -->
+<section class="why-section">
+    <div class="section-container">
+        <h2>Why work with us</h2>
+        <div class="card-container">
+            <div class="card">
+                <i class="fa-solid fa-gamepad fa-2xl icon" style="color: #000000;"></i>
+                <h3>People with disabilities are gamers</h3>
+
+                <p><strong>450 million gamers</strong> identify as having a disability or an impairment.</p>
+                <p> 
+
+                    We can help you anticipate their accessibility needs and welcome them into your next game.
+                    
+                </p>
+                <div class="button-container">
+                    <a class="link-button with-icon" href="https://learn.microsoft.com/en-us/gaming/accessibility/mgats">Microsoft article
+                        <img src="assets/arrow-right-dark.svg" alt="">
+                    </a>
+                </div>
+
+
+
+
+
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-universal-access fa-2xl icon" style="color: #000000;"></i>
+                <h3>Gamers care about accessibility</h3>
+                <p>
+                    <strong>82% of gamers</strong> think accessibility options in games are important.
+                </p>
+                <p>
+                    We can help you create the accessibility options they want—and likely need—to access and enjoy playing your games.
+
+                </p>
+                <div class="button-container">
+                    <a class="link-button with-icon" href="https://games.withgoogle.com/reports/2022-pc-console-insights-report/">Google survey
+                        <img src="assets/arrow-right-dark.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-user-group fa-2xl icon" style="color: #000000;"></i>
+                <h3>Gamers with disabilities connect online</h3>
+                <p>
+                    <strong>86% of gamers with disabilities</strong> connect in groups or communities related to games—the same ones our Accessibility Consultants participate in.
+
+                </p>
+                <p>
+                    We can help share your accessibility improvements and engage within these communities.
+
+                </p>
+                <div class="button-container">
+                    <a class="link-button with-icon" href="https://games.withgoogle.com/reports/2022-pc-console-insights-report/">Google survey
+                        <img src="assets/arrow-right-dark.svg" alt="">
+                    </a>
+                </div>
+
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-award fa-2xl icon" style="color: #000000;"></i>
+                <h3>Accessible games are successful and cherished</h3>
+                <p>
+                    Join the likes of widely successful and cherished AAA and indie games:</p>
+<ul>
+<li><strong>Last of Us Part I and II</li>
+<li>Forza Motorsport</li>
+<li>Mortal Kombat 1</li>
+<li>Diablo IV</li>
+<li>Stories of Blossom</li>
+<li>As Dusk Falls</li>
+<li>Brock the Investigator</strong></li>
+</ul>
+
+                <p>
+                    We can help you incorporate accessibility early and increase your odds for success through genuine feedback from gamers with disabilities.
+                </p>
+                <div class="button-container">
+                    <a class="link-button with-icon" href="https://www.gaconf.com/gaconf-awards-2023/">GAconf Awards 2023
+                        <img src="assets/arrow-right-dark.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+</section>
+
+           
+    <!-- TESTING SECTION -->
+
+        <section class="what-section">
+            <div class="section-container">
+            
+
+                <div class="two-column">
+                    <div class="col-left">
+                        <h2>Our services</h2>
+                        <p>Make your game welcoming to everyone with our services:
+                            </p>
+<ul>
+    <li>Accessibility consulting (1-on-1 interviews)</li>
+    <li>Accessibility playtesting</li>
+    <li>Accessibility assessment</li>
+</ul>
+
+
+                    </div>
+                    <div class="col-right">
+                        <img id="what-image" src="assets/game-accessibility.jpg"
+                            alt="A female presenting gamer holding a video game controller. They have long medium-blond hair and their left hand is bionic. They're wearing a beige hoodie and a pair of jeans. They're casually sitting on their couch." class="section-image">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+       
+
+       
+
+
+
+
+        <footer class="footer" role="contentinfo">
+            <div class="section-container">
+                <div class="col">
+                    <img src="assets/easy-surf-black-logo.svg" alt="" id="footer-logo-with-text">
+                    <img src="assets/easy-surf-logo-only-black.svg" alt="" id="footer-logo-without-text">
+
+                </div>
+                <div class="col pages-column">
+                    <h2>Pages</h2>
+                    <ul>
+                        <li><a href="index.html" class="pages">Home</a></li>
+                        <li><a href="web.html" class="pages">Web</a></li>
+                        <li><a href="game.html" class="pages" aria-current="page">Game</a></li>
+                        <li><a href="team.html" class="pages">Team</a></li>
+                        <li><a href="contact.html" class="pages">Contact us</a></li>
+                        <li><a href="accessibility.html" class="pages">Accessibility statement</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col pages-column">
+                    <h2>Follow us</h2>
+        <ul class="socials">
+            <li><a href="https://twitter.com/easysurf_ca" class="pages" aria-label="X"><i class="fa-brands fa-square-x-twitter fa-2xl" style="color: #000000;"></i></a></li>
+            <li class="icons"><a href="https://www.linkedin.com/company/easy-surf-ca/?viewAsMember=true" class="pages" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i></a></li>
+        </ul>
+                    
+                </div>
+            </div>
+
+
+            <div class="logo">
+                <div class="col">
+                    <img src="assets/easy-surf-black-logo.svg" alt="" id="footer-logo-with-text">
+</div>
+               
+
+            </div>
+<div class="mobile pages">
+    <div class="col pages-column">
+        <h2>Pages</h2>
+        <ul id="pages-mobile">
+            <li><a href="index.html" class="pages">Home</a></li>
+            <li><a href="web.html" class="pages">Web</a></li>
+            <li><a href="game.html" class="pages" aria-current="page">Game</a></li>
+            <li><a href="team.html" class="pages">Team</a></li>
+            <li><a href="contact.html" class="pages">Contact us</a></li>
+            <li><a href="accessibility.html" class="pages">Accessibility statement</a></li>
+        </ul>
+</div>
+    
+</div>
+
+<div class="mobile">
+    <div class="col pages-column">
+        <h2>Follow us</h2>
+        <ul class="socials">
+            <li><a href="https://twitter.com/easysurf_ca" class="pages" aria-label="X"><i class="fa-brands fa-square-x-twitter fa-2xl" style="color: #000000;"></i></a></li>
+            <li class="icons"><a href="https://www.linkedin.com/company/easy-surf-ca/?viewAsMember=true" class="pages" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i></a></li>
+        </ul>
+
+    </div>
+</div>
+
+
+
+        </footer>
+
+    </main>
+
+
+    <script src="styles_game.js"></script>
+    <script src="https://kit.fontawesome.com/2ebb5d506d.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

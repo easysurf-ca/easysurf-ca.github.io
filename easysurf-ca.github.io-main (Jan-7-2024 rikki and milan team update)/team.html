@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="team.css">
+    <title>Meet our team - Easy Surf</title>
+</head>
+
+<body>
+
+
+    <header>
+
+        <div class="skip">
+            <a href="#content">Skip to main content.</a>
+        </div>
+        <!-- Main nav (desktop menu) -->
+        <nav class="navbar" aria-label="Main">
+
+            <a href="index.html" class="link-logo-with-name" aria-label="Easy Surf" aria-description="Goes to home page"><img
+                    src="assets/easy-surf-black-logo.svg" alt="" id="logo-with-name"></a>
+            <a href="index.html" class="link-logo-without-name" aria-label="Easy Surf logo" aria-description="Goes to home page"><img
+                    src="assets/easy-surf-logo-only-black.svg" alt="" id="logo-without-name"></a>
+
+            <ul class="menu" aria-label="Main menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="web.html">Web</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="team.html" class="current" aria-current="page">Team</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="accessibility.html">Accessibility statement</a></li>
+            </ul>
+
+            <!-- Main nav (mobile menu) -->
+
+
+            <button id="menu-button" class="primary-button navbar-button" onclick="openNav();"
+                aria-label="Menu" aria-description="Opens menu" aria-expanded="false">
+                <img src="assets/menu-icon.svg" alt="" id="menu-icon">
+                <span>Menu</span>
+            </button>
+
+            <!-- Side nav (mobile menu) -->
+
+            <nav id="sidenav" class="sidenav displayNone" aria-label="Side">
+                <button href="javascript:void(0)" id="close-menu-button" class="closebtn displayNone"
+                    onclick="closeNav()" aria-label="Close menu">&times;</button>
+                <ul id="menu-mobile" class="displayNone" aria-label="Main menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="web.html">Web</a></li>
+                    <li><a href="game.html">Game</a></li>
+                    <li><a href="team.html" class="current" aria-current="page">Team</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="accessibility.html">Accessibility statement</a></li>
+                </ul>
+            </nav>
+
+
+
+        </nav>
+    </header>
+
+    <main id="content">
+        <!-- GRADIENT BACKGROUND -->
+        <canvas id="gradient-canvas" role="img"
+            aria-label="The background of Easy Surf's hero banner is an animated gradient of blue and turquoise. The colours move and change slowly to resemble moving water."></canvas>
+
+        <!-- Hero Section -->
+
+        <!-- <section class="hero-section" title="Hero"> -->
+        <div class="hero">
+            <div class="section-container two-column">
+                <div class="col-left">
+                    <h1>Meet our team</h1>
+                    <p>
+                        We're your complete accessibility team—providing expert insights grounded in real-life experiences.
+                    </p>
+                    <div class="button-container">
+
+                    </div>
+
+                    <button id="pause-button-mobile"
+                        class="primary-button navbar-button play-pause-button-mobile displayNoneMobile"
+                         aria-label="Pause" aria-description="This button pauses and plays the background animation of the hero banner." role="button" onclick="playPauseMobile();" type="button"><img src="assets/pause-button.svg"
+                            alt="" id="pause-icon-mobile" class=""><img src="assets/play-button.svg"
+                            alt="" id="play-icon-mobile" class="displayNone"></button>
+
+                   
+
+
+
+
+                </div>
+                <div class="col-right hero-phone-container">
+                    <div>
+                        <button id="pause-button" class="primary-button navbar-button play-pause-button"
+                        aria-label="Pause" aria-description="This button pauses and plays the background animation of the hero banner." role="button" onclick="playPause();" type="button"><img src="assets/pause-button.svg"
+                                alt="" id="pause-icon"><img src="assets/play-button.svg"
+                                alt="" id="play-icon" class="displayNone"></button>
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+        <!-- </section> -->
+    <!-- WCAG SECTION -->
+        <section class="what-section">
+            <div class="section-container">
+                <h2 id="thank-you">Who we are</h2>
+
+                
+                <p>Where expertise meets empathy—that's Easy Surf.</p>   
+                <p>We're a collective of accessibility experts, each drawing from our in-depth knowledge and unique perspectives to offer you both comprehensive and genuine insights.</p>
+
+                    <p>Our team includes a certified Accessibility Specialist (CPACC) and a community of Accessibility Consultants who identify as having a disability (or many). All our Consultants are everyday users of accessible technologies, and their lived experiences enrich our team's ability to identify accessibility issues and provide genuinely inclusive solutions that welcome everyone. They're also Content Creators who actively share and participate within the accessibility community through their various social media platforms.</p>
+
+                    
+               
+                
+
+
+                   
+
+            </div>
+        </section>
+            <!-- AUDITING SECTION -->
+        <section class="who-section">
+            <div class="section-container">
+
+
+                <div class="two-column">
+
+
+                    <div class="col-left">
+                        <!-- <div class="who-card">
+                            <div class="card-top"> -->
+
+                        <img id="auditing-image" src="assets/Headshot-Laetitia.JPG"
+                            alt="Laetitia is a 32-year old white woman with long, dark blond hair and is wearing a blue tank top. The Pacific Ocean is in the background."
+                            class="section-image">
+
+                        <!-- </div>
+                            </div> -->
+
+                           <div class="team-socials">
+                                <h3>Socials</h3>
+                                <ul class="team-socials">
+                                    <li><a href="https://twitter.com/laetitiabonaldo" class="team-socials" aria-label="Laetitia's Twitter"><i class="fa-brands fa-square-x-twitter fa-2xl" style="color: #000000;"></i></a></li>
+                                    <li class="icons"><a href="https://www.linkedin.com/in/laetitiabonaldo/" class="team-socials" aria-label="Laetitia's LinkedIn"><i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i></a></li>
+                                </ul>
+                            </div> 
+                                
+                    </div>
+
+
+                    <div class="col-right">
+                        <h2>Laetitia Bonaldo (CPACC)</h2>
+                       
+                            <p>Laetitia Bonaldo is the <strong>creator of Easy Surf</strong> and an <strong>Accessibility Specialist</strong> with a CPACC certification with the IAAP.
+                                <p>She currently provides auditing and consultation services to MS Canada and local BC businesses. She worked for 7 years in the technology industry, focusing on technical writing, product content, and localization. </p>
+                                <p>She has extensive experience working with Developers, Designers, User Experience Researchers, Quality Assurance Testers, and Product Managers. </p>
+                           
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    <!-- TESTING SECTION -->
+
+        <section class="what-section">
+            <div class="section-container">
+               
+
+                <div class="two-column">
+                    <div class="col-left">
+                        <h2>Noah Senecal-Junkeer</h2>
+                        <p>Noah Senecal-Junkeer is a <strong>Consultant</strong> and <strong>Accessibility Tester</strong>. Due to Complex Regional Pain Syndrome (CRPS), he uses speech recognition software and a headmouse while using his computer or mobile device. 
+                            <p>He's experienced in providing accessibility feedback to Designers and Developers, including those from Fortune 500 companies. He has eight years of experience using Voice Control, Dragon NaturallySpeaking and Voice Access.</p>
+                            <p>Noah has a BCom from McGill University and a background in investment banking, working as a Research Analyst at Scotiabank and Jarislowky Fraser.</p>
+</div>
+                    <div class="col-right">
+                        <img id="what-image" src="assets/Headshot-Noah.JPG"
+                            alt="Noah is a 33-year old man with shoulder-length, dark brown hair and is wearing a blue button-down shirt. The Pacific Ocean is in the background." class="section-image">
+
+                            <div class="team-socials">
+                                <h3>Socials</h3>
+                                <ul class="team-socials">
+                                    <li><a href="https://twitter.com/NoahsNote" class="team-socials" aria-label="Noah's Twitter"><i class="fa-brands fa-square-x-twitter fa-2xl" style="color: #000000;"></i></a></li>
+                                    <li class="icons"><a href="https://www.linkedin.com/in/noah-senecal-junkeer-a1b21359/?originalSubdomain=ca" class="team-socials" aria-label="Noah's LinkedIn"><i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i></a></li>
+                                </ul>
+                            </div> 
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+          <!-- AUDITING SECTION -->
+          <section class="who-section">
+            <div class="section-container">
+
+
+                <div class="two-column">
+
+
+                    <div class="col-left">
+                        <!-- <div class="who-card">
+                            <div class="card-top"> -->
+
+                                <img id="what-image" src="assets/Headshot-Tamara.jpg"
+                                alt="Tamara is a 31-year old female with white blond long wavy hair and blue eyes. She is smiling at the camera wearing a bright blue blazer and black top." class="section-image">
+
+                                <div class="team-socials">
+                                    <h3>Socials</h3>
+                                    <ul class="team-socials">
+                                        <li><a href="https://www.unsightlyopinion.com/index.html" class="team-socials" aria-label="Tamara's website"><i class="fa-solid fa-globe fa-2xl" style="color: #000000;"></i></a></li>
+                                        <li class="icons"><a href="https://www.youtube.com/c/UnsightlyOpinions" class="team-socials" aria-label="Tamara's YouTube"><i class="fa-brands fa-youtube fa-2xl" style="color: #000000;"></i></i></a></li>
+                                        <li class="icons"><a href="https://twitter.com/UnsightlyOp" class="team-socials" aria-label="Tamara's Twitter"><i class="fa-brands fa-square-x-twitter fa-2xl" style="color: #000000;"></i></a></li>
+                                        
+                                    </ul>
+                                </div> 
+                    </div>
+
+
+                    <div class="col-right">
+                        <h2>Tamara Cable</h2>
+                        <p>Tamara Cable is an <strong>Accessibility Consultant</strong> and has over 15 years of experience as a consultant, lecturer, and developer.</p>
+                        <p>Legally blind since birth and having lost most of her remaining vision in her early teens, she has been a lifelong user of assistive technology, a Braille reader, and a tech enthusiast. Additionally, she lives with other physical disabilities, which necessitate the use of a wheelchair and other mobility aids.</p>
+                            <p>She works with a diverse range of clients, from mom-and-pop businesses to educational institutions and Fortune 500 companies.</p>
+                            <p>Her extensive experience encompasses screen reader testing/accessibility (VoiceOver (iOS/Mac), NVDA, JAWS, TalkBack), website and application/game testing and development, brick-and-mortar accessibility and design, inclusivity lecturing, and more.</p>
+                            
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- TESTING SECTION -->
+
+        <section class="what-section">
+            <div class="section-container">
+                
+
+                <div class="two-column">
+                    <div class="col-left">
+                        <h2>Victor Dima</h2>
+                        <p>
+                            Victor Dima, a blind gaming, technology, and entertainment journalist and <strong>Accessibility Consultant</strong>, resides in Oslo with his wife, Alina. Renowned internationally, he collaborates with Nordic PR agencies, publishers, and developers as an ambassador for universal design and accessibility. Victor has partnerships with Mi5 Communications and Xbox Nordic, receiving an Xbox Series X bundle and other gaming equipment.</p>
+
+                            <p>Since 2010, Victor has been a prominent figure in gaming journalism, receiving early access to devices like PSVR2 and PS5 from Sony and frequently reviewing games and hardware before their release. His articles and reviews have achieved significant reach and engagement on social media platforms. He also runs a YouTube channel with over 1.5k subscribers.</p>
+                            
+                            <p>Victor's expertise and connections within the disabled community make him a valuable voice in the industry. Here are a few of his stats:
+                                <ul>
+                                    <li>His articles reach tens to hundreds of thousands of gamers.</li>
+                                    <li>His <em>God of War Ragnarok</em> review on LinkedIn received 50,000 impressions and 500+ reactions.</li>
+                                    <li>His <em>The Last of Us Part I</em> review reached over 30,000 people on LinkedIn, while reviews for <em>Hogwarts Legacy</em> and Xbox Series X gained over 10,000 impressions.</li>
+                                    <li>His <em>Diablo IV</em> review had over 20,000 reach on Twitter.</li>
+                                    <li>His reviews for <em>Forza Motorsport</em> and <em>Mortal Kombat 1</em> each achieved over 20,000 impressions on LinkedIn in the first week.</li>
+                                    <li>His review for <em>As Dusk Falls</em> received over 12,000 views on Twitter.</li>
+
+
+                                </ul>
+                                
+                                 </p>
+                    </div>
+                    <div class="col-right">
+                        <img id="what-image" src="assets/Headshot-Victor.jpeg"
+                            alt="Victor is a man with shaved hair and brown eyes. He's looking at the camera and is wearing a blue Horizon Forbidden West shirt and a dark yellow button up." class="section-image">
+
+                            <div class="team-socials">
+                                <h3>Socials</h3>
+                                <ul class="team-socials">
+                                    <li><a href="https://victordima.net/" class="team-socials" aria-label="Victor's website"><i class="fa-solid fa-globe fa-2xl" style="color: #000000;"></i></a></li>
+                                    <li class="icons"><a href="https://twitter.com/victordimanet" class="team-socials" aria-label="victor's Twitter"><i class="fa-brands fa-square-x-twitter fa-2xl" style="color: #000000;"></i></a></li>
+                                    <li class="icons"><a href="https://www.linkedin.com/in/victordimajournalist/" class="team-socials" aria-label="Victor's LinkedIn"><i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i></a></li>
+                                    <li class="icons"><a href="https://www.facebook.com/playstationfansromania" class="team-socials" aria-label="Victor's Facebook"><i class="fa-brands fa-square-facebook fa-2xl" style="color: #000000;"></i></a></li>
+                                    <li class="icons"><a href="https://www.patreon.com/victordima/posts" class="team-socials" aria-label="Victor's Patreon"><i class="fa-brands fa-patreon fa-2xl" style="color: #000000;"></i></a></li>
+                                    
+                                    
+                                </ul>
+                            </div> 
+
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- HELP US BE BETTER SECTION -->
+
+        <section class="who-section" title="Help us be better">
+            <div class="section-container">
+
+
+                <div class="two-column">
+
+
+                    <div class="col-left">
+                        <!-- <div class="who-card">
+                            <div class="card-top"> -->
+
+                        <img id="be-better-image" src="assets/Headshot-Juan.jpg"
+                            alt="Juan is a man with shaved hair and brown eyes. He is smiling at the camera wearing a blue t-shirt."
+                            class="section-image">
+
+                            <div class="team-socials">
+                                <h3>Socials</h3>
+                                <ul class="team-socials">
+                                    <li><a href="https://www.youtube.com/JuanAlcazar" class="team-socials" aria-label="Juan's YouTube"><i class="fa-brands fa-youtube fa-2xl" style="color: #000000;"></i></a></li>
+                                    <li class="icons"><a href="https://twitter.com/juan_c_alcazar?s=21" class="team-socials" aria-label="Juan's Twitter"><i class="fa-brands fa-square-x-twitter fa-2xl" style="color: #000000;"></i></a></li>
+                                    
+                                </ul>
+                            </div> 
+                    </div>
+
+
+                    <div class="col-right">
+                        <h2>Juan Alcazar</h2>
+                       
+                        <p>Juan Alcazar is a legally blind <strong>Accessibility Consultant</strong>, filmmaker, and content creator.</p>
+                        <p>In 2017, he began his disability journey on YouTube after openly discussing his sight loss on his channel. He's now an advocate for accessibility and hopes to spread the word about disability and blindness through the medium of film and video.</p>
+                            
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TESTING SECTION -->
+
+        <section class="what-section">
+            <div class="section-container">
+                
+
+                <div class="two-column">
+                    <div class="col-left">
+                        <h2>Rikki Poynter</h2>
+                        <p>
+                            Rikki Poynter is a disabled (deaf, chronic pain and fatigue) <strong>Accessibility Consultant</strong>, writer, public speaker, and content creator. Originally a beauty vlogger on YouTube, she moved on to talking about her journey growing up as a mainstreamed deaf person trying to find her deaf identity and community all while trying to navigate an inaccessible world.</p>
+
+<p>Since 2013, she has talked about making the Internet accessible to deaf and hard-of-hearing people with captions, transcripts, and more. Her work has gotten the attention of many news outlets, and she has worked with Apple, Firefox, Samsung, Google, and more.</p>
+
+
+                    </div>
+                    <div class="col-right">
+                        <img id="what-image" src="assets/Headshot-Rikki.png"
+                            alt="Rikki is a woman with medium length blond hair. She's wearing an olive green shirt, a leopard print blazer with the cuffs rolled up, and red lipstick. She's holding a microphone and is talking to the audience at a speaking event." class="section-image">
+
+                            <div class="team-socials">
+                                <h3>Socials</h3>
+                                <ul class="team-socials">
+                                    <li><a href="https://www.rikkipoynter.com/" class="team-socials" aria-label="Rikki's website"><i class="fa-solid fa-globe fa-2xl" style="color: #000000;"></i></a></li>
+                                    <li class="icons"><a href="https://www.youtube.com/user/rikkipoynter" class="team-socials" aria-label="Rikki's YouTube"><i class="fa-brands fa-youtube fa-2xl" style="color: #000000;"></i></i></a></li>
+                                    <li class="icons"><a href="https://twitter.com/rikkipoynter" class="team-socials" aria-label="Rikki's Twitter"><i class="fa-brands fa-square-x-twitter fa-2xl" style="color: #000000;"></i></a></li>
+                                    <li class="icons"><a href="https://www.linkedin.com/in/rikkipoynter-1b94171ba/" class="team-socials" aria-label="Rikki's LinkedIn"><i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i></a></li>
+                                    <li class="icons"><a href="https://www.instagram.com/rikkipoynter/" class="team-socials" aria-label="Rikki's Instagram"><i class="fa-brands fa-square-instagram fa-2xl" style="color: #000000;"></i></a></li>
+                                    <li class="icons"><a href="https://www.patreon.com/rikkipoynter" class="team-socials" aria-label="Rikki's Patreon"><i class="fa-brands fa-patreon fa-2xl" style="color: #000000;"></i></a></li>
+                                    
+                                    
+                                </ul>
+                            </div> 
+
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    
+
+
+
+
+ <!-- HELP US BE BETTER SECTION -->
+
+ <section class="who-section" title="Help us be better">
+    <div class="section-container">
+
+
+        <div class="two-column">
+
+
+            <div class="col-left">
+                <!-- <div class="who-card">
+                    <div class="card-top"> -->
+
+                <img id="be-better-image" src="assets/Headshot-Milan.png"
+                    alt="Milan is a man with brown eyes and glasses. He's wearing a grey hoodie over his head and is sitting in a wheelchair with a strap around his chest and a ventilation tube near his head. He's looking to the left of the camera and is smiling."
+                    class="section-image">
+
+                    <div class="team-socials">
+                        <h3>Socials</h3>
+                        <ul class="team-socials">
+                            <li class="icons"><a href="https://www.youtube.com/c/Patelasaur" class="team-socials" aria-label="Milan's YouTube"><i class="fa-brands fa-youtube fa-2xl" style="color: #000000;"></i></i></a></li>
+                            <li class="icons"><a href="https://twitter.com/patelasaur" class="team-socials" aria-label="Milan's Twitter"><i class="fa-brands fa-square-x-twitter fa-2xl" style="color: #000000;"></i></a></li>
+                            <li class="icons"><a href="https://www.linkedin.com/in/milan-patel-b478611a2/" class="team-socials" aria-label="Milan's LinkedIn"><i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i></a></li>
+                            <li class="icons"><a href="https://www.instagram.com/patelasaur/?hl=en" class="team-socials" aria-label="Milan's Instagram"><i class="fa-brands fa-square-instagram fa-2xl" style="color: #000000;"></i></a></li>
+                            <li class="icons"><a href="https://www.tiktok.com/@patelasaur" class="team-socials" aria-label="Milan's TikTok"><i class="fa-brands fa-tiktok fa-2xl" style="color: #000000;"></i></a></li> 
+                        </ul>
+                    </div> 
+            </div>
+
+
+            <div class="col-right">
+                <h2>Milan Patel</h2>
+               
+                <p>Milan Patel is an <strong>Accessibility Consultant</strong>, accessibility tester, graphic designer, and content creator. He was diagnosed with Duchenne Muscular Dystrophy (DMD) before his first birthday. He uses speech recognition and a sensitive mouse to control his computer and mobile devices.</p>
+                <p>Living with a progressive disease, gaming has been something he could always do with friends. He has slowly adapted his setup over the years to his current setup where he incorporates voice commands. He streams his gameplay on Twitch to show how he games and the importance of accessibility in gaming.
+                </p>
+                    
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- TESTING SECTION -->
+
+<section class="what-section">
+    <div class="section-container">
+        
+
+        <div class="two-column">
+            <div class="col-left">
+                <h2>Want to join the team?</h2>
+                <p>The more the merrier. We're always looking to include new perspectives from real people.</p>
+                <p>Reach out—we'd love to hear from you.</p>
+                <div class="button-container">
+                    <a class="link-button with-icon" href="contact.html#email-us" title="Goes to Contact us page">
+                        Contact us
+                        <img src="assets/arrow-right-dark.svg" alt="">
+                    </a>
+                </div>
+                    
+                
+
+            </div>
+            <div class="col-right">
+                <img id="what-image" src="assets/join-teamjpg.jpg"
+                    alt="A group of body boarders in wetsuits running into the ocean together. The shot is taken from behind them on a sunny day." class="section-image">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer" role="contentinfo">
+    <div class="section-container">
+        <div class="col">
+            <img src="assets/easy-surf-black-logo.svg" alt="" id="footer-logo-with-text">
+
+        </div>
+        <div class="col pages-column">
+            <h2>Pages</h2>
+            <ul>
+                <li><a href="index.html" class="pages">Home</a></li>
+                <li><a href="web.html" class="pages" aria-current="page">Web</a></li>
+                <li><a href="game.html" class="pages">Game</a></li>
+                <li><a href="team.html" class="pages">Team</a></li>
+                <li><a href="contact.html" class="pages">Contact us</a></li>
+                <li><a href="accessibility.html" class="pages">Accessibility statement</a></li>
+            </ul>
+
+        </div>
+
+        <div class="col pages-column">
+            <h2>Follow us</h2>
+<ul class="socials">
+    <li><a href="https://twitter.com/easysurf_ca" class="pages" aria-label="X"><i class="fa-brands fa-square-x-twitter fa-2xl" style="color: #000000;"></i></a></li>
+    <li class="icons"><a href="https://www.linkedin.com/company/easy-surf-ca/?viewAsMember=true" class="pages" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i></a></li>
+</ul>
+            
+        </div>
+    </div>
+
+
+    <div class="logo">
+        <div class="col">
+            <img src="assets/easy-surf-black-logo.svg" alt="" id="footer-logo-with-text">
+</div>
+       
+
+    </div>
+<div class="mobile pages">
+<div class="col pages-column">
+<h2>Pages</h2>
+<ul id="pages-mobile">
+    <li><a href="index.html" class="pages">Home</a></li>
+    <li><a href="web.html" class="pages">Web</a></li>
+    <li><a href="game.html" class="pages">Game</a></li>
+    <li><a href="team.html" class="pages"  aria-current="page">Team</a></li>
+    <li><a href="contact.html" class="pages">Contact us</a></li>
+    <li><a href="accessibility.html" class="pages">Accessibility statement</a></li>
+</ul>
+</div>
+
+</div>
+
+<div class="mobile">
+<div class="col pages-column">
+<h2>Follow us</h2>
+<ul class="socials">
+    <li><a href="https://twitter.com/easysurf_ca" class="pages socials" aria-label="X"><i class="fa-brands fa-square-x-twitter fa-2xl" style="color: #000000;"></i></a></li>
+    <li class="icons"><a href="https://www.linkedin.com/company/easy-surf-ca/?viewAsMember=true" class="pages socials" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i></a></li>
+</ul>
+
+</div>
+</div>
+
+
+
+</footer>
+
+    </main>
+
+
+    <script src="styles_team.js"></script>
+    <script src="https://kit.fontawesome.com/2ebb5d506d.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
