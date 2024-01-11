@@ -653,6 +653,14 @@ i {
   background-color: var(--bg-blue);
 }
 
+.what-section-flip {
+  padding: var(--spacing-xl) 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-white);
+}
+
 .what-section h2 {
   width: 50%;
   margin-bottom: var(--spacing-md);
