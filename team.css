@@ -706,6 +706,11 @@ section img.section-image {
   background-color: var(--primary-button-hover);
 }
 
+p.titles {
+
+  font-size: var(--h6-size);
+
+}
 
 
 
