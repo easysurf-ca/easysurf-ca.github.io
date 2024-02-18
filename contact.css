@@ -146,6 +146,8 @@ ul {
   line-height: var(--p-height);
   font-weight: 400;
   margin: var(--spacing-md) 0;
+  list-style: none;
+  padding-left: 0px;
 }
 
 /* Layout Styles  */
@@ -962,6 +964,7 @@ text-decoration: none;
 .footer .col ul {
   list-style-type: none;
   padding: 0;
+  margin: 0  0 var(--spacing-md) 0;
 }
 
 .footer .col ul li {
