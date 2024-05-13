@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Mike Luckett - EasySurf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <!-- NAV TO BE INCLUDED ON EACH PAGE -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <nav class="border-2 border-b-black py-8 md:px-6">
+      <div class="md:mx-auto lg:mx-10 px-2 flex items-center justify-between">
+        <!-- START MOBILE NAV -->
+        <!-- Mobile Navigation (Hamburger Menu) -->
+        <div class="flex md:hidden ml-4">
+          <button
+            type="button"
+            class="flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-bottom-shadow px-9 pt-4 pb-4 mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-white"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            onclick="toggleMobileMenu()"
+          >
+            Menu
+          </button>
+        </div>
+
+        <!-- START LOGO -->
+        <div class="mt-2 md:w-1/6 lg:w-1/5 mr-4">
+          <a
+            href="/"
+            aria-label="Easy Surf"
+            class="highlight-card inline-block"
+          >
+            <img src="/public/images/easy-surf-black-logo.svg" alt="" />
+          </a>
+        </div>
+        <!-- END LOGO -->
+
+        <!-- START DESKTOP NAV -->
+        <div class="hidden md:block w-4/5">
+          <div class="flex-grow hidden md:block">
+            <ul class="flex justify-center">
+              <li class="mt-2">
+                <a
+                  href="/"
+                  class="flex justify-center items-center font-extrabold border-2 border-black inner-top-shadow inner-bottom-shadow custom-outline px-4 pt-4 pb-4 md:mr-2 lg:mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-white xl:px-9"
+                >
+                  <span class="material-icons pr-1">home</span>
+                  Home</a
+                >
+              </li>
+              <li class="mt-2">
+                <a
+                  href="/web-services.html"
+                  class="flex justify-center items-center custom-outline custom-outline font-extrabold border-2 border-black inner-bottom-shadow px-4 pt-4 pb-4 md:mr-2 lg:mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-white xl:px-9"
+                >
+                  <span class="material-icons pr-1">public</span>
+                  Web</a
+                >
+              </li>
+              <li class="mt-2">
+                <a
+                  href="/game-services.html"
+                  class="flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-bottom-shadow px-4 pt-4 pb-4 md:mr-2 lg:mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-white xl:px-9"
+                  ><span class="material-icons pr-1">sports_esports</span>Game</a
+                >
+              </li>
+              <li class="mt-2">
+                <a
+                  href="/team.html"
+                  class="flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-bottom-shadow px-4 pt-4 pb-4 md:mr-2 lg:mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-yellow active-link xl:px-9"
+                  ><span class="material-icons pr-1">group</span>Team</a
+                >
+              </li>
+              <li class="justify-end mt-2">
+                <a
+                  href="/contact-us.html"
+                  class="flex justify-center items-center custom-outline font-extrabold border-2 border-black px-4 pt-4 pb-4 rounded-6xl bg-primary-brand text-white inner-y-shadow-light custom-hover-blue xl:px-9"
+                >
+                  Contact us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- END DESKTOP NAV -->
+      </div>
+      <!-- BEGIN MOBILE NAV -->
+      <div class="md:hidden hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <ul class="justify-center">
+            <li class="mt-2">
+              <a
+                href="/"
+                class="flex justify-center items-center font-extrabold border-2 border-black inner-bottom-shadow px-9 pt-4 pb-4 mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-white custom-outline"
+              >
+                <span class="material-icons pr-1">home</span>
+                Home</a
+              >
+            </li>
+            <li class="mt-2">
+              <a
+                href="/web-services.html"
+                class="flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-bottom-shadow px-9 pt-4 pb-4 mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-white"
+              >
+                <span class="material-icons pr-1">public</span>
+                Web</a
+              >
+            </li>
+            <li class="mt-2">
+              <a
+                href="/game-services.html"
+                class="flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-bottom-shadow px-9 pt-4 pb-4 mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-white"
+                ><span class="material-icons pr-1">sports_esports</span>Game</a
+              >
+            </li>
+            <li class="mt-2">
+              <a
+                href="/team.html"
+                class="flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-bottom-shadow px-9 pt-4 pb-4 mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-yellow active-link"
+                ><span class="material-icons pr-1">group</span>Team</a
+              >
+            </li>
+            <li class="justify-end mt-2">
+              <a
+                href="/contact-us.html"
+                class="flex justify-center items-center custom-outline font-extrabold border-2 border-black px-9 pt-4 pb-4 mr-6 rounded-6xl bg-primary-brand text-white custom-hover-blue inner-y-shadow"
+              >
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- END MOBILE NAV -->
+    </nav>
+    <!-- END OF NAV -->
+    <main id="main-content" class="text-2xl">
+      <section id="main-feature" class="bg-pebble-200 py-12">
+        <div class="w-full md:w-4/5 mx-auto mb-4">
+          <span>
+            <a
+              href="../team.html"
+              class="font-bold underline mx-2 md:ml-6 highlight-link"
+            >
+              Team</a
+            >
+            / Mike Luckett
+          </span>
+        </div>
+
+        <div
+          class="w-full md:w-4/5 mx-auto border-2 border-black rounded-32px bg-white bottom-outer-shadow"
+        >
+          <div
+            class="md:grid md:grid-cols-10 gap-4rounded-t-32px inner-top-light-shadow"
+          >
+            <div class="xs:block md:hidden col-span-10">
+              <img
+                src="/public/images/team/mike.png"
+                alt=""
+                class="w-full h-full object-cover rounded-t-30px"
+              />
+            </div>
+            <div class="md:col-span-5 mx-2 mt-12 hidden md:block py-12">
+              <div class="flex justify-center mt-2">
+                <img
+                  src="/public/images/team/mike.png"
+                  class="size-64 rounded-32px border-2 border-black"
+                />
+              </div>
+              <div class="flex justify-center align-left mt-12">
+                <ul>
+                  <!-- <li class="mt-2 mb-4 flex items-center text-lg">
+                    <span class="material-icons mr-3"> location_on </span>
+                    CPACC, CAPXP
+                  </li> -->
+                  <!-- <li class="mb-4 flex items-center text-lg">
+                    <span class="material-icons mr-3"> language </span
+                    >Queensland, Australia
+                  </li>
+                  <li class="flex items-center text-lg">
+                    <span class="material-icons mr-3"> book </span>
+                    <a
+                      href="https://incluseum.digital"
+                      class="underline highlight-link"
+                      >Personal website</a
+                    >
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+            <div
+              class="mx-2 md:w-4/5 md:mx-auto mx-2 col-span-10 md:col-span-5 text-xl sm:mx-6 md:mr-16 mt-20 md:mt-28 pb-12"
+            >
+              <h2 class="text-5xl font-extrabold mb-7 mb-12 mx-2">
+                Mike Luckett
+              </h2>
+              <div
+                class="flex align-left align-left my-12 xs:block md:hidden mx-2"
+              >
+                <ul>
+                  <!-- <li class="mt-2 mb-4 flex items-center text-lg">
+                    <span class="material-icons mr-3"> location_on </span>
+                    CPACC, CAPXP
+                  </li> -->
+                  <!-- <li class="mb-4 flex items-center text-lg">
+                    <span class="material-icons mr-3"> language </span
+                    >Queensland, Australia
+                  </li> -->
+                  <!-- <li class="flex items-center text-lg">
+                    <span class="material-icons mr-3"> book </span>
+                    <a href="#" class="underline highlight-link"
+                      >Personal website</a
+                    >
+                  </li> -->
+                </ul>
+              </div>
+              <p class="mb-6 md:mr-18 mx-2">
+                <em>Game Community and Testing Specialist & Consultant </em>
+              </p>
+              <p class="mb-6 mx-2 md:mx-0">
+                In 2011, while serving as an active duty officer in the US Army,
+                Mike was involved in a motorcycle accident and received a spinal
+                cord injury, leaving him a C6 quadriplegic.
+              </p>
+              <p class="mb-6 mx-2 md:mx-0">
+                Medically retired from the Army at the rank of Captain, he made
+                it his new mission to be an active advocate for spinal cord
+                injuries and a volunteer in his community, giving newly
+                diagnosed spinal cord injury patients a catalyst in
+                rehabilitation.
+              </p>
+
+              <p class="mb-14 mx-2 md:mx-0">
+                You can catch him live streaming on Twitch, as MikeTheQuad,
+                where he loudly advocates for accessibility in gaming.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER TO BE INCLUDED ON EACH PAGE -->
+    <footer class="border-t-2 border-t-black">
+      <div class="md:container md:mx-auto md:pt-8 pb-2 pl-2 lg:pl-12 md:pl-6">
+        <div
+          class="md:grid md:grid-cols-12 md:gap-4 pt-12 pb-12 justify-center justify-between"
+        >
+          <div class="md:col-span-4">
+            <h2 class="text-lg text-bold mb-2 flex items-center">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.4036 13.6436C10.2817 13.6436 9.34125 12.9074 8.98159 12.4134C8.96839 12.397 8.95849 12.3774 8.94529 12.361C8.66152 11.9488 8.51303 11.4612 8.51303 10.9541C8.51303 9.56683 9.65142 8.44131 11.0472 8.44131C12.8422 8.44131 13.2283 9.93328 13.2283 10.303C13.2283 10.905 13.72 11.3893 14.3238 11.3893C14.9309 11.3893 15.4193 10.9018 15.4193 10.303C15.4193 9.66172 15.1685 8.6638 14.4558 7.80003C13.8816 7.09985 12.8257 6.2688 11.0406 6.2688C8.43384 6.2688 6.31543 8.37261 6.31543 10.9541C6.31543 11.8997 6.5959 12.8093 7.12716 13.5847C7.15025 13.6174 7.17335 13.6501 7.19645 13.6796C7.96858 14.7429 9.56233 15.8194 11.4003 15.8194H21.0948C21.4313 15.1355 21.6986 14.4125 21.8834 13.6632C21.824 13.6534 21.7646 13.6468 21.7019 13.6468L11.4036 13.6436Z"
+                  fill="#011C28"
+                />
+                <path
+                  d="M4.47769 19.8209C6.32882 21.1918 8.62541 22 11.1167 22C13.5519 22 15.799 21.2246 17.6303 19.9093H10.9187C7.82029 19.9093 5.93286 18.3519 4.63278 16.9973C3.06212 15.3614 2.1976 13.2118 2.1976 10.9476C2.1976 8.60172 3.11822 6.39976 4.79116 4.74093C6.46411 3.08209 8.68481 2.16924 11.0507 2.16924C13.4463 2.16924 15.6109 2.97085 17.1518 4.43337C17.9108 5.15318 18.4981 6.00714 18.9073 6.97888C19.3329 7.99316 19.5474 9.11213 19.5474 10.2998C19.5474 10.9018 20.0391 11.3861 20.6429 11.3861C21.2468 11.3861 21.7384 10.8986 21.7384 10.2998C21.7384 8.82421 21.4645 7.42385 20.9267 6.14456C20.402 4.8947 19.6398 3.79209 18.6598 2.86615C16.713 1.01428 14.0072 0 11.0441 0C9.55593 0 8.10736 0.291196 6.74458 0.8605C5.428 1.41344 4.25001 2.20196 3.23371 3.20642C2.2174 4.21416 1.42217 5.38221 0.867821 6.68769C0.290374 8.03896 0 9.47204 0 10.9509C0 13.7745 1.079 16.4509 3.03572 18.4958C3.44489 18.9179 3.92004 19.3792 4.47769 19.8209Z"
+                  fill="#011C28"
+                />
+                <path
+                  d="M16.482 5.12704C15.1225 3.83792 13.1922 3.12793 11.0474 3.12793C6.69841 3.12793 3.16113 6.63537 3.16113 10.9477C3.16113 12.5247 3.63299 14.0429 4.52061 15.3385C4.54701 15.3778 4.5767 15.417 4.6031 15.4563C5.28614 16.415 6.14736 17.2329 7.09107 17.8219C8.29546 18.5711 9.61864 18.9507 11.021 18.9507H18.7819C19.4616 18.3061 20.0622 17.5765 20.5571 16.7781H11.0276C8.59574 16.7781 7.08117 15.1651 6.39814 14.2065C6.37834 14.177 6.35854 14.1476 6.33544 14.1214C5.6953 13.1889 5.35543 12.0928 5.35543 10.951C5.35543 7.83614 7.9094 5.30699 11.0474 5.30699C12.628 5.30699 14.0171 5.80104 14.9675 6.7008C15.898 7.5842 16.3896 8.82751 16.3896 10.2998C16.3896 10.9019 16.8813 11.3861 17.4851 11.3861C18.0923 11.3861 18.5806 10.8986 18.5806 10.2998C18.5839 8.21895 17.858 6.43251 16.482 5.12704Z"
+                  fill="#011C28"
+                />
+              </svg>
+
+              <span class="ml-4 font-extrabold">Easy Surf</span>
+              <span class="sr-only">Details</span>
+            </h2>
+            <ul>
+              <li>
+                <span class="block">902-5782 Berton</span>
+                <span class="block">Avenue</span>
+                <span class="block">Vancouver, BC</span>
+                <span class="block">V6S 0C1</span>
+                <span class="block">Canada</span>
+              </li>
+              <li class="mt-4 inline-block">
+                <a
+                  class="underline flex items-center highlight-link inline-block"
+                  href="tel:7787450990"
+                  ><svg
+                    width="34"
+                    height="34"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask
+                      id="mask0_997_2324"
+                      style="mask-type: alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="34"
+                      height="34"
+                    >
+                      <rect width="34" height="34" fill="#D9D9D9" />
+                    </mask>
+                    <g mask="url(#mask0_997_2324)">
+                      <path
+                        d="M27.488 29.0415C24.9234 29.0415 22.3028 28.412 19.626 27.1531C16.9491 25.8941 14.4626 24.1165 12.1662 21.8202C9.87899 19.5238 8.10589 17.0395 6.84695 14.3673C5.58798 11.695 4.9585 9.07657 4.9585 6.51205C4.9585 6.07737 5.10653 5.70974 5.40259 5.40914C5.69862 5.10855 6.06399 4.95825 6.4987 4.95825H10.7359C11.0997 4.95825 11.412 5.07737 11.6726 5.31561C11.9333 5.55384 12.1105 5.85732 12.2043 6.22603L13.0398 10.1545C13.09 10.5159 13.0776 10.838 13.0025 11.1207C12.9275 11.4034 12.7895 11.6392 12.5885 11.8281L9.26385 15.0656C9.86079 16.1099 10.5063 17.0836 11.2004 17.9866C11.8945 18.8895 12.6454 19.7421 13.453 20.5443C14.3006 21.4076 15.2021 22.1998 16.1574 22.9208C17.1127 23.6419 18.138 24.3021 19.2332 24.9014L22.4362 21.6277C22.6674 21.3777 22.9318 21.2072 23.2294 21.1164C23.5269 21.0256 23.8407 21.0038 24.1707 21.0511L27.774 21.8229C28.1475 21.9113 28.4522 22.0996 28.688 22.3878C28.9238 22.676 29.0418 23.0044 29.0418 23.3731V27.5013C29.0418 27.936 28.8915 28.3014 28.5909 28.5974C28.2903 28.8935 27.9226 29.0415 27.488 29.0415Z"
+                        fill="#011C28"
+                      />
+                    </g>
+                  </svg>
+                  <span class="ml-4">(778) 745-0990</span></a
+                >
+              </li>
+              <li class="mt-4">
+                <div class="inline-block">
+                  <a
+                    class="underline flex items-center highlight-link"
+                    href="mailto:howdy@easysurf.ca"
+                  >
+                    <svg
+                      width="34"
+                      height="34"
+                      viewBox="0 0 34 34"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <mask
+                        id="mask0_997_2329"
+                        style="mask-type: alpha"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="34"
+                        height="34"
+                      >
+                        <rect width="34" height="34" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_997_2329)">
+                        <path
+                          d="M5.75731 27.6249C5.14706 27.6249 4.62519 27.4082 4.19172 26.9747C3.75824 26.5412 3.5415 26.0194 3.5415 25.4091V8.59081C3.5415 7.98056 3.75824 7.45869 4.19172 7.02521C4.62519 6.59174 5.14706 6.375 5.75731 6.375H28.2423C28.8525 6.375 29.3744 6.59174 29.8079 7.02521C30.2414 7.45869 30.4581 7.98056 30.4581 8.59081V25.4091C30.4581 26.0194 30.2414 26.5412 29.8079 26.9747C29.3744 27.4082 28.8525 27.6249 28.2423 27.6249H5.75731ZM16.9998 17.1961C17.1118 17.1961 17.2162 17.1784 17.3131 17.1429C17.41 17.1075 17.5081 17.0638 17.6073 17.0117L28.2714 10.0455C28.3979 9.965 28.486 9.86041 28.5356 9.73176C28.5853 9.60312 28.5965 9.46827 28.5693 9.32719C28.5511 9.0802 28.4224 8.89087 28.1833 8.75922C27.9442 8.62754 27.7062 8.63768 27.4695 8.78964L16.9998 15.5452L6.54459 8.78964C6.30789 8.63768 6.06982 8.62179 5.83038 8.74197C5.59094 8.86212 5.4576 9.04479 5.43038 9.28997C5.40313 9.43589 5.41675 9.57937 5.47122 9.72042C5.52571 9.86148 5.61137 9.96984 5.7282 10.0455L16.4014 17.0117C16.4946 17.0638 16.5896 17.1075 16.6865 17.1429C16.7834 17.1784 16.8878 17.1961 16.9998 17.1961Z"
+                          fill="#011C28"
+                        />
+                      </g>
+                    </svg>
+                    <span class="ml-4 highlight-link"
+                      >howdy@easysurf.ca</span
+                    ></a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="md:col-span-4">
+            <h3 class="text-lg font-extrabold mb-2 sm:mt-6 md:mt-0">Sitemap</h3>
+            <ul class="grid grid-cols-1 gap-2">
+              <li><a class="underline highlight-link" href="/">Home</a></li>
+
+              <li>
+                <a class="underline highlight-link" href="/web-services.html"
+                  >Web</a
+                >
+              </li>
+              <li>
+                <a class="underline highlight-link" href="/game-services.html"
+                  >Game</a
+                >
+              </li>
+              <li>
+                <a class="underline highlight-link" href="/team.html">Team</a>
+              </li>
+              <li>
+                <a
+                  class="underline highlight-link"
+                  href="/accessibility-statement.html"
+                  >Accessibility Statement</a
+                >
+              </li>
+              <li>
+                <a class="underline highlight-link" href="/contact-us.html"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  class="underline highlight-link"
+                  href="/terms-and-conditions.html"
+                  >Terms and Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="md:col-span-4">
+            <h3 class="text-lg font-extrabold mb-2 sm:mt-6 md:mt-0">
+              Follow Us
+            </h3>
+            <ul class="grid grid-cols-10 gap-4 justify-start">
+              <li class="col-span-3 inline-block">
+                <div class="inline-block">
+                  <a
+                    class="flex items-center highlight-card"
+                    href="https://twitter.com/easysurf_ca"
+                    ><svg
+                      width="44"
+                      height="44"
+                      viewBox="0 0 44 44"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M29.2098 34.3504L10.7364 9.65022H14.8643L33.3377 34.3504H29.2098Z"
+                        fill="#011C28"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0 5.11017C0 2.2878 2.2878 0 5.11017 0H38.8893C41.7117 0 43.9995 2.2878 43.9995 5.11017V38.8893C44 41.7122 41.7122 44 38.8898 44H5.11017C2.2878 44 0 41.7122 0 38.8898V5.11017ZM15.8796 7.62313H6.69015L18.5479 23.4784L6.60802 36.377H9.35983L19.7778 25.1223L28.195 36.377H37.3845L24.8603 19.6315L35.9757 7.62313H33.2239L23.6309 17.9871L15.8796 7.62313Z"
+                        fill="#011C28"
+                      />
+                    </svg>
+                    <span class="sr-only">Follow on Twitter</span></a
+                  >
+                </div>
+              </li>
+              <li class="col-span-3">
+                <div class="inline-block">
+                  <a
+                    class="flex items-center highlight-card"
+                    href="https://www.linkedin.com/company/easy-surf-ca"
+                    ><svg
+                      width="44"
+                      height="44"
+                      viewBox="0 0 44 44"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M37.4856 37.4953H30.97V27.2855C30.97 24.8509 30.9205 21.7177 27.5746 21.7177C24.1775 21.7177 23.6586 24.3669 23.6586 27.1059V37.4953H17.143V16.5001H23.402V19.3619H23.4863C24.3608 17.7119 26.4875 15.9702 29.6646 15.9702C36.2664 15.9702 37.4874 20.3152 37.4874 25.971L37.4856 37.4953ZM9.78399 13.6272C9.28694 13.6275 8.79471 13.5297 8.33549 13.3395C7.87627 13.1492 7.45907 12.8703 7.10777 12.5187C6.75646 12.1671 6.47796 11.7496 6.28819 11.2902C6.09842 10.8308 6.00111 10.3385 6.00183 9.8414C6.0022 9.09299 6.22448 8.3615 6.64057 7.73943C7.05666 7.11736 7.64788 6.63264 8.33945 6.34657C9.03102 6.06051 9.79189 5.98594 10.5258 6.1323C11.2598 6.27866 11.9339 6.63938 12.4628 7.16884C12.9918 7.6983 13.3518 8.37271 13.4975 9.10681C13.6431 9.8409 13.5678 10.6017 13.2811 11.293C12.9943 11.9843 12.5091 12.575 11.8866 12.9905C11.2641 13.406 10.5324 13.6276 9.78399 13.6272ZM13.051 37.4953H6.517V16.5001H13.051V37.4953ZM1.99959 3.43569e-05C0.895006 1.58982e-05 -0.000446371 0.895451 -0.000447445 2.00003L-0.000486337 42C-0.000487411 43.1046 0.894943 44 1.99951 44C15.3328 44 28.6661 44 41.9994 44C43.104 44 43.9994 43.1046 43.9994 42V2.00005C43.9994 0.895464 43.104 2.33261e-05 41.9994 4.83917e-05C28.6661 0.000350952 15.3329 0.000257169 1.99959 3.43569e-05Z"
+                        fill="#011C28"
+                      />
+                    </svg>
+                    <span class="sr-only">Follow on LinkedIn</span></a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="pb-6">
+          Easy Surf is based in Vancouver, BC on the traditional, ancestral and
+          unceded traditional territories of the xʷməθkʷəy̓əm (Musqueam),
+          Sḵwx̱wú7mesh (Squamish), and səlilwətaɬ (Tsleil-Waututh) Nations.
+        </p>
+        <p class="pb-6">
+          Website design by
+          <a class="underline highlight-link" href="https://www.alekmackie.com/"
+            >Alex Mackie</a
+          >. Website developed by
+          <a class="underline highlight-link" href="https://incluseum.digital"
+            >incluseum.digital</a
+          >.
+        </p>
+        <p>© 2024 Easy Surf. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- END OF FOOTER -->
+
+    <script src="../script.js"></script>
+  </body>
+</html>
