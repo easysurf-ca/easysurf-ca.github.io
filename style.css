@@ -17,6 +17,22 @@ html {
   background-color: #f8f3e3;
 }
 
+.home-banner-outer {
+  background-image: url("public/images/heroes/CTA-Background.png");
+  background-size: cover;
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom-color: black;
+  border-bottom-width: 2px;
+}
+.home-banner-inner {
+  background-image: url("public/images/heroes/CTA-Linework.svg");
+  background-size: cover;
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom-color: black;
+  border-bottom-width: 2px;
+}
 #main-banner {
   background-image: url("public/images/heroes/home-hero.webp");
   background-size: cover;
@@ -61,10 +77,8 @@ html {
   border: 2px solid black; /* Normal border */
 }
 
-.custom-outline:hover,
 .custom-outline:focus,
 .custom-outline:focus-visible,
-.active-link:hover,
 .active-link:focus,
 .active-link:focus-visible {
   border: 2px solid black; /* Normal border */
@@ -73,6 +87,13 @@ html {
   outline-offset: 0;
   /* outer indicator and shadow*/
   box-shadow: 0 0 0 6px #923b0e, inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.active-link:hover
+{
+  border: 2px solid black; /* Normal border */
+  box-shadow: 0 0 0 6px #923b0e, inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+
 }
 
 .custom-outline:active,
@@ -89,13 +110,13 @@ html {
 .custom-hover-white:hover {
   background-color: rgb(230, 230, 230);
   box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.4),
-    inset 0 3px 0 0 rgba(255, 255, 255, 0.4), 0 0 0 6px #923b0e;
+    inset 0 3px 0 0 rgba(255, 255, 255, 0.4);
   padding-top: 17px;
   padding-bottom: 15px;
 }
 
 .custom-hover-yellow:hover {
-  box-shadow: inset 0 3px 0 0 #d96e06, 0 0 0 6px #923b0e;
+  box-shadow: inset 0 3px 0 0 #d96e06;
   background-color: #e7bb40 !important;
   padding-top: 17px;
   padding-bottom: 15px;
@@ -103,15 +124,15 @@ html {
 
 .custom-hover-blue:hover {
   background-color: #033249 !important;
-  box-shadow: inset 0 -3px 0 0 #104e69, inset 0 3px 0 0 #03749b,
-    0 0 0 6px #923b0e;
+  box-shadow: inset 0 -3px 0 0 #104e69, inset 0 3px 0 0 #03749b;
   padding-top: 17px;
   padding-bottom: 15px;
 }
 
 .active-link {
   background-color: #fcca46 !important;
-  border-color: #bd9735;
+  border: 2px solid black; /* Normal border */
+  /* inner indicator */
   box-shadow: inset 0px 4px 0 0px rgba(0, 0, 0, 0.2);
 }
 
