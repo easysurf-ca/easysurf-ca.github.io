@@ -26,12 +26,12 @@ html {
   border-bottom-width: 2px;
 }
 .home-banner-inner {
-  background-image: url("public/images/heroes/CTA-Linework.svg");
+  background-image: url('public/images/heroes/CTA-Linework.svg');
   background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
   padding-left: 0;
   padding-right: 0;
-  border-bottom-color: black;
-  border-bottom-width: 2px;
 }
 #main-banner {
   background-image: url("public/images/heroes/home-hero.webp");
