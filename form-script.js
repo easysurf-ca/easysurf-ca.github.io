@@ -48,17 +48,16 @@ form.addEventListener("submit", (event) => {
     firstErrorInput.focus();
   } else {
     // Form is valid, submit the form
+    const submitButton = document.getElementById("submit-button");
+    submitButton.textContent = "Submitting..."
     form.submit();
 
     // Get the success message element
-    const successMessage = document.getElementById("successMessage");
-
+  
     // Clear any previous error messages
     clearErrors();
 
     // Display the success message
-    successMessage.textContent = "Form submitted successfully!";
-
     // Move focus to the success message
     successMessage.focus();
   }
