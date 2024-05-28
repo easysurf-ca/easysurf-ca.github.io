@@ -16,47 +16,148 @@ html {
 #main-content {
   background-color: #f8f3e3;
 }
-
+#team-banner {
+  background-image: url("public/images/team-background.png");
+  background-size: cover;
+  background-position: top;
+  padding-left: 0;
+  padding-right: 0;
+}
 .home-banner-outer {
-  background-image: url("public/images/heroes/CTA-Background.png");
+  background-image: url("public/images/heroes/BG-Home.png");
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
   border-bottom-color: black;
   border-bottom-width: 2px;
+  min-height: 722px;
 }
 .home-banner-inner {
-  background-image: url('public/images/heroes/CTA-Linework.svg');
+  background-image: url('public/images/heroes/Lines-Home.svg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 720px;
+}
+.home-secondary-outer {
+  background-image: url("public/images/heroes/BG-Home.png");
+  background-size: cover;
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom-color: black;
+  border-bottom-width: 2px;
+  min-height: 722px;
+}
+.home-secondary-inner {
+  background-image: url('public/images/heroes/Lines-Game.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y:180%;
+  padding-left: 0;
+  padding-right: 0;
+  min-height:540px;
+}
+.web-banner-outer {
+  background-image: url("public/images/heroes/BG-Web.png");
+  background-size: cover;
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom-color: black;
+  border-bottom-width: 2px;
+  min-height: 628px;
+}
+.web-banner-inner {
+  background-image: url('public/images/heroes/Lines-Web.svg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 626px;
+
+}
+.game-banner-outer {
+  background-image: url("public/images/heroes/BG-Game.png");
+  background-size: cover;
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom-color: black;
+  border-bottom-width: 2px;
+  min-height: 628px;
+
+}
+.game-banner-inner {
+  background-image: url('public/images/heroes/Lines-Game.svg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 626px;
+}
+.team-banner-inner {
+  background-image: url('public/images/heroes/Lines-Team.svg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 472px;
+}
+.team-banner-outer {
+  background-image: url("public/images/heroes/BG-Team.png");
+  background-size: cover;
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom-color: black;
+  border-bottom-width: 2px;
+  min-height: 470px;
+}
+.contact-banner-inner {
+  background-image: url('public/images/heroes/Lines-Contact.svg');
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
   padding-left: 0;
   padding-right: 0;
 }
-#main-banner {
-  background-image: url("public/images/heroes/home-hero.webp");
+.contact-banner-outer {
+  background-image: url("public/images/heroes/BG-Contact.png");
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
   border-bottom-color: black;
   border-bottom-width: 2px;
 }
-#team-banner {
-  background-image: url("public/images/team-background.png");
-  background-size:cover;
-  background-position: right;
+.cta-banner-inner {
+  background-image: url('public/images/heroes/Lines-CTA.svg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
   padding-left: 0;
   padding-right: 0;
 }
-#web-banner {
-  background-image: url("public/images/heroes/web-hero.webp");
+.cta-banner-outer {
+  background-image: url("public/images/heroes/BG-CTA.png");
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
+  border-bottom-color: black;
+  border-bottom-width: 2px;
 }
-
-#secondary-banner {
-  background-image: url("public/images/secondary-banner-background.png");
+.accessibility-banner-inner {
+  background-image: url('public/images/heroes/Lines-Accessibility.svg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-left: 0;
+  padding-right: 0;
+}
+.accessibility-banner-outer {
+  background-image: url("public/images/heroes/BG-Accessibility.png");
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
@@ -72,6 +173,10 @@ html {
   color: black;
   padding: 8px;
   z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
 }
 
 .custom-outline {
@@ -97,16 +202,7 @@ html {
 
 }
 
-.custom-outline:active,
-.active-link:active {
-  border: 2px solid black; /* Normal border */
-  /* inner indicator */
-  outline: 4px #fcca46 solid;
-  outline-offset: 0;
-  /* outer indicator and shadow*/
-  box-shadow: 0 0 0 6px #923b0e, inset 0 4px 0 0 rgba(0, 0, 0, 0.2) !important;
-  background-color: #f5950b !important;
-}
+
 
 .custom-hover-white:hover {
   background-color: rgb(230, 230, 230);
@@ -137,18 +233,17 @@ html {
   box-shadow: inset 0px 4px 0 0px rgba(0, 0, 0, 0.2);
 }
 
-.skip-link:focus {
-  top: 0;
-}
-
 .highlight-link {
   padding: 2px;
+  border: 2px transparent solid;
+
 }
 .highlight-link:hover,
 .highlight-link:focus,
 .highlight-link:focus-visible {
   background-color: #fcca46 !important;
   border-radius: 4px;
+  border: 2px black solid;
 }
 
 .highlight-card {
@@ -270,6 +365,7 @@ html {
   .rounded-b-var-32px {
     border-radius: 0px 0px 0px 0px
   }
+
 }
 
 .rounded-t-32px {

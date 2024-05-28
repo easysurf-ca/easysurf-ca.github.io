@@ -16,6 +16,10 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="../style.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
 
   <body>
@@ -25,10 +29,10 @@
       <div class="md:mx-auto lg:mx-10 px-2 flex items-center justify-between">
         <!-- START MOBILE NAV -->
         <!-- Mobile Navigation (Hamburger Menu) -->
-        <div class="flex md:hidden ml-4">
+        <div class="flex lg:hidden ml-4">
           <button
             type="button"
-            class="flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-bottom-shadow px-9 pt-4 pb-4 mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-white"
+            class="text-xl flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-bottom-shadow px-9 pt-4 pb-4 mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-white"
             aria-controls="mobile-menu"
             aria-expanded="false"
             onclick="toggleMobileMenu()"
@@ -50,8 +54,8 @@
         <!-- END LOGO -->
 
         <!-- START DESKTOP NAV -->
-        <div class="hidden md:block w-4/5">
-          <div class="flex-grow hidden md:block">
+        <div class="hidden lg:block w-4/5">
+          <div class="flex-grow hidden md:block text-xl">
             <ul class="flex justify-center">
               <li class="mt-2">
                 <a
@@ -99,7 +103,7 @@
         <!-- END DESKTOP NAV -->
       </div>
       <!-- BEGIN MOBILE NAV -->
-      <div class="md:hidden hidden" id="mobile-menu">
+      <div class="lg:hidden hidden text-xl" id="mobile-menu">
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <ul class="justify-center">
             <li class="mt-2">
@@ -259,7 +263,7 @@
         <div
           class="md:grid md:grid-cols-12 md:gap-4 pt-12 pb-12 justify-center justify-between"
         >
-          <div class="md:col-span-4">
+          <div class="md:col-span-3">
             <h2 class="text-lg text-bold mb-2 flex items-center">
               <svg
                 width="22"
@@ -267,6 +271,7 @@
                 viewBox="0 0 22 22"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <path
                   d="M11.4036 13.6436C10.2817 13.6436 9.34125 12.9074 8.98159 12.4134C8.96839 12.397 8.95849 12.3774 8.94529 12.361C8.66152 11.9488 8.51303 11.4612 8.51303 10.9541C8.51303 9.56683 9.65142 8.44131 11.0472 8.44131C12.8422 8.44131 13.2283 9.93328 13.2283 10.303C13.2283 10.905 13.72 11.3893 14.3238 11.3893C14.9309 11.3893 15.4193 10.9018 15.4193 10.303C15.4193 9.66172 15.1685 8.6638 14.4558 7.80003C13.8816 7.09985 12.8257 6.2688 11.0406 6.2688C8.43384 6.2688 6.31543 8.37261 6.31543 10.9541C6.31543 11.8997 6.5959 12.8093 7.12716 13.5847C7.15025 13.6174 7.17335 13.6501 7.19645 13.6796C7.96858 14.7429 9.56233 15.8194 11.4003 15.8194H21.0948C21.4313 15.1355 21.6986 14.4125 21.8834 13.6632C21.824 13.6534 21.7646 13.6468 21.7019 13.6468L11.4036 13.6436Z"
@@ -282,15 +287,16 @@
                 />
               </svg>
 
-              <span class="ml-4 font-extrabold">Easy Surf</span>
+              <span class="ml-4 text-xl font-extrabold">Easy Surf</span>
               <span class="sr-only">Details</span>
             </h2>
-            <ul>
+            <ul class="text-lg">
               <li>
-                <span class="block">902-5782 Berton</span>
-                <span class="block">Avenue</span>
+                <span class="block">Easy Surf Collective Corp.</span>
+                <span class="block">329 Howe Street</span>
+                <span class="block">Unit #553</span>
                 <span class="block">Vancouver, BC</span>
-                <span class="block">V6S 0C1</span>
+                <span class="block">V6C 3N2</span>
                 <span class="block">Canada</span>
               </li>
               <li class="mt-4 inline-block">
@@ -303,6 +309,7 @@
                     viewBox="0 0 34 34"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
                   >
                     <mask
                       id="mask0_997_2324"
@@ -337,6 +344,7 @@
                       viewBox="0 0 34 34"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
                     >
                       <mask
                         id="mask0_997_2329"
@@ -356,17 +364,15 @@
                         />
                       </g>
                     </svg>
-                    <span class="ml-4 highlight-link"
-                      >howdy@easysurf.ca</span
-                    ></a
+                    <span class="ml-4">howdy@easysurf.ca</span></a
                   >
                 </div>
               </li>
             </ul>
           </div>
-          <div class="md:col-span-4">
-            <h3 class="text-lg font-extrabold mb-2 sm:mt-6 md:mt-0">Sitemap</h3>
-            <ul class="grid grid-cols-1 gap-2">
+          <div class="md:col-span-3">
+            <h3 class="text-xl font-extrabold mb-2 sm:mt-6 md:mt-0">Sitemap</h3>
+            <ul class="grid grid-cols-1 gap-2 text-lg">
               <li><a class="underline highlight-link" href="/">Home</a></li>
 
               <li>
@@ -386,32 +392,32 @@
                 <a
                   class="underline highlight-link"
                   href="/accessibility-statement.html"
-                  >Accessibility Statement</a
+                  >Accessibility statement</a
                 >
               </li>
               <li>
                 <a class="underline highlight-link" href="/contact-us.html"
-                  >Contact Us</a
+                  >Contact us</a
                 >
               </li>
               <li>
                 <a
                   class="underline highlight-link"
                   href="/terms-and-conditions.html"
-                  >Terms and Conditions</a
+                  >Terms and conditions</a
                 >
               </li>
             </ul>
           </div>
-          <div class="md:col-span-4">
-            <h3 class="text-lg font-extrabold mb-2 sm:mt-6 md:mt-0">
-              Follow Us
+          <div class="md:col-span-3">
+            <h3 class="text-xl font-extrabold mb-2 sm:mt-6 md:mt-0">
+              Follow us
             </h3>
             <ul class="grid grid-cols-10 gap-4 justify-start">
-              <li class="col-span-3 inline-block">
+              <li class="col-span-1 md:col-span-2 inline-block">
                 <div class="inline-block">
                   <a
-                    class="flex items-center highlight-card"
+                    class="flex items-center highlight-link"
                     href="https://twitter.com/easysurf_ca"
                     ><svg
                       width="44"
@@ -419,6 +425,7 @@
                       viewBox="0 0 44 44"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
                     >
                       <path
                         d="M29.2098 34.3504L10.7364 9.65022H14.8643L33.3377 34.3504H29.2098Z"
@@ -435,10 +442,10 @@
                   >
                 </div>
               </li>
-              <li class="col-span-3">
+              <li>
                 <div class="inline-block">
                   <a
-                    class="flex items-center highlight-card"
+                    class="flex items-center highlight-link"
                     href="https://www.linkedin.com/company/easy-surf-ca"
                     ><svg
                       width="44"
@@ -446,6 +453,7 @@
                       viewBox="0 0 44 44"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
                     >
                       <path
                         d="M37.4856 37.4953H30.97V27.2855C30.97 24.8509 30.9205 21.7177 27.5746 21.7177C24.1775 21.7177 23.6586 24.3669 23.6586 27.1059V37.4953H17.143V16.5001H23.402V19.3619H23.4863C24.3608 17.7119 26.4875 15.9702 29.6646 15.9702C36.2664 15.9702 37.4874 20.3152 37.4874 25.971L37.4856 37.4953ZM9.78399 13.6272C9.28694 13.6275 8.79471 13.5297 8.33549 13.3395C7.87627 13.1492 7.45907 12.8703 7.10777 12.5187C6.75646 12.1671 6.47796 11.7496 6.28819 11.2902C6.09842 10.8308 6.00111 10.3385 6.00183 9.8414C6.0022 9.09299 6.22448 8.3615 6.64057 7.73943C7.05666 7.11736 7.64788 6.63264 8.33945 6.34657C9.03102 6.06051 9.79189 5.98594 10.5258 6.1323C11.2598 6.27866 11.9339 6.63938 12.4628 7.16884C12.9918 7.6983 13.3518 8.37271 13.4975 9.10681C13.6431 9.8409 13.5678 10.6017 13.2811 11.293C12.9943 11.9843 12.5091 12.575 11.8866 12.9905C11.2641 13.406 10.5324 13.6276 9.78399 13.6272ZM13.051 37.4953H6.517V16.5001H13.051V37.4953ZM1.99959 3.43569e-05C0.895006 1.58982e-05 -0.000446371 0.895451 -0.000447445 2.00003L-0.000486337 42C-0.000487411 43.1046 0.894943 44 1.99951 44C15.3328 44 28.6661 44 41.9994 44C43.104 44 43.9994 43.1046 43.9994 42V2.00005C43.9994 0.895464 43.104 2.33261e-05 41.9994 4.83917e-05C28.6661 0.000350952 15.3329 0.000257169 1.99959 3.43569e-05Z"
@@ -459,21 +467,22 @@
             </ul>
           </div>
         </div>
-        <p class="pb-6">
-          Easy Surf is based in Vancouver, BC on the traditional, ancestral and
+        <p class="pb-6 text-lg">
+          Easy Surf is based in Vancouver, BC on the traditional, ancestral, and
           unceded traditional territories of the xʷməθkʷəy̓əm (Musqueam),
           Sḵwx̱wú7mesh (Squamish), and səlilwətaɬ (Tsleil-Waututh) Nations.
         </p>
-        <p class="pb-6">
+        <p class="pb-6 text-lg">
           Website design by
           <a class="underline highlight-link" href="https://www.alekmackie.com/"
-            >Alek Mackie</a
-          >. Website developed by
-          <a class="underline highlight-link" href="https://incluseum.digital"
-            >incluseum.digital</a
-          >.
+            >Alek Mackie.</a
+          >Website developed by<a
+            class="underline highlight-link"
+            href="https://incluseum.digital"
+            >incluseum.digital.</a
+          >
         </p>
-        <p>© 2024 Easy Surf. All rights reserved.</p>
+        <p class="text-lg">© 2024 Easy Surf. All rights reserved.</p>
       </div>
     </footer>
     <!-- END OF FOOTER -->
