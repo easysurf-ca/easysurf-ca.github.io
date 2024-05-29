@@ -228,7 +228,7 @@ html {
 
 .active-link {
   background-color: #fcca46 !important;
-  border: 2px solid black; /* Normal border */
+  border: #923b0e 2px solid !important;
   /* inner indicator */
   box-shadow: inset 0px 4px 0 0px rgba(0, 0, 0, 0.2);
 }

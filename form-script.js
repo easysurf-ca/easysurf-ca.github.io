@@ -68,6 +68,9 @@ function clearErrors() {
   emailError.textContent = "";
   messageError.textContent = "";
   errorList.innerHTML = "";
+  fullNameInput.removeAttribute("aria-invalid")
+  fullNameInput.removeAttribute("aria-invalid")
+  fullNameInput.removeAttribute("aria-invalid")
   errorContainer.classList.add("hidden");
 }
 
@@ -81,4 +84,5 @@ function createErrorLink(input) {
 
   errorLink.appendChild(errorLinkAnchor);
   errorList.appendChild(errorLink);
+  input.setAttribute("aria-invalid", "true");
 }
