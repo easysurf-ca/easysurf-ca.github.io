@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="output.css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -26,14 +26,14 @@
     <!-- NAV TO BE INCLUDED ON EACH PAGE -->
     <header>
       <a href="#main-content" class="skip-link">Skip to main content</a>
-      <nav class="border-2 border-b-black py-8 md:px-6">
-        <div class="md:mx-auto lg:mx-10 px-2 flex items-center justify-between">
+      <nav class="border-2 border-b-black py-8 px-5 lg:px-20 xl:px-24">
+        <div class="md:mx-auto flex items-center justify-between">
           <!-- START MOBILE NAV -->
           <!-- Mobile Navigation (Hamburger Menu) -->
-          <div class="flex lg:hidden ml-4">
+          <div class="flex lg:hidden">
             <button
               type="button"
-              class="text-xl flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-bottom-shadow px-9 pt-4 pb-4 mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-white"
+              class="text-xl flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-bottom-shadow px-9 pt-4 pb-4 mr-6 rounded-6xl text-zinc-800 bg-white"
               aria-controls="mobile-menu"
               aria-expanded="false"
               onclick="toggleMobileMenu()"
@@ -43,7 +43,7 @@
           </div>
 
           <!-- START LOGO -->
-          <div class="mt-2 md:w-1/6 lg:w-1/5 mr-4">
+          <div class="mt-2 md:w-1/5 lg:w-1/5">
             <a
               href="/"
               aria-label="Easy Surf"
@@ -55,13 +55,13 @@
           <!-- END LOGO -->
 
           <!-- START DESKTOP NAV -->
-          <div class="hidden lg:block w-4/5">
-            <div class="flex-grow hidden md:block text-xl">
+          <div class="hidden lg:block">
+            <div class="flex-grow hidden md:block text-[22px]">
               <ul class="flex justify-center">
                 <li class="mt-2">
                   <a
                     href="/"
-                    class="flex justify-center items-center font-extrabold border-2 border-black inner-top-shadow inner-bottom-shadow custom-outline px-4 pt-4 pb-4 md:mr-2 lg:mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-white xl:px-9"
+                    class="flex justify-center items-center font-extrabold border-2 border-black inner-bottom-shadow px-1 lg:px-3 pt-4 pb-4 md:mr-2 lg:mr-5 rounded-6xl text-zinc-800 bg-white custom-hover-white custom-outline xl:px-9"
                   >
                     <span class="material-icons pr-1" aria-hidden="true"
                       >home</span
@@ -72,7 +72,7 @@
                 <li class="mt-2">
                   <a
                     href="/web-services.html"
-                    class="flex justify-center items-center custom-outline custom-outline font-extrabold border-2 border-black inner-bottom-shadow px-4 pt-4 pb-4 md:mr-2 lg:mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-white xl:px-9"
+                    class="flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-bottom-shadow px-1 lg:px-3 pt-4 pb-4 md:mr-2 lg:mr-5 rounded-6xl text-zinc-800 bg-white custom-hover-white xl:px-9"
                   >
                     <span class="material-icons pr-1" aria-hidden="true"
                       >public</span
@@ -83,7 +83,7 @@
                 <li class="mt-2">
                   <a
                     href="/game-services.html"
-                    class="flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-bottom-shadow px-4 pt-4 pb-4 md:mr-2 lg:mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-white xl:px-9"
+                    class="flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-bottom-shadow px-1 lg:px-3 pt-4 pb-4 md:mr-2 lg:mr-5 rounded-6xl text-zinc-800 bg-white custom-hover-white xl:px-9"
                     ><span class="material-icons pr-1" aria-hidden="true"
                       >sports_esports</span
                     >Game</a
@@ -91,9 +91,8 @@
                 </li>
                 <li class="mt-2">
                   <a
-                    aria-current="page"
                     href="/team.html"
-                    class="flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-bottom-shadow px-4 pt-4 pb-4 md:mr-2 lg:mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-yellow active-link xl:px-9"
+                    class="flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-top-shadow px-1 lg:px-3 pt-4 pb-4 md:mr-2 lg:mr-16 rounded-6xl text-zinc-800 bg-white custom-hover-yellow active-link xl:px-9"
                     ><span class="material-icons pr-1" aria-hidden="true"
                       >group</span
                     >Team</a
@@ -102,7 +101,7 @@
                 <li class="justify-end mt-2">
                   <a
                     href="/contact-us.html"
-                    class="flex justify-center items-center custom-outline font-extrabold border-2 border-black px-4 pt-4 pb-4 rounded-6xl bg-primary-brand text-white inner-y-shadow-light custom-hover-blue xl:px-9"
+                    class="flex justify-center items-center custom-outline font-extrabold border-2 border-black px-1 lg:px-3 pt-4 pb-4 rounded-6xl bg-primary-brand text-white inner-y-shadow-light custom-hover-blue xl:px-9"
                   >
                     Contact us
                   </a>
@@ -149,9 +148,8 @@
               </li>
               <li class="mt-2">
                 <a
-                  aria-current="page"
                   href="/team.html"
-                  class="flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-bottom-shadow px-9 pt-4 pb-4 mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-yellow active-link"
+                  class="flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-top-shadow px-9 pt-4 pb-4 mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-yellow active-link"
                   ><span class="material-icons pr-1" aria-hidden="true"
                     >group</span
                   >Team</a
@@ -172,19 +170,17 @@
       </nav>
     </header>
     <!-- END OF NAV -->
-    <main id="main-content" class="text-2xl">
+    <main id="main-content" class="text-xl md:text-[22px]">
       <section class="team-banner-outer inner-top-shadow">
         <div class="team-banner-inner">
           <div
-            class="w-full md:w-4/5 mx-auto md:grid md:grid-cols-10 pt-12 gap-4 pb-20"
+            class="w-full px-5 lg:px-20 xl:px-24 md:grid md:grid-cols-10 pt-12 gap-4 pb-20"
           >
-            <div
-              class="md:col-span-7 lg:col-span-5 xl:col-span-5 mx-2 sm:mx-12 md:mx-16"
-            >
-              <h1 class="text-5xl font-extrabold mt-6 md:mt-12">
+            <div class="md:col-span-7 lg:col-span-5 xl:col-span-5">
+              <h1 class="text-4xl md:text-7xl font-extrabold mt-6 md:mt-12">
                 Meet our Surfers
               </h1>
-              <p class="my-8 mb-16 sm:">
+              <p class="my-8 mb-16">
                 We're your complete accessibility team—providing expert insights
                 grounded in real-life experiences.
               </p>
@@ -195,12 +191,13 @@
 
       <section id="main-feature" class="pb-12">
         <div
-          class="w-full md:w-4/5 mx-auto mt-12 pb-24 border-2 border-black rounded-32px bg-white bottom-outer-shadow"
+          class="md:mx-5 lg:mx-20 xl:mx-24 mt-12 border-2 border-black rounded-32px bg-white bottom-outer-shadow"
         >
           <div
             class="md:grid md:grid-cols-10 gap-4 py-12 pb-24 bg-blue-wave rounded-t-32px inner-top-light-shadow border-b-2 border-b-black bg-gradient-to-b from-[#5BEBFF] to-[#CCFBF3]"
           >
-            <div class="md:col-span-5 mx-2 sm:ml-12 md:ml-16">
+            <div class="md:col-span-1"></div>
+            <div class="px-5 md:px-0 md:col-span-4">
               <h2 class="text-5xl font-extrabold my-12 mb-22">Who we are</h2>
               <img
                 src="/public/images/content/team-image-1.png"
@@ -208,7 +205,7 @@
                 alt=""
               />
             </div>
-            <div class="md:col-span-5 mt-12 sm:mx-6 md:mr-16">
+            <div class="md:col-span-4 mt-12 px-5">
               <p class="mx-4 mb-8 md:mr-18">
                 We're a collective of accessibility experts, each drawing from
                 our in-depth knowledge and unique perspectives to offer you both
@@ -229,341 +226,353 @@
                 media platforms.
               </p>
             </div>
+            <div class="md:col-span-1"></div>
           </div>
-          <div class="grid gap-4 bg-white mx-2 sm:mx-12 md:mx-16">
-            <h3
-              class="text-3xl font-bold mt-12 col-span-full flex items-center"
-            >
-              <span class="ml-4 md:ml-12">Founders</span>
-            </h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-              <a
-                href="/team/laetitia.html"
-                class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
-              >
-                <img
-                  src="/public/images/team/laetitia.png"
-                  alt=""
-                  class="mx-auto w-4/5 aspect-square rounded-32px border-black border-2"
-                />
-                <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
-                  Laetitia Bonaldo
-                </h4>
-                <p class="w-4/5 mx-auto my-6">
-                  <em> Founder & Accessibility Specialist (CPACC, CAPXP)</em>
-                </p>
-              </a>
-              <a
-                href="/team/noah.html"
-                class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
-              >
-                <img
-                  src="/public/images/team/noah.png"
-                  alt=""
-                  class="mx-auto w-4/5 aspect-square rounded-32px border-black border-2"
-                />
-                <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
-                  Noah Senecal-Junkeer
-                </h4>
-                <p class="w-4/5 mx-auto my-6">Founder</p>
-              </a>
-              <a
-                href="/team/tamara.html"
-                class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
-              >
-                <img
-                  src="/public/images/team/tamara.png"
-                  alt=""
-                  class="mx-auto w-4/5 aspect-square rounded-32px border-black border-2"
-                />
-                <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
-                  Tamara Vandendool Cable
-                </h4>
-                <p class="w-4/5 mx-auto my-6">
-                  Founder & Web Business Development Lead
-                </p>
-              </a>
-              <!-- Add more team member cards here -->
-            </div>
-            <h3
-              class="text-3xl font-bold mt-12 col-span-full flex items-center"
-            >
-              <span class="ml-4 md:ml-12">Leads</span>
-            </h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-              <a
-                href="/team/charlie.html"
-                class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
-              >
-                <img
-                  src="/public/images/team/charlie.png"
-                  alt=""
-                  class="mx-auto w-4/5 aspect-square rounded-32px border-black border-2"
-                />
-                <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
-                  Charlie Morris
-                </h4>
-                <p class="w-4/5 mx-auto my-6">
-                  <em> Web Accessibility Lead & Web Developer</em>
-                </p>
-              </a>
 
-              <a
-                href="/team/britt.html"
-                class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
+          <div
+            class="md:grid md:grid-cols-10 gap-4 inner-top-light-shadow pb-12"
+          >
+            <div class="md:col-span-1"></div>
+            <div class="md:col-span-8">
+              <h3
+                class="text-3xl font-bold mt-12 col-span-full flex items-center"
               >
-                <img
-                  src="/public/images/team/britt.png"
-                  alt=""
-                  class="mx-auto w-4/5 aspect-square rounded-32px border-black border-2"
-                />
-                <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
-                  Britt Dye
-                </h4>
-                <p class="w-4/5 mx-auto my-6">Game Accessibility Lead</p>
-              </a>
-              <a
-                href="/team/tarja.html"
-                class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
+                <span class="px-5 md:px-0">Founders</span>
+              </h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <a
+                  href="/team/laetitia.html"
+                  class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
+                >
+                  <img
+                    src="/public/images/team/laetitia.png"
+                    alt=""
+                    class="mx-auto w-4/5 aspect-square rounded-a-32px  border-black border-2"
+                  />
+                  <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
+                    Laetitia Bonaldo
+                  </h4>
+                  <p class="w-4/5 mx-auto my-6">
+                    <em> Founder & Accessibility Specialist (CPACC, CAPXP)</em>
+                  </p>
+                </a>
+                <a
+                  href="/team/noah.html"
+                  class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
+                >
+                  <img
+                    src="/public/images/team/noah.png"
+                    alt=""
+                    class="mx-auto w-4/5 aspect-square rounded-a-32px  border-black border-2"
+                  />
+                  <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
+                    Noah Senecal-Junkeer
+                  </h4>
+                  <p class="w-4/5 mx-auto my-6">Founder</p>
+                </a>
+                <a
+                  href="/team/tamara.html"
+                  class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
+                >
+                  <img
+                    src="/public/images/team/tamara.png"
+                    alt=""
+                    class="mx-auto w-4/5 aspect-square rounded-a-32px  border-black border-2"
+                  />
+                  <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
+                    Tamara Vandendool Cable
+                  </h4>
+                  <p class="w-4/5 mx-auto my-6">
+                    Founder & Web Business Development Lead
+                  </p>
+                </a>
+                <!-- Add more team member cards here -->
+              </div>
+              <h3
+                class="text-3xl font-bold mt-12 col-span-full flex items-center"
               >
-                <img
-                  src="/public/images/team/tarja.png"
-                  alt=""
-                  class="mx-auto w-4/5 aspect-square rounded-32px border-black border-2"
-                />
-                <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
-                  Tarja Porkka-Kontturi
-                </h4>
-                <p class="w-4/5 mx-auto my-6">Game Business Development Lead</p>
-              </a>
-            </div>
-            <h3
-              class="text-3xl font-bold mt-12 col-span-full flex items-center"
-            >
-              <span class="ml-4 md:ml-12">Specialists</span>
-            </h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-              <a
-                href="/team/brandon.html"
-                class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
+                <span class="px-5 md:px-0">Leads</span>
+              </h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <a
+                  href="/team/charlie.html"
+                  class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
+                >
+                  <img
+                    src="/public/images/team/charlie.png"
+                    alt=""
+                    class="mx-auto w-4/5 aspect-square rounded-a-32px  border-black border-2"
+                  />
+                  <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
+                    Charlie Morris
+                  </h4>
+                  <p class="w-4/5 mx-auto my-6">
+                    <em> Web Accessibility Lead & Web Developer</em>
+                  </p>
+                </a>
+
+                <a
+                  href="/team/britt.html"
+                  class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
+                >
+                  <img
+                    src="/public/images/team/britt.png"
+                    alt=""
+                    class="mx-auto w-4/5 aspect-square rounded-a-32px  border-black border-2"
+                  />
+                  <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
+                    Britt Dye
+                  </h4>
+                  <p class="w-4/5 mx-auto my-6">Game Accessibility Lead</p>
+                </a>
+                <a
+                  href="/team/tarja.html"
+                  class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
+                >
+                  <img
+                    src="/public/images/team/tarja.png"
+                    alt=""
+                    class="mx-auto w-4/5 aspect-square rounded-a-32px  border-black border-2"
+                  />
+                  <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
+                    Tarja Porkka-Kontturi
+                  </h4>
+                  <p class="w-4/5 mx-auto my-6">
+                    Game Business Development Lead
+                  </p>
+                </a>
+              </div>
+              <h3
+                class="text-3xl font-bold mt-12 col-span-full flex items-center"
               >
-                <img
-                  src="/public/images/team/brandon.png"
-                  alt=""
-                  class="mx-auto w-4/5 aspect-square rounded-32px border-black border-2"
-                />
-                <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
-                  Brandon Cole
-                </h4>
-                <p class="w-4/5 mx-auto my-6">
-                  <em>Game Testing Specialist & Consultant</em>
-                </p>
-              </a>
-              <a
-                href="/team/victor.html"
-                class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
-              >
-                <img
-                  src="/public/images/team/victor.png"
-                  alt=""
-                  class="mx-auto w-4/5 aspect-square rounded-32px border-black border-2"
-                />
-                <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
-                  Victor Dima
-                </h4>
-                <p class="w-4/5 mx-auto my-6">
-                  Game Communications Specialist & Consultant
-                </p>
-              </a>
-              <!-- <a
+                <span class="px-5 md:px-0">Specialists</span>
+              </h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <a
+                  href="/team/brandon.html"
+                  class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
+                >
+                  <img
+                    src="/public/images/team/brandon.png"
+                    alt=""
+                    class="mx-auto w-4/5 aspect-square rounded-a-32px  border-black border-2"
+                  />
+                  <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
+                    Brandon Cole
+                  </h4>
+                  <p class="w-4/5 mx-auto my-6">
+                    <em>Game Testing Specialist & Consultant</em>
+                  </p>
+                </a>
+                <a
+                  href="/team/victor.html"
+                  class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
+                >
+                  <img
+                    src="/public/images/team/victor.png"
+                    alt=""
+                    class="mx-auto w-4/5 aspect-square rounded-a-32px  border-black border-2"
+                  />
+                  <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
+                    Victor Dima
+                  </h4>
+                  <p class="w-4/5 mx-auto my-6">
+                    Game Communications Specialist & Consultant
+                  </p>
+                </a>
+                <!-- <a
                 href="/team/Pheobe.html"
                 class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
               >
                 <img
                   src="/public/images/team/phoebe.png"
                   alt=""
-                  class="mx-auto w-4/5 aspect-square rounded-32px border-black border-2"
+                  class="mx-auto w-4/5 aspect-square rounded-a-32px  border-black border-2"
                 />
                 <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
                   Phoebe Hesketh
                 </h4>
                 <p class="w-4/5 mx-auto my-6">Game Engineer Specialist</p>
               </a> -->
-              <a
-                href="/team/arevya.html"
-                class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
+                <a
+                  href="/team/arevya.html"
+                  class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
+                >
+                  <img
+                    src="/public/images/team/arevya.png"
+                    alt=""
+                    class="mx-auto w-4/5 aspect-square rounded-a-32px  border-black border-2"
+                  />
+                  <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
+                    Elisabeth Siversten (Arevya)
+                  </h4>
+                  <p class="w-4/5 mx-auto my-6">
+                    Game Events Specialist & Consultant
+                  </p>
+                </a>
+                <a
+                  href="/team/mike.html"
+                  class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
+                >
+                  <img
+                    src="/public/images/team/mike.png"
+                    alt=""
+                    class="mx-auto w-4/5 aspect-square rounded-a-32px  border-black border-2"
+                  />
+                  <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
+                    Mike Luckett
+                  </h4>
+                  <p class="w-4/5 mx-auto my-6">
+                    Game Community and Testing Specialist & Consultant
+                  </p>
+                </a>
+                <a
+                  href="/team/rikki.html"
+                  class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
+                >
+                  <img
+                    src="/public/images/team/rikki.png"
+                    alt=""
+                    class="mx-auto w-4/5 aspect-square rounded-a-32px  border-black border-2"
+                  />
+                  <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
+                    Rikki Poynter
+                  </h4>
+                  <p class="w-4/5 mx-auto my-6">
+                    Web & Game Content Specialist & Consultant
+                  </p>
+                </a>
+                <!-- Add more team member cards here -->
+              </div>
+              <h3
+                class="text-3xl font-bold mt-12 col-span-full flex items-center"
               >
-                <img
-                  src="/public/images/team/arevya.png"
-                  alt=""
-                  class="mx-auto w-4/5 aspect-square rounded-32px border-black border-2"
-                />
-                <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
-                  Elisabeth Siversten (Arevya)
-                </h4>
-                <p class="w-4/5 mx-auto my-6">
-                  Game Events Specialist & Consultant
-                </p>
-              </a>
-              <a
-                href="/team/mike.html"
-                class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
-              >
-                <img
-                  src="/public/images/team/mike.png"
-                  alt=""
-                  class="mx-auto w-4/5 aspect-square rounded-32px border-black border-2"
-                />
-                <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
-                  Mike Luckett
-                </h4>
-                <p class="w-4/5 mx-auto my-6">
-                  Game Community and Testing Specialist & Consultant
-                </p>
-              </a>
-              <a
-                href="/team/rikki.html"
-                class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
-              >
-                <img
-                  src="/public/images/team/rikki.png"
-                  alt=""
-                  class="mx-auto w-4/5 aspect-square rounded-32px border-black border-2"
-                />
-                <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
-                  Rikki Poynter
-                </h4>
-                <p class="w-4/5 mx-auto my-6">
-                  Web & Game Content Specialist & Consultant
-                </p>
-              </a>
-              <!-- Add more team member cards here -->
-            </div>
-            <h3
-              class="text-3xl font-bold mt-12 col-span-full flex items-center"
-            >
-              <span class="ml-4 md:ml-12">Consultants</span>
-            </h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-              <a
-                href="/team/milan.html"
-                class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
-              >
-                <img
-                  src="/public/images/team/milan.png"
-                  alt=""
-                  class="mx-auto w-4/5 aspect-square rounded-32px border-black border-2"
-                />
-                <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
-                  Milan Patel
-                </h4>
-                <p class="w-4/5 mx-auto my-6">
-                  <em>Web & Game Accessibility Consultant</em>
-                </p>
-              </a>
-              <a
-                href="/team/dani.html"
-                class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
-              >
-                <img
-                  src="/public/images/team/dani.png"
-                  alt=""
-                  class="mx-auto w-4/5 aspect-square rounded-32px border-black border-2"
-                />
-                <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
-                  Danielle (Dani) Moulds
-                </h4>
-                <p class="w-4/5 mx-auto my-6">
-                  Web & Game Accessibility Consultant
-                </p>
-              </a>
-              <a
-                href="/team/marco.html"
-                class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
-              >
-                <img
-                  src="/public/images/team/marco.png"
-                  alt=""
-                  class="mx-auto w-4/5 aspect-square rounded-32px border-black border-2"
-                />
-                <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
-                  Marco Salsiccia
-                </h4>
-                <p class="w-4/5 mx-auto my-6">Web Accessibility Consultant</p>
-              </a>
-              <a
-                href="/team/tess.html"
-                class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
-              >
-                <img
-                  src="/public/images/team/tess.png"
-                  alt=""
-                  class="mx-auto w-4/5 aspect-square rounded-32px border-black border-2"
-                />
-                <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
-                  Tess Grossman
-                </h4>
-                <p class="w-4/5 mx-auto my-6">
-                  Web & Game Accessibility Consultant
-                </p>
-              </a>
-              <a
-                href="/team/lindsey.html"
-                class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
-              >
-                <img
-                  src="/public/images/team/lindsey.png"
-                  alt=""
-                  class="mx-auto w-4/5 aspect-square rounded-32px border-black border-2"
-                />
-                <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
-                  Lindsey Cunningham
-                </h4>
-                <p class="w-4/5 mx-auto my-6">Web Accessibility Consultant</p>
-              </a>
-              <!-- <a
+                <span class="px-5 md:px-0">Consultants</span>
+              </h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <a
+                  href="/team/milan.html"
+                  class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
+                >
+                  <img
+                    src="/public/images/team/milan.png"
+                    alt=""
+                    class="mx-auto w-4/5 aspect-square rounded-a-32px  border-black border-2"
+                  />
+                  <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
+                    Milan Patel
+                  </h4>
+                  <p class="w-4/5 mx-auto my-6">
+                    <em>Web & Game Accessibility Consultant</em>
+                  </p>
+                </a>
+                <a
+                  href="/team/dani.html"
+                  class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
+                >
+                  <img
+                    src="/public/images/team/dani.png"
+                    alt=""
+                    class="mx-auto w-4/5 aspect-square rounded-a-32px  border-black border-2"
+                  />
+                  <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
+                    Danielle (Dani) Moulds
+                  </h4>
+                  <p class="w-4/5 mx-auto my-6">
+                    Web & Game Accessibility Consultant
+                  </p>
+                </a>
+                <a
+                  href="/team/marco.html"
+                  class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
+                >
+                  <img
+                    src="/public/images/team/marco.png"
+                    alt=""
+                    class="mx-auto w-4/5 aspect-square rounded-a-32px  border-black border-2"
+                  />
+                  <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
+                    Marco Salsiccia
+                  </h4>
+                  <p class="w-4/5 mx-auto my-6">Web Accessibility Consultant</p>
+                </a>
+                <a
+                  href="/team/tess.html"
+                  class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
+                >
+                  <img
+                    src="/public/images/team/tess.png"
+                    alt=""
+                    class="mx-auto w-4/5 aspect-square rounded-a-32px  border-black border-2"
+                  />
+                  <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
+                    Tess Grossman
+                  </h4>
+                  <p class="w-4/5 mx-auto my-6">
+                    Web & Game Accessibility Consultant
+                  </p>
+                </a>
+                <a
+                  href="/team/lindsey.html"
+                  class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
+                >
+                  <img
+                    src="/public/images/team/lindsey.png"
+                    alt=""
+                    class="mx-auto w-4/5 aspect-square rounded-a-32px  border-black border-2"
+                  />
+                  <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
+                    Lindsey Cunningham
+                  </h4>
+                  <p class="w-4/5 mx-auto my-6">Web Accessibility Consultant</p>
+                </a>
+                <!-- <a
                 href="/team/anna.html"
                 class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
               >
                 <img
                 src="/public/images/team/anna.png"
                   alt=""
-                  class="mx-auto w-4/5 aspect-square rounded-32px border-black border-2"
+                  class="mx-auto w-4/5 aspect-square rounded-a-32px  border-black border-2"
                 />
                 <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
                   Anna Ashbarry
                 </h4>
                 <p class="w-4/5 mx-auto my-6">Web Accessibility Consultant</p>
               </a> -->
-              <a
-                href="/team/laura.html"
-                class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
-              >
-                <img
-                  src="/public/images/team/laurakate.png"
-                  alt=""
-                  class="mx-auto w-4/5 aspect-square rounded-32px border-black border-2"
-                />
-                <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
-                  Laura Kate Dale
-                </h4>
-                <p class="w-4/5 mx-auto my-6">
-                  Web & Game Accessibility Consultant
-                </p>
-              </a>
+                <a
+                  href="/team/laura.html"
+                  class="justify-center text-left items-center p-4 highlight-card border-2 border-white inline-block"
+                >
+                  <img
+                    src="/public/images/team/laurakate.png"
+                    alt=""
+                    class="mx-auto w-4/5 aspect-square rounded-a-32px  border-black border-2"
+                  />
+                  <h4 class="w-4/5 mx-auto font-extrabold my-6 text-2xl">
+                    Laura Kate Dale
+                  </h4>
+                  <p class="w-4/5 mx-auto my-6">
+                    Web & Game Accessibility Consultant
+                  </p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
         <div
-          class="w-full md:w-4/5 mx-auto mt-12 pb-24 border-2 border-black rounded-32px bg-white bottom-outer-shadow"
+          class="md:mx-5 lg:mx-20 xl:mx-24 mt-12 pb-24 border-2 border-black rounded-32px bg-white bottom-outer-shadow"
         >
           <div
             class="py-12 bg-blue-wave rounded-t-32px inner-top-light-shadow border-b-2 border-b-black"
           >
-            <div class="mx-2 sm:ml-12 md:ml-16">
-              <h2 class="text-5xl font-extrabold my-2 mb-22">
-                Assistive technology coverage
-              </h2>
+            <div class="md:grid md:grid-cols-10">
+              <div class="md:col-span-1"></div>
+              <div class="md:col-span-8 px-5 md:px-0">
+                <h2 class="text-5xl font-extrabold my-2 mb-22">
+                  Assistive technology coverage
+                </h2>
+              </div>
             </div>
           </div>
           <div
@@ -873,12 +882,12 @@
     </main>
 
     <!-- FOOTER TO BE INCLUDED ON EACH PAGE -->
-    <footer class="border-t-2 border-t-black">
-      <div class="md:container md:mx-auto md:pt-8 pb-2 pl-2 lg:pl-12 md:pl-6">
+    <footer class="border-t-2 border-black">
+      <div class="px-5 lg:px-20 xl:px-24 md:pt-8 pb-2">
         <div
           class="md:grid md:grid-cols-12 md:gap-4 pt-12 pb-12 justify-center justify-between"
         >
-          <div class="md:col-span-3">
+          <div class="md:col-span-4 lg:col-span-3">
             <h2 class="text-lg text-bold mb-2 flex items-center">
               <svg
                 width="22"
@@ -985,8 +994,8 @@
               </li>
             </ul>
           </div>
-          <div class="md:col-span-3">
-            <h3 class="text-xl font-extrabold mb-2 sm:mt-6 md:mt-0">Sitemap</h3>
+          <div class="md:col-span-4 lg:col-span-3 mt-8 md:mt-0">
+            <h3 class="text-xl font-extrabold mb-2 md:mt-0">Sitemap</h3>
             <ul class="grid grid-cols-1 gap-2 text-lg">
               <li><a class="underline highlight-link" href="/">Home</a></li>
 
@@ -1024,11 +1033,9 @@
               </li>
             </ul>
           </div>
-          <div class="md:col-span-3">
-            <h3 class="text-xl font-extrabold mb-2 sm:mt-6 md:mt-0">
-              Follow us
-            </h3>
-            <ul class="grid grid-cols-10 gap-4 justify-start">
+          <div class="md:col-span-4 lg:col-span-3 mt-8 md:mt-0">
+            <h3 class="text-xl font-extrabold mb-2 md:mt-0">Follow us</h3>
+            <ul class="md:grid md:grid-cols-10 gap-4 justify-start">
               <li class="col-span-1 md:col-span-2 inline-block">
                 <div class="inline-block">
                   <a
@@ -1057,7 +1064,7 @@
                   >
                 </div>
               </li>
-              <li>
+              <li class="col-span-1 md:col-span-2 inline-block">
                 <div class="inline-block">
                   <a
                     class="flex items-center highlight-link"
@@ -1076,6 +1083,24 @@
                       />
                     </svg>
                     <span class="sr-only">Follow on LinkedIn</span></a
+                  >
+                </div>
+              </li>
+            </ul>
+            <h3 class="text-xl font-extrabold mb-2 mt-8 md:mt-6">
+              Credentials
+            </h3>
+            <ul class="grid grid-cols-4 gap-4 justify-start">
+              <li class="col-span-2 md:col-span-4 inline-block">
+                <div class="inline-block">
+                  <a
+                    class="flex items-center highlight-link"
+                    href="https://safeinourworld.org/"
+                    ><image
+                      src="/public/images/logos/safe-in-our-world-logo.png"
+                      alt=""
+                    ></image>
+                    <span class="sr-only">A Safe In Our World Partner</span></a
                   >
                 </div>
               </li>
