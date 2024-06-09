@@ -357,6 +357,10 @@ html {
   border-bottom-left-radius: 32px;
   border-bottom-right-radius: 32px;
 }
+.rounded-b-var-30px {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
 
 @media (max-width: 763px) {
   .rounded-32px {
@@ -365,7 +369,12 @@ html {
   .rounded-b-var-32px {
     border-radius: 0px 0px 0px 0px
   }
-
+  .rounded-30px {
+    border-radius: 30px 30px 0 0;
+  }
+  .rounded-b-var-30px {
+    border-radius: 0px 0px 0px 0px
+  }
 }
 
 .rounded-t-32px {
