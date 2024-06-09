@@ -422,6 +422,7 @@ html {
 
 .rounded-tr-30px {
   border-top-right-radius: 30px;
+  border-left: black solid 2px;
 }
 
 .rounded-16px {
