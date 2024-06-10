@@ -172,7 +172,7 @@
     <!-- END OF NAV -->
     <main id="main-content" class="text-2xl">
       <section id="main-feature" class="bg-pebble-200 py-12">
-        <nav aria-label="Breadcrumb" class="w-full md:w-4/5 mx-auto mb-4">
+        <nav aria-label="Breadcrumb" class="md:mx-5 lg:mx-20 xl:mx-24  mb-4">
           <span>
             <a
               href="/team"
@@ -185,10 +185,10 @@
         </nav>
 
         <div
-          class="w-full md:w-4/5 mx-auto border-2 border-black rounded-32px bg-white bottom-outer-shadow"
+          class="md:mx-5 lg:mx-20 xl:mx-24  border-2 border-black rounded-32px bg-white bottom-outer-shadow"
         >
           <div
-            class="md:grid md:grid-cols-10 gap-4rounded-t-32px inner-top-light-shadow"
+            class="md:grid md:grid-cols-10 gap-4 rounded-t-32px inner-top-light-shadow"
           >
             <div class="xs:block md:hidden col-span-10">
               <img
@@ -229,7 +229,7 @@
             <div
               class="mx-2 md:w-4/5 md:mx-auto mx-2 col-span-10 md:col-span-5 text-xl sm:mx-6 md:mr-16 mt-20 md:mt-28 pb-12"
             >
-              <h1 class="text-5xl font-extrabold mb-7 mb-12 mx-2">
+              <h1 class="text-5xl font-extrabold my-12 mx-2">
                 Lindsey Cunningham
               </h1>
               <div
@@ -271,11 +271,11 @@
 
     <!-- FOOTER TO BE INCLUDED ON EACH PAGE -->
     <footer class="border-t-2 border-t-black">
-      <div class="md:container md:mx-auto md:pt-8 pb-2 pl-2 lg:pl-12 md:pl-6">
+      <div class="px-5 lg:px-20 xl:px-24 md:pt-8 pb-2">
         <div
           class="md:grid md:grid-cols-12 md:gap-4 pt-12 pb-12 justify-center justify-between"
         >
-          <div class="md:col-span-3">
+          <div class="md:col-span-4 lg:col-span-3">
             <h2 class="text-lg text-bold mb-2 flex items-center">
               <svg
                 width="22"
@@ -382,15 +382,13 @@
               </li>
             </ul>
           </div>
-          <div class="md:col-span-3">
-            <h3 class="text-xl font-extrabold mb-2 sm:mt-6 md:mt-0">Sitemap</h3>
+          <div class="md:col-span-4 lg:col-span-3 mt-8 md:mt-0">
+            <h3 class="text-xl font-extrabold mb-2 md:mt-0">Sitemap</h3>
             <ul class="grid grid-cols-1 gap-2 text-lg">
               <li><a class="underline highlight-link" href="/">Home</a></li>
 
               <li>
-                <a class="underline highlight-link" href="/web-services"
-                  >Web</a
-                >
+                <a class="underline highlight-link" href="/web-services">Web</a>
               </li>
               <li>
                 <a class="underline highlight-link" href="/game-services"
@@ -413,19 +411,15 @@
                 >
               </li>
               <li>
-                <a
-                  class="underline highlight-link"
-                  href="/terms-and-conditions"
+                <a class="underline highlight-link" href="/terms-and-conditions"
                   >Terms and conditions</a
                 >
               </li>
             </ul>
           </div>
-          <div class="md:col-span-3">
-            <h3 class="text-xl font-extrabold mb-2 sm:mt-6 md:mt-0">
-              Follow us
-            </h3>
-            <ul class="grid grid-cols-10 gap-4 justify-start">
+          <div class="md:col-span-4 lg:col-span-3 mt-8 md:mt-0">
+            <h3 class="text-xl font-extrabold mb-2 md:mt-0">Follow us</h3>
+            <ul class="md:grid md:grid-cols-10 gap-4 justify-start">
               <li class="col-span-1 md:col-span-2 inline-block">
                 <div class="inline-block">
                   <a
@@ -454,7 +448,7 @@
                   >
                 </div>
               </li>
-              <li>
+              <li class="col-span-1 md:col-span-2 inline-block">
                 <div class="inline-block">
                   <a
                     class="flex items-center highlight-link"
@@ -473,6 +467,24 @@
                       />
                     </svg>
                     <span class="sr-only">Follow on LinkedIn</span></a
+                  >
+                </div>
+              </li>
+            </ul>
+            <h3 class="text-xl font-extrabold mb-2 mt-8 md:mt-6">
+              Credentials
+            </h3>
+            <ul class="grid grid-cols-4 gap-4 justify-start">
+              <li class="col-span-2 md:col-span-4 inline-block">
+                <div class="inline-block">
+                  <a
+                    class="flex items-center highlight-link"
+                    href="https://safeinourworld.org/"
+                    ><image
+                      src="/public/images/logos/safe-in-our-world-logo.png"
+                      alt=""
+                    ></image>
+                    <span class="sr-only">A Safe In Our World Partner</span></a
                   >
                 </div>
               </li>
