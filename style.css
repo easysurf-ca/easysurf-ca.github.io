@@ -60,6 +60,14 @@ html {
   padding-right: 0;
   min-height:540px;
 }
+.web-secondary-inner {
+  background-image: url('public/images/heroes/Lines-Game.svg');
+  background-repeat: no-repeat;
+  padding-left: 0;
+  padding-right: 0;
+  min-height:540px;
+  background-position-y:150%;
+}
 .web-banner-outer {
   background-image: url("public/images/heroes/BG-Web.webp");
   background-size: cover;
@@ -394,6 +402,29 @@ html {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
+  }
+  .web-secondary-inner {
+    background-image: url('public/images/heroes/Lines-Web.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-y: 103%;
+  }
+  .game-secondary-inner {
+    background-image: url('public/images/heroes/Lines-Web.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-y: 106%;
+
+  }
+  .team-secondary-inner {
+    background-image: url('public/images/heroes/Lines-Web.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-y: 109%;
+
   }
 }
 

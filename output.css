@@ -915,28 +915,18 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-\[\#CCFBF3\] {
-  --tw-gradient-from: #CCFBF3 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(204 251 243 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .from-\[\#cafbf3\] {
   --tw-gradient-from: #cafbf3 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(202 251 243 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.to-\[\#5BEBFF\] {
-  --tw-gradient-to: #5BEBFF var(--tw-gradient-to-position);
+.to-\[\#00d4ff\] {
+  --tw-gradient-to: #00d4ff var(--tw-gradient-to-position);
 }
 
 .to-\[\#CCFBF3\] {
   --tw-gradient-to: #CCFBF3 var(--tw-gradient-to-position);
-}
-
-.to-\[\#00d4ff\] {
-  --tw-gradient-to: #00d4ff var(--tw-gradient-to-position);
 }
 
 .object-cover {
@@ -1180,10 +1170,6 @@ video {
 
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .sm\:flex-nowrap {
-    flex-wrap: nowrap;
   }
 
   .sm\:px-3 {
