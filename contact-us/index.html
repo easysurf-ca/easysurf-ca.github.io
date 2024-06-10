@@ -191,127 +191,131 @@
         </div>
       </section>
 
-      <section id="main-feature" class="bg-pebble-200 pb-12">
-        <div
-          class="md:mx-5 lg:mx-20 xl:mx-24 mt-12 pb-12 border-2 border-black rounded-32px bg-white bottom-outer-shadow"
-        >
-          <div class="py-12 bg-blue-wave rounded-t-32px inner-top-light-shadow">
+      <section id="main-feature" class="bg-pebble-200 ">
+        <div class="contact-secondary-inner pb-12">
+          <div
+            class="md:mx-5 lg:mx-20 xl:mx-24 mt-12 pb-12 border-2 border-black rounded-32px bg-white bottom-outer-shadow"
+          >
+            <div
+              class="py-12 bg-blue-wave rounded-t-32px inner-top-light-shadow"
+            >
+              <div class="md:grid md:grid-cols-10">
+                <div class="col-span-1"></div>
+                <div class="px-5 md:px-0 md:col-span-4">
+                  <h2 class="text-5xl font-extrabold my-2 mb-22">Email us</h2>
+                </div>
+                <div class="px-5 md:px-0 md:col-span-4">
+                  <p class="text-2xl my-2 mb-22 sm:mr-12 md:mr-16">
+                    Please fill out every field and we will get back to you as
+                    soon as possible!
+                  </p>
+                </div>
+                <div class="col-span-1"></div>
+              </div>
+            </div>
             <div class="md:grid md:grid-cols-10">
-              <div class="col-span-1"></div>
-              <div class="px-5 md:px-0 md:col-span-4">
-                <h2 class="text-5xl font-extrabold my-2 mb-22">Email us</h2>
-              </div>
-              <div class="px-5 md:px-0 md:col-span-4">
-                <p class="text-2xl my-2 mb-22 sm:mr-12 md:mr-16">
-                  Please fill out every field and we will get back to you as
-                  soon as possible!
-                </p>
+              <div id="errors" class="w-4/5 mb-6 shadow p-4 rounded-md hidden">
+                <h3 class="font-bold text-red-500 mb-2 ml-4">
+                  Please fix the following errors:
+                </h3>
+                <ul class="list-disc ml-8"></ul>
               </div>
               <div class="col-span-1"></div>
-            </div>
-          </div>
-          <div class="md:grid md:grid-cols-10">
-            <div id="errors" class="w-4/5 mb-6 shadow p-4 rounded-md hidden">
-              <h3 class="font-bold text-red-500 mb-2 ml-4">
-                Please fix the following errors:
-              </h3>
-              <ul class="list-disc ml-8"></ul>
-            </div>
-            <div class="col-span-1"></div>
-            <div class="px-5 md:px-0 md:col-span-8 pt-4">
-              <form
-                id="form"
-                action="https://formsubmit.co/howdy@easysurf.ca"
-                method="POST"
-                novalidate
-              >
-                <input
-                  type="hidden"
-                  aria-hidden="true"
-                  name="_next"
-                  value="https://easysurf.ca/contact-successful"
-                />
-                <input
-                  type="hidden"
-                  aria-hidden="true"
-                  name="_subject"
-                  value="New submission from EasySurf!"
-                />
-                <input
-                  type="hidden"
-                  aria-hidden="true"
-                  name="_captcha"
-                  value="false"
-                />
-                <div class="mb-6">
-                  <label for="full_name" class="block my-2 font-bold text-2xl"
-                    >Name</label
-                  >
-                  <input
-                    id="full_name"
-                    name="full_name"
-                    class="block border-2 border-black rounded-lg text-2xl px-2 py-2 w-full focus:outline-none custom-input-outline"
-                    aria-describedBy="full_name_error"
-                    required
-                  />
-                  <div
-                    id="full_name_error"
-                    class="mt-1 text-red-500"
-                    role="alert"
-                  ></div>
-                </div>
-
-                <div class="mb-6">
-                  <label
-                    for="email"
-                    class="block mb-2 mt-6 font-bold text-2xl py-1"
-                    >Email</label
-                  >
-                  <input
-                    id="email"
-                    name="email"
-                    class="block border-2 border-black rounded-lg text-2xl px-2 py-2 w-full focus:outline-none custom-input-outline"
-                    aria-describedBy="email_error"
-                    required
-                  />
-                  <div
-                    id="email_error"
-                    class="mt-1 text-red-500"
-                    role="alert"
-                  ></div>
-                </div>
-
-                <div class="mb-12">
-                  <label
-                    for="message"
-                    class="block mb-2 mt-6 font-bold text-2xl py-1"
-                    >How can we help you?</label
-                  >
-                  <textarea
-                    id="message"
-                    name="message"
-                    class="block border-2 border-black rounded-lg text-2xl px-2 py-2 w-full focus:outline-none custom-input-outline"
-                    rows="10"
-                    aria-describedBy="message_error"
-                    required
-                  ></textarea>
-                  <div
-                    id="message_error"
-                    class="mt-1 text-red-500"
-                    role="alert"
-                  ></div>
-                </div>
-
-                <button
-                  id="submit-button"
-                  type="submit"
-                  class="px-9 custom-outline font-extrabold w-full w-full md:w-64 text-2xl border-black inner-bottom-shadow px-4 pt-4 pb-4 md:mr-2 lg:mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-white"
+              <div class="px-5 md:px-0 md:col-span-8 pt-4">
+                <form
+                  id="form"
+                  action="https://formsubmit.co/howdy@easysurf.ca"
+                  method="POST"
+                  novalidate
                 >
-                  Send
-                </button>
-              </form>
+                  <input
+                    type="hidden"
+                    aria-hidden="true"
+                    name="_next"
+                    value="https://easysurf.ca/contact-successful"
+                  />
+                  <input
+                    type="hidden"
+                    aria-hidden="true"
+                    name="_subject"
+                    value="New submission from EasySurf!"
+                  />
+                  <input
+                    type="hidden"
+                    aria-hidden="true"
+                    name="_captcha"
+                    value="false"
+                  />
+                  <div class="mb-6">
+                    <label for="full_name" class="block my-2 font-bold text-2xl"
+                      >Name</label
+                    >
+                    <input
+                      id="full_name"
+                      name="full_name"
+                      class="block border-2 border-black rounded-lg text-2xl px-2 py-2 w-full focus:outline-none custom-input-outline"
+                      aria-describedBy="full_name_error"
+                      required
+                    />
+                    <div
+                      id="full_name_error"
+                      class="mt-1 text-red-500"
+                      role="alert"
+                    ></div>
+                  </div>
+
+                  <div class="mb-6">
+                    <label
+                      for="email"
+                      class="block mb-2 mt-6 font-bold text-2xl py-1"
+                      >Email</label
+                    >
+                    <input
+                      id="email"
+                      name="email"
+                      class="block border-2 border-black rounded-lg text-2xl px-2 py-2 w-full focus:outline-none custom-input-outline"
+                      aria-describedBy="email_error"
+                      required
+                    />
+                    <div
+                      id="email_error"
+                      class="mt-1 text-red-500"
+                      role="alert"
+                    ></div>
+                  </div>
+
+                  <div class="mb-12">
+                    <label
+                      for="message"
+                      class="block mb-2 mt-6 font-bold text-2xl py-1"
+                      >How can we help you?</label
+                    >
+                    <textarea
+                      id="message"
+                      name="message"
+                      class="block border-2 border-black rounded-lg text-2xl px-2 py-2 w-full focus:outline-none custom-input-outline"
+                      rows="10"
+                      aria-describedBy="message_error"
+                      required
+                    ></textarea>
+                    <div
+                      id="message_error"
+                      class="mt-1 text-red-500"
+                      role="alert"
+                    ></div>
+                  </div>
+
+                  <button
+                    id="submit-button"
+                    type="submit"
+                    class="px-9 custom-outline font-extrabold w-full w-full md:w-64 text-2xl border-black inner-bottom-shadow px-4 pt-4 pb-4 md:mr-2 lg:mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-white"
+                  >
+                    Send
+                  </button>
+                </form>
+              </div>
+              <div class="col-span-1"></div>
             </div>
-            <div class="col-span-1"></div>
           </div>
         </div>
       </section>
@@ -435,9 +439,7 @@
               <li><a class="underline highlight-link" href="/">Home</a></li>
 
               <li>
-                <a class="underline highlight-link" href="/web-services"
-                  >Web</a
-                >
+                <a class="underline highlight-link" href="/web-services">Web</a>
               </li>
               <li>
                 <a class="underline highlight-link" href="/game-services"
@@ -460,9 +462,7 @@
                 >
               </li>
               <li>
-                <a
-                  class="underline highlight-link"
-                  href="/terms-and-conditions"
+                <a class="underline highlight-link" href="/terms-and-conditions"
                   >Terms and conditions</a
                 >
               </li>
@@ -563,6 +563,6 @@
     <!-- END OF FOOTER -->
 
     <script src="../script.js"></script>
-    <script src=""../form-script.js.js"></script>
+    <script src="../form-script.js"></script>
   </body>
 </html>

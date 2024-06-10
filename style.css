@@ -124,6 +124,21 @@ html {
   border-bottom-width: 2px;
   min-height: 470px;
 }
+.team-secondary-inner {
+  background-image: url('public/images/heroes/choppy.svg');
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  min-height:270px;
+}
+.team-individual-inner {
+  background-image: url('public/images/heroes/choppy.svg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-position-y: 260px;
+  min-height:540px;
+}
 .contact-banner-inner {
   background-image: url('public/images/heroes/Lines-Contact.svg');
   background-size: cover;
@@ -132,6 +147,7 @@ html {
   padding-left: 0;
   padding-right: 0;
 }
+
 .contact-banner-outer {
   background-image: url("public/images/heroes/BG-Contact.webp");
   background-size: cover;
@@ -139,6 +155,13 @@ html {
   padding-right: 0;
   border-bottom-color: black;
   border-bottom-width: 2px;
+}
+.contact-secondary-inner {
+  background-image: url('public/images/heroes/choppy.svg');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  min-height:270px;
 }
 .cta-banner-inner {
   background-image: url('public/images/heroes/Lines-CTA.svg');
@@ -425,6 +448,12 @@ html {
     background-position: bottom;
     background-position-y: 109%;
 
+  }
+  .contact-secondary-inner {
+    background-image: url('public/images/heroes/Lines-Team.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
 }
 
