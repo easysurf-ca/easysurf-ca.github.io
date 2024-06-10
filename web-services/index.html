@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Web accessibility | Easy Surf Canada</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../output.css" />
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+
+  <body>
+    <!-- NAV TO BE INCLUDED ON EACH PAGE -->
+    <header>
+      <a href="#main-content" class="skip-link">Skip to main content</a>
+      <nav class="border-2 border-b-black py-8 px-5 lg:px-20 xl:px-24">
+        <div class="md:mx-auto flex items-center justify-between">
+          <!-- START MOBILE NAV -->
+          <!-- Mobile Navigation (Hamburger Menu) -->
+          <div class="flex lg:hidden">
+            <button
+              type="button"
+              class="text-xl flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-bottom-shadow px-9 pt-4 pb-4 mr-6 rounded-6xl text-zinc-800 bg-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+              onclick="toggleMobileMenu()"
+            >
+              Menu
+            </button>
+          </div>
+
+          <!-- START LOGO -->
+          <div class="mt-2 md:w-1/5 lg:w-1/5">
+            <a
+              href="/"
+              aria-label="Easy Surf"
+              class="highlight-card inline-block pr-2"
+            >
+              <img src="/public/images/easy-surf-black-logo.svg" alt="" />
+            </a>
+          </div>
+          <!-- END LOGO -->
+
+          <!-- START DESKTOP NAV -->
+          <div class="hidden lg:block">
+            <div class="flex-grow hidden md:block text-[22px]">
+              <ul class="flex justify-center">
+                <li class="mt-2">
+                  <a
+                    href="/"
+                    class="flex justify-center items-center font-extrabold border-2 border-black inner-bottom-shadow px-1 lg:px-3 pt-4 pb-4 md:mr-2 lg:mr-5 rounded-6xl text-zinc-800 bg-white custom-hover-white custom-outline xl:px-9"
+                  >
+                    <span class="material-icons pr-1" aria-hidden="true"
+                      >home</span
+                    >
+                    Home</a
+                  >
+                </li>
+                <li class="mt-2">
+                  <a
+                    aria-current="page"
+                    href="/web-services"
+                    class="flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-top-shadow px-1 lg:px-3 pt-4 pb-4 md:mr-2 lg:mr-5 rounded-6xl text-zinc-800 bg-white custom-hover-yellow active-link xl:px-9"
+                  >
+                    <span class="material-icons pr-1" aria-hidden="true"
+                      >public</span
+                    >
+                    Web</a
+                  >
+                </li>
+                <li class="mt-2">
+                  <a
+                    href="/game-services"
+                    class="flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-bottom-shadow px-1 lg:px-3 pt-4 pb-4 md:mr-2 lg:mr-5 rounded-6xl text-zinc-800 bg-white custom-hover-white xl:px-9"
+                    ><span class="material-icons pr-1" aria-hidden="true"
+                      >sports_esports</span
+                    >Game</a
+                  >
+                </li>
+                <li class="mt-2">
+                  <a
+                    href="/team"
+                    class="flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-bottom-shadow px-1 lg:px-3 pt-4 pb-4 md:mr-2 lg:mr-16 rounded-6xl text-zinc-800 bg-white custom-hover-white xl:px-9"
+                    ><span class="material-icons pr-1" aria-hidden="true"
+                      >group</span
+                    >Team</a
+                  >
+                </li>
+                <li class="justify-end mt-2">
+                  <a
+                    href="/contact-us"
+                    class="flex justify-center items-center custom-outline font-extrabold border-2 border-black px-1 lg:px-3 pt-4 pb-4 rounded-6xl bg-primary-brand text-white inner-y-shadow-light custom-hover-blue xl:px-9"
+                  >
+                    Contact us
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- END DESKTOP NAV -->
+        </div>
+        <!-- BEGIN MOBILE NAV -->
+        <div class="lg:hidden hidden text-xl" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <ul class="justify-center">
+              <li class="mt-2">
+                <a
+                  href="/"
+                  class="flex justify-center items-center font-extrabold border-2 border-black inner-bottom-shadow px-9 pt-4 pb-4 mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-white custom-outline"
+                >
+                  <span class="material-icons pr-1" aria-hidden="true"
+                    >home</span
+                  >
+                  Home</a
+                >
+              </li>
+              <li class="mt-2">
+                <a
+                  aria-current="page"
+                  href="/web-services"
+                  class="flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-top-shadow px-9 pt-4 pb-4 mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-yellow active-link"
+                >
+                  <span class="material-icons pr-1" aria-hidden="true"
+                    >public</span
+                  >
+                  Web</a
+                >
+              </li>
+              <li class="mt-2">
+                <a
+                  href="/game-services"
+                  class="flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-bottom-shadow px-9 pt-4 pb-4 mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-white"
+                  ><span class="material-icons pr-1" aria-hidden="true"
+                    >sports_esports</span
+                  >Game</a
+                >
+              </li>
+              <li class="mt-2">
+                <a
+                  href="/team"
+                  class="flex justify-center items-center custom-outline font-extrabold border-2 border-black inner-bottom-shadow px-9 pt-4 pb-4 mr-6 rounded-6xl text-zinc-800 bg-white custom-hover-white"
+                  ><span class="material-icons pr-1" aria-hidden="true"
+                    >group</span
+                  >Team</a
+                >
+              </li>
+              <li class="justify-end mt-2">
+                <a
+                  href="/contact-us"
+                  class="flex justify-center items-center custom-outline font-extrabold border-2 border-black px-9 pt-4 pb-4 mr-6 rounded-6xl bg-primary-brand text-white custom-hover-blue inner-y-shadow"
+                >
+                  Contact us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- END MOBILE NAV -->
+      </nav>
+    </header>
+    <!-- END OF NAV -->
+    <main id="main-content" class="text-xl md:text-[22px]">
+      <section class="web-banner-outer inner-top-shadow">
+        <div class="web-banner-inner">
+          <div
+            class="w-full px-5 lg:px-20 xl:px-24 md:grid md:grid-cols-10 pt-12 gap-4 pb-20"
+          >
+            <div class="md:col-span-7 lg:col-span-5 xl:col-span-5">
+              <h1 class="text-4xl md:text-7xl font-extrabold mt-6 md:mt-12">
+                Build without barriers
+              </h1>
+              <p class="my-8 mb-16">
+                Connect your website to the entire world with accessible and
+                effortless online experiences. Surfing the web should be easy
+                for everyone.
+              </p>
+              <a
+                aria-label="Learn how, contact us now."
+                href="/contact-us"
+                class="block text-center md:inline-block md:mt-6 border-2 border-black custom-outline inner-bottom-shadow px-9 pt-4 pb-4 md:mr-6 rounded-6xl text-zinc-800 bg-white font-extrabold custom-hover-white"
+                >Learn how</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="main-feature">
+        <div
+          class="md:mx-5 lg:mx-20 xl:mx-24 mt-12 pb-24 border-2 border-black rounded-32px bg-white bottom-outer-shadow"
+        >
+          <div
+            class="md:mx-auto md:grid md:grid-cols-10 py-12 pb-24 rounded-t-32px inner-top-light-shadow border-b-black border-b-2 bg-gradient-to-b from-[#5BEBFF] to-[#CCFBF3]"
+          >
+            <div class="col-span-1"></div>
+            <div class="md:col-span-4 px-5 md:px-0">
+              <h2 class="text-5xl font-extrabold my-12 mb-22">
+                Trust a partner with lived experience
+              </h2>
+              <img
+                src="/public/images/content/web-image-9.jpeg"
+                class="w-100 h-100 rounded-lg border-2 border-black"
+                alt=""
+              />
+            </div>
+            <div class="md:col-span-5 mt-12 md:mt-60 lg:mt-48 sm:mx-6 md:mr-16">
+              <p class="mx-4 mb-8 md:mr-18">
+                Our collective is not just diverse in terms of expertise,
+                nationality, and identity. It also includes a wide range of
+                perspectives from people who identify as disabled.
+              </p>
+              <p class="mx-4 mb-12 md:mr-18">
+                We have a deep knowledge of assistive technology, which allows
+                us to share our in-depth understanding of the end user's
+                experiences.
+              </p>
+              <p class="mx-4 mb-12 md:mr-18">
+                We also acknowledge the unmet needs of the neurodiverse and
+                neurodevelopmental disability communities.
+              </p>
+            </div>
+          </div>
+          <div class="md:grid md:grid-cols-10 gap-4 bg-white">
+            <div class="col-span-1"></div>
+            <h3
+              class="md:ml-4 text-3xl font-bold mt-12 md:col-span-4 flex flex-col md:flex-row items-start md:items-center px-5 md:px-0"
+            >
+              <svg
+                aria-hidden="true"
+                width="80"
+                height="80"
+                viewBox="0 0 80 80"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="flex-shrink-0"
+              >
+                <rect width="80" height="80" rx="40" fill="#D0EAFF" />
+                <circle cx="40" cy="40" r="32" fill="#8DDDFF" />
+                <mask
+                  id="mask0_442_38769"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="12"
+                  y="12"
+                  width="56"
+                  height="56"
+                >
+                  <rect x="12" y="12" width="56" height="56" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_442_38769)">
+                  <path
+                    d="M14.76 62.2113C14.3143 62.2113 13.9374 62.0572 13.6293 61.7491C13.3211 61.441 13.167 61.064 13.167 60.6183V59.7927C13.167 58.7637 13.5604 57.8617 14.3471 57.087C15.1339 56.3122 16.2213 55.7378 17.6094 55.3639C18.5756 55.0677 19.4641 54.9159 20.2747 54.9084C21.0854 54.9009 21.9544 54.9361 22.8818 55.0139C23.154 55.0527 23.3641 55.1791 23.5122 55.393C23.6603 55.6069 23.7029 55.8425 23.6401 56.0998C23.4995 56.5455 23.3941 57.0047 23.3238 57.4773C23.2535 57.95 23.2184 58.4286 23.2184 58.9132V60.5286C23.2184 61.0191 23.0605 61.4222 22.7449 61.7378C22.4293 62.0534 22.0262 62.2113 21.5357 62.2113H14.76ZM28.8498 62.2113C28.3592 62.2113 27.9561 62.0534 27.6405 61.7378C27.3249 61.4222 27.1671 61.0191 27.1671 60.5286V59.003C27.1671 56.7743 28.3517 54.9869 30.7209 53.6408C33.0901 52.2947 36.1833 51.6216 40.0003 51.6216C43.8563 51.6216 46.9591 52.2947 49.3089 53.6408C51.6587 54.9869 52.8336 56.7743 52.8336 59.003V60.5286C52.8336 61.0191 52.6758 61.4222 52.3602 61.7378C52.0446 62.0534 51.6415 62.2113 51.1509 62.2113H28.8498ZM58.465 62.2113C57.9744 62.2113 57.5713 62.0534 57.2557 61.7378C56.9401 61.4222 56.7823 61.0191 56.7823 60.5286V58.9132C56.7823 58.4286 56.7472 57.95 56.6769 57.4773C56.6066 57.0047 56.5086 56.5455 56.3829 56.0998C56.3052 55.8425 56.3403 55.6069 56.4884 55.393C56.6365 55.1791 56.8467 55.0527 57.1189 55.0139C58.0462 54.9361 58.9152 54.9009 59.7259 54.9084C60.5366 54.9159 61.425 55.0677 62.3913 55.3639C63.7793 55.7378 64.8667 56.3122 65.6535 57.087C66.4402 57.8617 66.8336 58.7637 66.8336 59.7927V60.6183C66.8336 61.064 66.6795 61.441 66.3714 61.7491C66.0633 62.0572 65.6863 62.2113 65.2406 62.2113H58.465ZM21.5132 53.0575C20.5201 53.0575 19.6772 52.7112 18.9847 52.0187C18.2922 51.3262 17.946 50.4834 17.946 49.4902C17.946 48.512 18.2922 47.6766 18.9847 46.9841C19.6772 46.2916 20.5201 45.9453 21.5132 45.9453C22.4914 45.9453 23.3305 46.2916 24.0305 46.9841C24.7305 47.6766 25.0805 48.512 25.0805 49.4902C25.0805 50.4834 24.7305 51.3262 24.0305 52.0187C23.3305 52.7112 22.4914 53.0575 21.5132 53.0575ZM58.5099 53.0575C57.5317 53.0575 56.6926 52.7112 55.9926 52.0187C55.2926 51.3262 54.9426 50.4834 54.9426 49.4902C54.9426 48.512 55.2926 47.6766 55.9926 46.9841C56.6926 46.2916 57.5317 45.9453 58.5099 45.9453C59.503 45.9453 60.3459 46.2916 61.0384 46.9841C61.7309 47.6766 62.0772 48.512 62.0772 49.4902C62.0772 50.4834 61.7309 51.3262 61.0384 52.0187C60.3459 52.7112 59.503 53.0575 58.5099 53.0575ZM40.0003 49.8716C38.3251 49.8716 36.8967 49.2808 35.7151 48.0992C34.5335 46.9176 33.9427 45.4892 33.9427 43.814C33.9427 42.0999 34.5335 40.6618 35.7151 39.4996C36.8967 38.3375 38.3251 37.7564 40.0003 37.7564C41.7144 37.7564 43.1525 38.3375 44.3147 39.4996C45.4769 40.6618 46.0579 42.0999 46.0579 43.814C46.0579 45.4892 45.4769 46.9176 44.3147 48.0992C43.1525 49.2808 41.7144 49.8716 40.0003 49.8716ZM40.0003 26.5204C41.6456 24.5161 43.5557 22.9561 45.7305 21.8403C47.9053 20.7244 50.1952 20.1665 52.6003 20.1665C56.549 20.1665 59.9084 21.5516 62.6785 24.3216C65.4486 27.0917 66.8336 30.4511 66.8336 34.3998C66.8336 35.8506 66.6481 37.2589 66.2772 38.6245C65.9062 39.9901 65.4036 41.3131 64.7695 42.5934C64.581 42.9793 64.302 43.2455 63.9326 43.3921C63.5632 43.5387 63.1855 43.5297 62.7996 43.3652C62.4765 43.2156 62.2439 42.9853 62.1019 42.6742C61.9598 42.3631 61.9785 42.0654 62.1579 41.7812C62.7772 40.6265 63.2701 39.4292 63.6365 38.1892C64.003 36.9493 64.1862 35.6861 64.1862 34.3998C64.1862 31.184 63.0592 28.449 60.8051 26.195C58.5511 23.9409 55.8161 22.8139 52.6003 22.8139C50.3538 22.8139 48.2934 23.4257 46.4192 24.6492C44.5451 25.8727 42.8572 27.331 41.3555 29.0242C40.9815 29.437 40.5298 29.6434 40.0003 29.6434C39.4709 29.6434 39.0191 29.437 38.6452 29.0242C37.1285 27.346 35.4369 25.8914 33.5702 24.6604C31.7035 23.4294 29.6469 22.8139 27.4003 22.8139C24.1845 22.8139 21.4496 23.9409 19.1955 26.195C16.9415 28.449 15.8145 31.184 15.8145 34.3998C15.8145 35.6861 15.9939 36.953 16.3529 38.2004C16.7119 39.4479 17.201 40.649 17.8202 41.8037C17.9848 42.0878 17.9997 42.3795 17.8651 42.6787C17.7305 42.9778 17.5092 43.2096 17.201 43.3741C16.8391 43.5387 16.4711 43.5439 16.0972 43.3899C15.7233 43.2358 15.4346 42.9658 15.2312 42.5799C14.5971 41.2996 14.0945 39.9729 13.7235 38.5998C13.3526 37.2267 13.1671 35.8267 13.1671 34.3998C13.1671 30.4511 14.5521 27.0917 17.3222 24.3216C20.0922 21.5516 23.4516 20.1665 27.4003 20.1665C29.8054 20.1665 32.0954 20.7244 34.2702 21.8403C36.445 22.9561 38.355 24.5161 40.0003 26.5204Z"
+                    fill="#0B456F"
+                  />
+                </g>
+              </svg>
+
+              <span class="md:ml-6">Achieve more than just conformance</span>
+            </h3>
+            <p class="mt-6 md:mt-16 md:mr-6 md:col-span-4 px-5">
+              Let our community of experts make sure your website is WCAG
+              conformant and welcoming to people with disabilities, for the
+              benefit of your entire audience.
+              <span class="font-bold">Accessibility is usability.</span>
+            </p>
+            <div class="col-span-1"></div>
+            <div class="col-span-1"></div>
+            <h3
+              class="md:ml-4 text-3xl font-bold mt-12 md:col-span-4 flex flex-col md:flex-row items-start md:items-center px-5 md:px-0"
+            >
+              <svg
+                aria-hidden="true"
+                width="80"
+                height="80"
+                viewBox="0 0 80 80"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="flex-shrink-0"
+              >
+                <rect width="80" height="80" rx="40" fill="#CBFBFF" />
+                <circle cx="40" cy="40" r="32" fill="#9EF5FF" />
+                <mask
+                  id="mask0_442_38777"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="12"
+                  y="12"
+                  width="56"
+                  height="56"
+                >
+                  <rect x="12" y="12" width="56" height="56" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_442_38777)">
+                  <path
+                    d="M46.7855 57.4999C41.8974 57.4999 37.7571 55.8036 34.3646 52.4111C30.9721 49.0186 29.2759 44.8784 29.2759 39.9903C29.2759 35.1147 30.9721 30.9808 34.3646 27.5885C37.7571 24.1962 41.8974 22.5 46.7855 22.5C51.661 22.5 55.7949 24.1962 59.1873 27.5885C62.5795 30.9808 64.2757 35.1147 64.2757 39.9903C64.2757 44.8784 62.5795 49.0186 59.1873 52.4111C55.7949 55.8036 51.661 57.4999 46.7855 57.4999ZM48.0994 39.4436V32.3493C48.0994 31.9881 47.9725 31.6772 47.7187 31.4165C47.4648 31.1559 47.1503 31.0256 46.775 31.0256C46.3997 31.0256 46.0854 31.1499 45.8321 31.3986C45.5788 31.6472 45.4521 31.9641 45.4521 32.3493V39.8653C45.4521 40.0603 45.491 40.2571 45.5688 40.4558C45.6465 40.6544 45.7771 40.8533 45.9605 41.0525L51.8373 46.9147C52.0958 47.1749 52.4027 47.305 52.758 47.305C53.1135 47.305 53.4287 47.1742 53.7039 46.9127C53.9791 46.6511 54.1168 46.3452 54.1168 45.995C54.1168 45.6449 53.9791 45.3293 53.7039 45.0481L48.0994 39.4436ZM19.3816 31.9903C19.0066 31.9903 18.6922 31.8624 18.4385 31.6065C18.1848 31.3505 18.0579 31.0334 18.0579 30.6552C18.0579 30.2769 18.1848 29.9636 18.4385 29.7154C18.6922 29.4671 19.0066 29.3429 19.3816 29.3429H25.6188C25.9939 29.3429 26.3082 29.4709 26.562 29.7267C26.8157 29.9827 26.9425 30.2998 26.9425 30.678C26.9425 31.0563 26.8157 31.3696 26.562 31.6179C26.3082 31.8662 25.9939 31.9903 25.6188 31.9903H19.3816ZM17.0483 41.3236C16.6733 41.3236 16.3589 41.1957 16.1052 40.9398C15.8515 40.6839 15.7246 40.3668 15.7246 39.9885C15.7246 39.6102 15.8515 39.297 16.1052 39.0487C16.3589 38.8004 16.6733 38.6762 17.0483 38.6762H25.6188C25.9939 38.6762 26.3082 38.8042 26.562 39.0601C26.8157 39.316 26.9425 39.6331 26.9425 40.0114C26.9425 40.3896 26.8157 40.7029 26.562 40.9512C26.3082 41.1995 25.9939 41.3236 25.6188 41.3236H17.0483ZM19.3816 50.657C19.0066 50.657 18.6922 50.529 18.4385 50.2731C18.1848 50.0172 18.0579 49.7001 18.0579 49.3218C18.0579 48.9436 18.1848 48.6303 18.4385 48.382C18.6922 48.1337 19.0066 48.0096 19.3816 48.0096H25.6188C25.9939 48.0096 26.3082 48.1375 26.562 48.3934C26.8157 48.6493 26.9425 48.9664 26.9425 49.3447C26.9425 49.723 26.8157 50.0363 26.562 50.2845C26.3082 50.5328 25.9939 50.657 25.6188 50.657H19.3816Z"
+                    fill="#104E69"
+                  />
+                </g>
+              </svg>
+
+              <span class="md:ml-6">Prevent tomorrow’s problems</span>
+            </h3>
+            <p class="mt-6 md:mt-20 md:mr-6 md:col-span-4 px-5">
+              Our shift left approach addresses accessibility issues
+              <span class="font-bold">early in the design phase.</span> It
+              prevents issues, reduces costs, requires less effort, and saves
+              you time.
+            </p>
+            <div class="col-span-1"></div>
+            <div class="col-span-1"></div>
+            <h3
+              class="md:ml-4 text-3xl font-bold mt-12 md:col-span-4 flex flex-col md:flex-row items-start md:items-center px-5 md:px-0"
+            >
+              <svg
+                aria-hidden="true"
+                width="80"
+                height="80"
+                viewBox="0 0 80 80"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="flex-shrink-0"
+              >
+                <rect width="80" height="80" rx="40" fill="#D4FDF6" />
+                <circle cx="40" cy="40" r="32" fill="#ABFAEE" />
+                <mask
+                  id="mask0_442_38785"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="12"
+                  y="12"
+                  width="56"
+                  height="56"
+                >
+                  <rect x="12" y="12" width="56" height="56" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_442_38785)">
+                  <path
+                    d="M33.4939 57.5H23.5324C22.614 57.5 21.8235 57.1627 21.1609 56.4881C20.4983 55.8136 20.167 55.0291 20.167 54.1346V21.1989C20.167 20.2805 20.4983 19.49 21.1609 18.8274C21.8235 18.1648 22.614 17.8335 23.5324 17.8335H56.4681C57.3626 17.8335 58.1471 18.1648 58.8216 18.8274C59.4962 19.49 59.8335 20.2805 59.8335 21.1989V54.1346C59.8335 55.0291 59.4962 55.8136 58.8216 56.4881C58.1471 57.1627 57.3626 57.5 56.4681 57.5H46.5067L41.1804 62.8263C40.8453 63.1613 40.452 63.3288 40.0003 63.3288C39.5486 63.3288 39.1552 63.1613 38.8201 62.8262L33.4939 57.5ZM40.3054 50.5225C40.8229 50.5225 41.2619 50.3423 41.6223 49.9818C41.9828 49.6213 42.163 49.1823 42.163 48.6648C42.163 48.1473 41.9828 47.7083 41.6223 47.3478C41.2619 46.9874 40.8229 46.8071 40.3054 46.8071C39.7879 46.8071 39.3489 46.9874 38.9884 47.3478C38.628 47.7083 38.4477 48.1473 38.4477 48.6648C38.4477 49.1823 38.628 49.6213 38.9884 49.9818C39.3489 50.3423 39.7879 50.5225 40.3054 50.5225ZM44.5817 31.12C44.5817 31.8978 44.379 32.6464 43.9737 33.3659C43.5684 34.0853 42.905 34.8788 41.9836 35.7463C41.3285 36.3775 40.7968 36.9421 40.3884 37.4402C39.9801 37.9383 39.6593 38.4251 39.4259 38.9008C39.2704 39.2418 39.15 39.5933 39.0647 39.9552C38.9795 40.3172 38.898 40.7046 38.8202 41.1174C38.7723 41.4554 38.8725 41.7583 39.1208 42.0261C39.3691 42.2938 39.6742 42.4276 40.0361 42.4276C40.3742 42.4276 40.6748 42.3095 40.9381 42.0732C41.2013 41.8368 41.3763 41.5257 41.463 41.1399C41.6037 40.4788 41.8549 39.8625 42.2169 39.2911C42.5789 38.7198 43.1487 38.0452 43.9265 37.2674C45.1201 36.0738 45.9584 34.9962 46.4416 34.0344C46.9247 33.0727 47.1662 32.0698 47.1662 31.0258C47.1662 29.1292 46.55 27.6155 45.3175 26.4848C44.0851 25.354 42.4383 24.7886 40.3772 24.7886C38.8994 24.7886 37.56 25.1162 36.3589 25.7713C35.1579 26.4264 34.1909 27.3314 33.458 28.486C33.2696 28.8001 33.2404 29.1143 33.3705 29.4284C33.5006 29.7424 33.7347 29.9743 34.0727 30.1239C34.4107 30.2734 34.7428 30.2951 35.0689 30.1889C35.3949 30.0827 35.6836 29.8845 35.9348 29.5944C36.5092 28.8585 37.1659 28.308 37.9048 27.9431C38.6436 27.5781 39.4678 27.3956 40.3772 27.3956C41.7114 27.3956 42.7457 27.7254 43.4801 28.3851C44.2145 29.0447 44.5817 29.9563 44.5817 31.12Z"
+                    fill="#134E4D"
+                  />
+                </g>
+              </svg>
+
+              <span class="md:ml-6">Support that stokes progress</span>
+            </h3>
+            <p class="mt-6 md:mt-16 md:mr-6 md:col-span-4 px-5">
+              To ensure you have the support you need to meet your goals, we
+              offer accessibility office hours and general accessibility
+              consulting <span class="font-bold">when you need it.</span>
+            </p>
+            <div class="col-span-1"></div>
+          </div>
+        </div>
+        <div
+          class="md:mx-5 lg:mx-20 xl:mx-24 mt-12 bg-blue-wave rounded-32px border-2 border-black bottom-outer-shadow inner-top-light-shadow"
+        >
+          <div class="grid grid-cols-10 gap-4">
+            <div class="xs:block md:hidden col-span-10">
+              <img
+                src="public/images/content/web-image-1.png"
+                alt=""
+                class="w-full h-full object-cover rounded-t-30px border-b-2 border-b-black"
+              />
+            </div>
+            <div class="col-span-1"></div>
+            <div class="col-span-10 md:col-span-4 px-5 md:px-0">
+              <h2 class="text-3xl font-extrabold md:my-12 mb-22 pt-6">
+                Accessibility plan
+              </h2>
+              <p class="mb-8 mt-12">
+                Our Accessibility Specialist will collaborate with your team to
+                establish accessibility goals, timelines, and implementation
+                strategies. Together, we’ll determine high, moderate, and low
+                priority needs for accessibility implementation.
+              </p>
+              <p class="mb-8">Accessibility plans include:</p>
+              <ul class="mb-12">
+                <li class="list-disc ml-4 mb-2">A 1-hour initial meeting</li>
+                <li class="list-disc ml-4 mb-2">
+                  Accessibility plan development
+                </li>
+
+                <li class="list-disc ml-4 mb-2">A 1-hour review meeting</li>
+                <li class="list-disc ml-4">1 round of document revisions</li>
+              </ul>
+              <div
+                class="xl:flex xl:justify-apart pb-8"
+              >
+                <div class="mb-4 lg:mb-0">
+                  <span class="sr-only"
+                    >Pricing from $600 to $900 USD + GST</span
+                  >
+                  <div
+                    aria-hidden="true"
+                    class="pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px mx-0 xl:mr-6 bg-white md:min-w-72 "
+                  >
+                    $600 to $900 USD + GST
+                  </div>
+                </div>
+                <div>
+                  <span class="sr-only">Expected time 1 to 2 weeks</span>
+                  <div
+                    aria-hidden="true"
+                    class="pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px bg-white md:min-w-40 lg:mt-0 md:mt-4"
+                  >
+                    1 to 2 weeks
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-1"></div>
+
+            <div
+              class="md:col-span-4 hidden md:block col-span-10 top-light-shadow rounded-32px"
+            >
+              <img
+                src="public/images/content/web-image-1.png"
+                alt=""
+                class="w-full h-full object-cover rounded-r-30px"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="md:mx-5 lg:mx-20 xl:mx-24 mt-12 bg-white rounded-32px border-2 border-black bottom-outer-shadow inner-top-light-shadow"
+        >
+          <div class="grid grid-cols-10 gap-4">
+            <div class="xs:block md:hidden col-span-10">
+              <img
+                src="public/images/content/web-image-2.png"
+                alt=""
+                class="w-full h-full object-cover rounded-t-30px border-b-2 border-b-black"
+              />
+            </div>
+            <div class="col-span-1"></div>
+            <div class="col-span-10 md:col-span-4 px-5 md:px-0">
+              <h2 class="text-3xl font-extrabold md:my-12 mb-22 pt-6">
+                Mini audits
+              </h2>
+              <p class="mb-8 mt-12">
+                Not sure where to start? We can do an intro audit for 1-3 pages
+                of your website. Our Accessibility Specialist will identify
+                high-impact accessibility issues and priority fixes. This puts
+                you on the path to WCAG conformance, as conducting a full audit
+                afterward would build upon the intro audit.
+              </p>
+              <p class="mb-14">
+                Mini audits are best paired with accessibility testing and
+                interviews.
+              </p>
+              <div
+               class="xl:flex xl:justify-apart pb-8"
+              >
+                <div class="mb-4 lg:mb-0">
+                  <span class="sr-only"
+                    >Pricing from $600 to $1,800 USD + GST</span
+                  >
+                  <div
+                    aria-hidden="true"
+                    class="pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px mx-0 xl:mr-6 md:min-w-72 md:min-w-72 bg-blue-wave"
+                  >
+                    $600 to $1,800 USD + GST
+                  </div>
+                </div>
+                <div>
+                  <span class="sr-only">Expected time 1 to 2 weeks</span>
+                  <div
+                    aria-hidden="true"
+                    class="pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px md:min-w-40 bg-blue-wave"
+                  >
+                    1 to 2 weeks
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-1"></div>
+
+            <div
+              class="md:col-span-4 hidden md:block col-span-10 top-light-shadow rounded-32px"
+            >
+              <img
+                src="public/images/content/web-image-2.png"
+                alt=""
+                class="w-full h-full object-cover rounded-r-30px"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="md:mx-5 lg:mx-20 xl:mx-24 mt-12 bg-winter-swell rounded-32px border-2 border-black bottom-outer-shadow inner-top-light-shadow"
+        >
+          <div class="grid grid-cols-10 gap-4">
+            <div class="xs:block md:hidden col-span-10">
+              <img
+                src="public/images/content/web-image-3.png"
+                alt=""
+                class="w-full h-full object-cover rounded-t-30px border-b-2 border-b-black"
+              />
+            </div>
+            <div class="col-span-1"></div>
+            <div class="col-span-10 md:col-span-4 px-5 md:px-0">
+              <h2 class="text-3xl font-extrabold md:my-12 mb-22 pt-6">
+                Full audits
+              </h2>
+              <p class="mb-8 mt-12">
+                Have experience implementing accessibility issues, and want to
+                become WCAG conformant? We can do a full audit of your website.
+                We’ll audit a representative sample of your website and key
+                flows against the WCAG success criteria relevant to your
+                accessibility goals.
+              </p>
+              <p class="mb-14">
+                We like to combine our full audits with accessibility testing
+                and interviews. This approach captures the experience of
+                everyday users of adaptive technology to support our audit
+                findings.
+              </p>
+              <div
+               class="xl:flex xl:justify-apart pb-8"
+              >
+                <div class="mb-4 lg:mb-0">
+                  <span class="sr-only"
+                    >Pricing from $3,750 to $10,200 USD + GST</span
+                  >
+                  <div
+                    aria-hidden="true"
+                    class="pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px mx-0 xl:mr-6 md:min-w-72 md:min-w-72 bg-white"
+                  >
+                    $3,750 to $10,200 USD + GST
+                  </div>
+                </div>
+                <div>
+                  <span class="sr-only">Expected time 2 to 5 weeks</span>
+                  <div
+                    aria-hidden="true"
+                    class="pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px md:min-w-40 bg-white"
+                  >
+                    2 to 5 weeks
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-1"></div>
+
+            <div
+              class="md:col-span-4 hidden md:block col-span-10 top-light-shadow rounded-32px"
+            >
+              <img
+                src="public/images/content/web-image-3.png"
+                alt=""
+                class="w-full h-full object-cover rounded-r-30px"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="md:mx-5 lg:mx-20 xl:mx-24 mt-12 bg-white border-2 border-black rounded-32px border-2 border-black bottom-outer-shadow inner-top-light-shadow"
+        >
+          <div class="grid grid-cols-10 gap-4">
+            <div class="xs:block md:hidden col-span-10">
+              <img
+                src="public/images/content/web-image-4.png"
+                alt=""
+                class="w-full h-full object-cover rounded-t-30px border-b-2 border-b-black"
+              />
+            </div>
+            <div class="col-span-1"></div>
+            <div class="col-span-10 md:col-span-4 px-5 md:px-0">
+              <h2 class="text-3xl font-extrabold md:my-12 mb-22 mr-12 pt-6">
+                Remediation
+              </h2>
+              <p class="mb-14 mt-12">
+                Remediation services involve our Developer giving further advice
+                on fixing accessibility issues. Our Developer retests elements
+                that initially failed accessibility checks, making sure any
+                remaining problems are addressed and remediated.
+              </p>
+              <h3 class="font-extrabold my-6 mr-12 pt-6">
+                Mini audit remediation
+              </h3>
+              <div
+               class="xl:flex xl:justify-apart pb-8"
+              >
+                <div class="mb-4 lg:mb-0">
+                  <span class="sr-only"
+                    >Pricing from $225 to $675 USD + GST</span
+                  >
+                  <div
+                    aria-hidden="true"
+                    class="pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px mx-0 xl:mr-6 md:min-w-72 md:min-w-72 bg-blue-wave"
+                  >
+                    $225 to $675 USD + GST
+                  </div>
+                </div>
+                <div>
+                  <span class="sr-only">Expected time 1 week</span>
+                  <div
+                    aria-hidden="true"
+                    class="pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px md:min-w-40 bg-blue-wave"
+                  >
+                    1 week
+                  </div>
+                </div>
+              </div>
+              <h3 class="font-extrabold my-6 mr-12 pt-6">
+                Full audit remediation
+              </h3>
+              <div
+               class="xl:flex xl:justify-apart pb-8"
+              >
+                <div class="mb-4 lg:mb-0">
+                  <span class="sr-only"
+                    >Pricing from $1,500 to $4,500 USD + GST</span
+                  >
+                  <div
+                    aria-hidden="true"
+                    class="pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px mx-0 xl:mr-6 md:min-w-72 md:min-w-72 bg-blue-wave"
+                  >
+                    $1,500 to $4,500 USD + GST
+                  </div>
+                </div>
+                <div>
+                  <span class="sr-only">Expected time 1 to 3 weeks</span>
+                  <div
+                    aria-hidden="true"
+                    class="pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px md:min-w-40 bg-blue-wave"
+                  >
+                    1 to 3 weeks
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-1"></div>
+
+            <div class="md:col-span-4 hidden md:block col-span-10">
+              <img
+                src="public/images/content/web-image-4.png"
+                alt=""
+                class="w-full h-full object-cover rounded-r-30px"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- TABLE -->
+        <div
+          class="md:mx-5 lg:mx-20 xl:mx-24 mt-12 border-2 border-black rounded-32px border-2 border-black bottom-outer-shadow inner-top-light-shadow"
+        >
+          <div class="grid grid-cols-10 gap-x-4 bg-blue-wave rounded-32px">
+            <div class="xs:block md:hidden col-span-10">
+              <img
+                src="public/images/content/web-image-5.png"
+                alt=""
+                class="w-full h-full object-cover rounded-t-30px border-b-2 border-b-black"
+              />
+            </div>
+            <div class="col-span-1"></div>
+            <div class="col-span-10 md:col-span-4 px-5 md:px-0">
+              <h2 class="text-3xl font-extrabold md:my-12 mb-22 pt-6">
+                Accessibility Testing and Interviews
+              </h2>
+              <p class="mb-8 mt-12">
+                Accessibility testing and interviews are recorded sessions with
+                Accessibility consultants tailored to their specific needs.
+                These sessions cover both desktop and mobile experiences, using
+                various assistive technologies to ensure we capture diverse
+                perspectives.
+              </p>
+              <p class="">
+                We recommend a minimum of 3 participants with various
+                perspectives (ie. screen reader, magnification, and alternative
+                navigation).
+              </p>
+            </div>
+            <div class="col-span-1"></div>
+
+            <div
+              class="md:col-span-4 hidden md:block col-span-10 top-light-shadow rounded-32px"
+            >
+              <img
+                src="public/images/content/web-image-5.png"
+                alt=""
+                class="w-full h-full object-cover rounded-r-30px"
+              />
+            </div>
+            <div
+              class="grid grid-cols-10 col-span-10 bg-pebble-200 py-12 border-t-2 border-t-black rounded-b-var-32px bg-white"
+            >
+              <div class="md:col-span-1"></div>
+              <div
+                class="col-span-10 md:col-span-8 border-2 border-black rounded-table-32px bottom-outer-shadow inner-top-light-shadow bg-linear-blue"
+              >
+                <h3 class="font-extrabold my-6 mb-22 md:mx-12 mx-4">
+                  Complete
+                </h3>
+
+                <div class="bg-white border-t-2 border-t-black rounded-b-30px px-4 md:px-0">
+                  <p class="mb-4 mt-12  md:px-12  text-lg">
+                    Includes synthesis, full reports, and recordings with
+                    chapters and highlights.
+                  </p>
+                  <p class="mb-14  md:px-12 ">
+                    Let us handle it all for you. You want access to our
+                    collective of Accessibility Consultants. You also want us to
+                    synthesize findings for you, edit the full-length recordings
+                    into easy-to-follow chapters, and create a highlight reel
+                    and research report of the most important insights and
+                    recommendations.
+                  </p>
+                  <div class="xl:flex xl:justify-between pb-8 md:mx-12">
+                    <div class="mb-4 lg:mb-0">
+                      <span class="sr-only"
+                        >Pricing Per participant: $750 to $900 USD + GST
+                      </span>
+                      <div
+                        aria-hidden="true"
+                        class="pl-2 mt-4 pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px md:min-w-96 bg-blue-wave"
+                      >
+                        Per participant: $750 to $900 USD + GST
+                      </div>
+                    </div>
+                    <div class="mb-4 lg:mb-0">
+                      <span class="sr-only"
+                        >Pricing for Goal setting: $900 USD + GST
+                      </span>
+                      <div
+                        aria-hidden="true"
+                        class="mt-4 pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px md:min-w-72 bg-blue-wave"
+                      >
+                        Goal setting: $900 USD + GST
+                      </div>
+                    </div>
+                    <div>
+                      <span class="sr-only">Expected time 3 to 4 weeks</span>
+                      <div
+                        aria-hidden="true"
+                        class="mt-4 pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px md:min-w-40 bg-blue-wave"
+                      >
+                        3 to 4 weeks
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-span-1"></div>
+              <div class="col-span-1"></div>
+
+              <div
+                class="col-span-10 md:col-span-8 mt-12 rounded-table-32px border-2 border-black bottom-outer-shadow inner-top-light-shadow bg-linear-blue"
+              >
+                <h3 class="font-extrabold my-6 mb-22 md:mx-12 mx-4">
+                  Intermediate
+                </h3>
+
+                <div class="bg-white border-t-2 border-t-black rounded-b-30px px-4 md:px-0">
+                  <p class="mb-4 mt-12  md:px-12 text-lg">
+                    Includes synthesis, full reports, and recordings with
+                    chapters and highlights.
+                  </p>
+                  <p class="mb-14  md:px-12">
+                    You want access to our collective of Accessibility
+                    Consultants. You also want us to synthesize findings for
+                    you, summarize key insights in an executive summary, and
+                    edit the full-length recordings into easy-to-follow
+                    chapters.
+                  </p>
+                  <div class="xl:flex xl:justify-between pb-8 md:mx-12">
+                    <div class="mb-4 lg:mb-0">
+                      <span class="sr-only"
+                        >Pricing Per participant: $450 to $600 USD + GST
+                      </span>
+                      <div
+                        aria-hidden="true"
+                        class="mt-4 pl-2 pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px md:min-w-96 bg-blue-wave"
+                      >
+                        Per participant: $450 to $600 USD + GST
+                      </div>
+                    </div>
+                    <div class="mb-4 lg:mb-0">
+                      <span class="sr-only"
+                        >Pricing for Goal setting: $525 USD + GST
+                      </span>
+                      <div
+                        aria-hidden="true"
+                        class="mt-4 pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px md:min-w-72 bg-blue-wave"
+                      >
+                        Goal setting: $525 USD + GST
+                      </div>
+                    </div>
+                    <div>
+                      <span class="sr-only">Expected time 2 to 3 weeks</span>
+                      <div
+                        aria-hidden="true"
+                        class="mt-4 pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px md:min-w-40 bg-blue-wave"
+                      >
+                        2 to 3 weeks
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-span-1"></div>
+              <div class="col-span-1"></div>
+              <div
+                class="col-span-10 md:col-span-8 mt-12 rounded-table-32px border-2 border-black bottom-outer-shadow inner-top-light-shadow bg-linear-blue"
+              >
+                <h3 class="font-extrabold my-6 mb-22 md:mx-12 mx-4">Basic</h3>
+
+                <div class="bg-white border-t-2 border-t-black rounded-b-30px px-4 md:px-0">
+                  <p class="mb-4 mt-12  md:px-12  text-lg">
+                    Only includes raw recordings without chapters or highlights.
+                  </p>
+                  <p class="mb-14  md:px-12 ">
+                    You just want access to our collective of Accessibility
+                    Consultants. You’ll take it from there.
+                  </p>
+                  <div class="xl:flex xl:justify-between pb-8 md:mx-12">
+                    <div class="mb-4 lg:mb-0">
+                      <span class="sr-only"
+                        >Pricing Per participant: $150 to $300 USD + GST</span
+                      >
+                      <div
+                        aria-hidden="true"
+                        class="mt-4 pl-2 pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px md:min-w-96 bg-blue-wave"
+                      >
+                        Per participant: $150 to $300 USD + GST
+                      </div>
+                    </div>
+                    <div class="mb-4 lg:mb-0">
+                      <span class="sr-only"
+                        >Pricing for Goal setting: $150 USD + GST
+                      </span>
+                      <div
+                        aria-hidden="true"
+                        class="mt-4 pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px md:min-w-72 bg-blue-wave"
+                      >
+                        Goal setting: $150 USD + GST
+                      </div>
+                    </div>
+                    <div>
+                      <span class="sr-only">Expected time 1 to 2 weeks</span>
+                      <div
+                        aria-hidden="true"
+                        class="mt-4 pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px md:min-w-40 bg-blue-wave"
+                      >
+                        1 to 2 weeks
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TABLE END -->
+        <div
+          class="md:mx-5 lg:mx-20 xl:mx-24 mt-12 bg-white border-2 border-black rounded-32px border-2 border-black bottom-outer-shadow inner-top-light-shadow"
+        >
+          <div class="grid grid-cols-10 gap-4">
+            <div class="xs:block md:hidden col-span-10">
+              <img
+                src="public/images/content/web-image-6.png"
+                alt=""
+                class="w-full h-full object-cover rounded-t-30px border-b-2 border-b-black"
+              />
+            </div>
+            <div class="col-span-1"></div>
+            <div class="col-span-10 md:col-span-4 px-5 md:px-0">
+              <h2 class="text-3xl font-extrabold md:my-12 mb-22 mr-12 pt-6">
+                Design reviews
+              </h2>
+              <p class="mb-8 mt-12">
+                Design reviews make sure that your designs meet Web Content
+                Accessibility Guidelines 2.2 standards. They also include best
+                practices and firsthand feedback from our Accessibility
+                Consultants.
+              </p>
+              <p class="mb-14">
+                Spotting and addressing potential accessibility issues before
+                they progress into the development stage is crucial for cost and
+                timesaving.
+              </p>
+              <div
+               class="xl:flex xl:justify-apart pb-8"
+              >
+                <div class="mb-4 lg:mb-0">
+                  <span class="sr-only"
+                    >Pricing Per screen: $375 USD + GST</span
+                  >
+                  <div
+                    aria-hidden="true"
+                    class="pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px mx-0 xl:mr-6 md:min-w-72 md:min-w-72 bg-blue-wave"
+                  >
+                    Per screen: $375 USD + GST
+                  </div>
+                </div>
+                <div>
+                  <span class="sr-only">Expected time 1 to 3 weeks</span>
+                  <div
+                    aria-hidden="true"
+                    class="pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px md:min-w-40 bg-blue-wave"
+                  >
+                    1 to 3 weeks
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-1"></div>
+
+            <div class="md:col-span-4 hidden md:block col-span-10">
+              <img
+                src="public/images/content/web-image-6.png"
+                alt=""
+                class="w-full h-full object-cover rounded-r-30px"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="md:mx-5 lg:mx-20 xl:mx-24 mt-12 bg-winter-swell border-2 border-black rounded-32px border-2 border-black bottom-outer-shadow inner-top-light-shadow"
+        >
+          <div class="grid grid-cols-10 gap-4">
+            <div class="xs:block md:hidden col-span-10">
+              <img
+                src="public/images/content/web-image-7.png"
+                alt=""
+                class="w-full h-full object-cover rounded-t-30px border-b-2 border-b-black"
+              />
+            </div>
+            <div class="col-span-1"></div>
+            <div class="col-span-10 md:col-span-4 px-5 md:px-0">
+              <h2 class="text-3xl font-extrabold md:my-12 mb-22 mr-12 pt-6">
+                Accessibility office hours
+              </h2>
+              <p class="mb-4 mt-12 text-lg">
+                Response times are within 24-48 hours, or immediately during a
+                predetermined window of time. Communication method is flexible.
+              </p>
+              <p class="mb-14 mt-12">
+                The topic of accessibility is as vast as it is deep. Venturing
+                into the accessibility space for the first time can sometimes
+                feel daunting and overwhelming.
+              </p>
+              <p class="mb-8">
+                Easy Surf can be a source of guidance and reassurance during
+                this learning curve by offering accessibility office hours to
+                your various teams.
+              </p>
+              <div
+               class="xl:flex xl:justify-apart pb-8"
+              >
+                <div class="mb-4 lg:mb-0">
+                  <span class="sr-only"
+                    >Pricing from $150 USD + GST per hour</span
+                  >
+                  <div
+                    aria-hidden="true"
+                    class="pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px mx-0 xl:mr-6 md:min-w-72 md:min-w-72 bg-white"
+                  >
+                    $150 USD + GST per hour
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-1"></div>
+
+            <div class="md:col-span-4 hidden md:block col-span-10">
+              <img
+                src="public/images/content/web-image-7.png"
+                alt=""
+                class="w-full h-full object-cover rounded-r-30px"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="md:mx-5 lg:mx-20 xl:mx-24 mt-12 bg-white border-2 border-black rounded-32px border-2 border-black bottom-outer-shadow inner-top-light-shadow"
+        >
+          <div class="grid grid-cols-10 gap-4">
+            <div class="xs:block md:hidden col-span-10">
+              <img
+                src="public/images/content/web-image-8.png"
+                alt=""
+                class="w-full h-full object-cover rounded-t-30px border-b-2 border-b-black"
+              />
+            </div>
+            <div class="col-span-1"></div>
+            <div class="col-span-10 md:col-span-4 px-5 md:px-0">
+              <h2 class="text-3xl font-extrabold md:my-12 mb-22 mr-12 pt-6">
+                Accessibility consulting
+              </h2>
+              <p class="mb-4 mt-12 text-lg">
+                Response times are within 24-48 hours to schedule a deliverable
+                or meeting.
+              </p>
+              <p class="mb-8 mt-12">
+                Whether it be writing accessibility best practices, creating
+                accessibility guidelines for your style guides, or attending
+                collaborative meetings to provide accessibility guidance—we're
+                here to support you.
+              </p>
+              <p class="mb-14">Just ask, and we'll do our best to help.</p>
+
+              <div
+               class="xl:flex xl:justify-apart pb-8"
+              >
+                <div class="mb-4 lg:mb-0">
+                  <span class="sr-only">Pricing from</span>
+                  <div
+                    class="pt-4 pb-4 flex justify-center shadow-md border-2 border-black text-lg rounded-100px mx-0 xl:mr-6 md:min-w-72 md:min-w-72 bg-blue-wave"
+                  >
+                    $150 USD + GST per hour
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-1"></div>
+            <div class="md:col-span-4 hidden md:block col-span-10">
+              <img
+                src="public/images/content/web-image-8.png"
+                alt=""
+                class="w-full h-full object-cover rounded-r-30px"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="secondary-banner"
+        class="mt-12 border-2 border-y-black cta-banner-outer"
+      >
+        <div class="cta-banner-inner pb-20">
+          <div class="text-center pt-12 w-full">
+            <h2 class="text-5xl font-extrabold mt-6 mb-12">
+              Catch the waves of progress
+            </h2>
+            <p class="mb-6 mx-auto w-4/5 md:w-2/5">
+              Surpass your vision and achieve web excellence for the benefit of
+              your entire audience.
+            </p>
+            <a
+              href="/contact-us"
+              class="mx-4 block md:inline-block font-semibold custom-outline text-2xl border-2 border-black my-6 px-9 pt-4 pb-4 mr-6 rounded-6xl bg-primary-brand text-white inner-y-shadow custom-hover-blue"
+            >
+              Get started
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER TO BE INCLUDED ON EACH PAGE -->
+    <footer>
+      <div class="px-5 lg:px-20 xl:px-24 md:pt-8 pb-2">
+        <div
+          class="md:grid md:grid-cols-12 md:gap-4 pt-12 pb-12 justify-center justify-between"
+        >
+          <div class="md:col-span-4 lg:col-span-3">
+            <h2 class="text-lg text-bold mb-2 flex items-center">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M11.4036 13.6436C10.2817 13.6436 9.34125 12.9074 8.98159 12.4134C8.96839 12.397 8.95849 12.3774 8.94529 12.361C8.66152 11.9488 8.51303 11.4612 8.51303 10.9541C8.51303 9.56683 9.65142 8.44131 11.0472 8.44131C12.8422 8.44131 13.2283 9.93328 13.2283 10.303C13.2283 10.905 13.72 11.3893 14.3238 11.3893C14.9309 11.3893 15.4193 10.9018 15.4193 10.303C15.4193 9.66172 15.1685 8.6638 14.4558 7.80003C13.8816 7.09985 12.8257 6.2688 11.0406 6.2688C8.43384 6.2688 6.31543 8.37261 6.31543 10.9541C6.31543 11.8997 6.5959 12.8093 7.12716 13.5847C7.15025 13.6174 7.17335 13.6501 7.19645 13.6796C7.96858 14.7429 9.56233 15.8194 11.4003 15.8194H21.0948C21.4313 15.1355 21.6986 14.4125 21.8834 13.6632C21.824 13.6534 21.7646 13.6468 21.7019 13.6468L11.4036 13.6436Z"
+                  fill="#011C28"
+                />
+                <path
+                  d="M4.47769 19.8209C6.32882 21.1918 8.62541 22 11.1167 22C13.5519 22 15.799 21.2246 17.6303 19.9093H10.9187C7.82029 19.9093 5.93286 18.3519 4.63278 16.9973C3.06212 15.3614 2.1976 13.2118 2.1976 10.9476C2.1976 8.60172 3.11822 6.39976 4.79116 4.74093C6.46411 3.08209 8.68481 2.16924 11.0507 2.16924C13.4463 2.16924 15.6109 2.97085 17.1518 4.43337C17.9108 5.15318 18.4981 6.00714 18.9073 6.97888C19.3329 7.99316 19.5474 9.11213 19.5474 10.2998C19.5474 10.9018 20.0391 11.3861 20.6429 11.3861C21.2468 11.3861 21.7384 10.8986 21.7384 10.2998C21.7384 8.82421 21.4645 7.42385 20.9267 6.14456C20.402 4.8947 19.6398 3.79209 18.6598 2.86615C16.713 1.01428 14.0072 0 11.0441 0C9.55593 0 8.10736 0.291196 6.74458 0.8605C5.428 1.41344 4.25001 2.20196 3.23371 3.20642C2.2174 4.21416 1.42217 5.38221 0.867821 6.68769C0.290374 8.03896 0 9.47204 0 10.9509C0 13.7745 1.079 16.4509 3.03572 18.4958C3.44489 18.9179 3.92004 19.3792 4.47769 19.8209Z"
+                  fill="#011C28"
+                />
+                <path
+                  d="M16.482 5.12704C15.1225 3.83792 13.1922 3.12793 11.0474 3.12793C6.69841 3.12793 3.16113 6.63537 3.16113 10.9477C3.16113 12.5247 3.63299 14.0429 4.52061 15.3385C4.54701 15.3778 4.5767 15.417 4.6031 15.4563C5.28614 16.415 6.14736 17.2329 7.09107 17.8219C8.29546 18.5711 9.61864 18.9507 11.021 18.9507H18.7819C19.4616 18.3061 20.0622 17.5765 20.5571 16.7781H11.0276C8.59574 16.7781 7.08117 15.1651 6.39814 14.2065C6.37834 14.177 6.35854 14.1476 6.33544 14.1214C5.6953 13.1889 5.35543 12.0928 5.35543 10.951C5.35543 7.83614 7.9094 5.30699 11.0474 5.30699C12.628 5.30699 14.0171 5.80104 14.9675 6.7008C15.898 7.5842 16.3896 8.82751 16.3896 10.2998C16.3896 10.9019 16.8813 11.3861 17.4851 11.3861C18.0923 11.3861 18.5806 10.8986 18.5806 10.2998C18.5839 8.21895 17.858 6.43251 16.482 5.12704Z"
+                  fill="#011C28"
+                />
+              </svg>
+
+              <span class="ml-4 text-xl font-extrabold">Easy Surf</span>
+              <span class="sr-only">Details</span>
+            </h2>
+            <ul class="text-lg">
+              <li>
+                <span class="block">Easy Surf Collective Corp.</span>
+                <span class="block">329 Howe Street</span>
+                <span class="block">Unit #553</span>
+                <span class="block">Vancouver, BC</span>
+                <span class="block">V6C 3N2</span>
+                <span class="block">Canada</span>
+              </li>
+              <li class="mt-4 inline-block">
+                <a
+                  class="underline flex items-center highlight-link inline-block"
+                  href="tel:778-745-0990"
+                  ><svg
+                    width="34"
+                    height="34"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <mask
+                      id="mask0_997_2324"
+                      style="mask-type: alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="34"
+                      height="34"
+                    >
+                      <rect width="34" height="34" fill="#D9D9D9" />
+                    </mask>
+                    <g mask="url(#mask0_997_2324)">
+                      <path
+                        d="M27.488 29.0415C24.9234 29.0415 22.3028 28.412 19.626 27.1531C16.9491 25.8941 14.4626 24.1165 12.1662 21.8202C9.87899 19.5238 8.10589 17.0395 6.84695 14.3673C5.58798 11.695 4.9585 9.07657 4.9585 6.51205C4.9585 6.07737 5.10653 5.70974 5.40259 5.40914C5.69862 5.10855 6.06399 4.95825 6.4987 4.95825H10.7359C11.0997 4.95825 11.412 5.07737 11.6726 5.31561C11.9333 5.55384 12.1105 5.85732 12.2043 6.22603L13.0398 10.1545C13.09 10.5159 13.0776 10.838 13.0025 11.1207C12.9275 11.4034 12.7895 11.6392 12.5885 11.8281L9.26385 15.0656C9.86079 16.1099 10.5063 17.0836 11.2004 17.9866C11.8945 18.8895 12.6454 19.7421 13.453 20.5443C14.3006 21.4076 15.2021 22.1998 16.1574 22.9208C17.1127 23.6419 18.138 24.3021 19.2332 24.9014L22.4362 21.6277C22.6674 21.3777 22.9318 21.2072 23.2294 21.1164C23.5269 21.0256 23.8407 21.0038 24.1707 21.0511L27.774 21.8229C28.1475 21.9113 28.4522 22.0996 28.688 22.3878C28.9238 22.676 29.0418 23.0044 29.0418 23.3731V27.5013C29.0418 27.936 28.8915 28.3014 28.5909 28.5974C28.2903 28.8935 27.9226 29.0415 27.488 29.0415Z"
+                        fill="#011C28"
+                      />
+                    </g>
+                  </svg>
+                  <span class="ml-4">(778) 745-0990</span></a
+                >
+              </li>
+              <li class="mt-4">
+                <div class="inline-block">
+                  <a
+                    class="underline flex items-center highlight-link"
+                    href="mailto:howdy@EasySurf.ca"
+                  >
+                    <svg
+                      width="34"
+                      height="34"
+                      viewBox="0 0 34 34"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <mask
+                        id="mask0_997_2329"
+                        style="mask-type: alpha"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="34"
+                        height="34"
+                      >
+                        <rect width="34" height="34" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_997_2329)">
+                        <path
+                          d="M5.75731 27.6249C5.14706 27.6249 4.62519 27.4082 4.19172 26.9747C3.75824 26.5412 3.5415 26.0194 3.5415 25.4091V8.59081C3.5415 7.98056 3.75824 7.45869 4.19172 7.02521C4.62519 6.59174 5.14706 6.375 5.75731 6.375H28.2423C28.8525 6.375 29.3744 6.59174 29.8079 7.02521C30.2414 7.45869 30.4581 7.98056 30.4581 8.59081V25.4091C30.4581 26.0194 30.2414 26.5412 29.8079 26.9747C29.3744 27.4082 28.8525 27.6249 28.2423 27.6249H5.75731ZM16.9998 17.1961C17.1118 17.1961 17.2162 17.1784 17.3131 17.1429C17.41 17.1075 17.5081 17.0638 17.6073 17.0117L28.2714 10.0455C28.3979 9.965 28.486 9.86041 28.5356 9.73176C28.5853 9.60312 28.5965 9.46827 28.5693 9.32719C28.5511 9.0802 28.4224 8.89087 28.1833 8.75922C27.9442 8.62754 27.7062 8.63768 27.4695 8.78964L16.9998 15.5452L6.54459 8.78964C6.30789 8.63768 6.06982 8.62179 5.83038 8.74197C5.59094 8.86212 5.4576 9.04479 5.43038 9.28997C5.40313 9.43589 5.41675 9.57937 5.47122 9.72042C5.52571 9.86148 5.61137 9.96984 5.7282 10.0455L16.4014 17.0117C16.4946 17.0638 16.5896 17.1075 16.6865 17.1429C16.7834 17.1784 16.8878 17.1961 16.9998 17.1961Z"
+                          fill="#011C28"
+                        />
+                      </g>
+                    </svg>
+                    <span class="ml-4">howdy@easysurf.ca</span></a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="md:col-span-4 lg:col-span-3 mt-8 md:mt-0">
+            <h3 class="text-xl font-extrabold mb-2 md:mt-0">Sitemap</h3>
+            <ul class="grid grid-cols-1 gap-2 text-lg">
+              <li><a class="underline highlight-link" href="/">Home</a></li>
+
+              <li>
+                <a class="underline highlight-link" href="/web-services"
+                  >Web</a
+                >
+              </li>
+              <li>
+                <a class="underline highlight-link" href="/game-services"
+                  >Game</a
+                >
+              </li>
+              <li>
+                <a class="underline highlight-link" href="/team">Team</a>
+              </li>
+              <li>
+                <a
+                  class="underline highlight-link"
+                  href="/accessibility-statement"
+                  >Accessibility statement</a
+                >
+              </li>
+              <li>
+                <a class="underline highlight-link" href="/contact-us"
+                  >Contact us</a
+                >
+              </li>
+              <li>
+                <a
+                  class="underline highlight-link"
+                  href="/terms-and-conditions"
+                  >Terms and conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="md:col-span-4 lg:col-span-3 mt-8 md:mt-0">
+            <h3 class="text-xl font-extrabold mb-2 md:mt-0">Follow us</h3>
+            <ul class="md:grid md:grid-cols-10 gap-4 justify-start">
+              <li class="col-span-1 md:col-span-2 inline-block">
+                <div class="inline-block">
+                  <a
+                    class="flex items-center highlight-link"
+                    href="https://twitter.com/easysurf_ca"
+                    ><svg
+                      width="44"
+                      height="44"
+                      viewBox="0 0 44 44"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M29.2098 34.3504L10.7364 9.65022H14.8643L33.3377 34.3504H29.2098Z"
+                        fill="#011C28"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0 5.11017C0 2.2878 2.2878 0 5.11017 0H38.8893C41.7117 0 43.9995 2.2878 43.9995 5.11017V38.8893C44 41.7122 41.7122 44 38.8898 44H5.11017C2.2878 44 0 41.7122 0 38.8898V5.11017ZM15.8796 7.62313H6.69015L18.5479 23.4784L6.60802 36.377H9.35983L19.7778 25.1223L28.195 36.377H37.3845L24.8603 19.6315L35.9757 7.62313H33.2239L23.6309 17.9871L15.8796 7.62313Z"
+                        fill="#011C28"
+                      />
+                    </svg>
+                    <span class="sr-only">Follow on Twitter</span></a
+                  >
+                </div>
+              </li>
+              <li class="col-span-1 md:col-span-2 inline-block">
+                <div class="inline-block">
+                  <a
+                    class="flex items-center highlight-link"
+                    href="https://www.linkedin.com/company/easy-surf-ca"
+                    ><svg
+                      width="44"
+                      height="44"
+                      viewBox="0 0 44 44"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M37.4856 37.4953H30.97V27.2855C30.97 24.8509 30.9205 21.7177 27.5746 21.7177C24.1775 21.7177 23.6586 24.3669 23.6586 27.1059V37.4953H17.143V16.5001H23.402V19.3619H23.4863C24.3608 17.7119 26.4875 15.9702 29.6646 15.9702C36.2664 15.9702 37.4874 20.3152 37.4874 25.971L37.4856 37.4953ZM9.78399 13.6272C9.28694 13.6275 8.79471 13.5297 8.33549 13.3395C7.87627 13.1492 7.45907 12.8703 7.10777 12.5187C6.75646 12.1671 6.47796 11.7496 6.28819 11.2902C6.09842 10.8308 6.00111 10.3385 6.00183 9.8414C6.0022 9.09299 6.22448 8.3615 6.64057 7.73943C7.05666 7.11736 7.64788 6.63264 8.33945 6.34657C9.03102 6.06051 9.79189 5.98594 10.5258 6.1323C11.2598 6.27866 11.9339 6.63938 12.4628 7.16884C12.9918 7.6983 13.3518 8.37271 13.4975 9.10681C13.6431 9.8409 13.5678 10.6017 13.2811 11.293C12.9943 11.9843 12.5091 12.575 11.8866 12.9905C11.2641 13.406 10.5324 13.6276 9.78399 13.6272ZM13.051 37.4953H6.517V16.5001H13.051V37.4953ZM1.99959 3.43569e-05C0.895006 1.58982e-05 -0.000446371 0.895451 -0.000447445 2.00003L-0.000486337 42C-0.000487411 43.1046 0.894943 44 1.99951 44C15.3328 44 28.6661 44 41.9994 44C43.104 44 43.9994 43.1046 43.9994 42V2.00005C43.9994 0.895464 43.104 2.33261e-05 41.9994 4.83917e-05C28.6661 0.000350952 15.3329 0.000257169 1.99959 3.43569e-05Z"
+                        fill="#011C28"
+                      />
+                    </svg>
+                    <span class="sr-only">Follow on LinkedIn</span></a
+                  >
+                </div>
+              </li>
+            </ul>
+            <h3 class="text-xl font-extrabold mb-2 mt-8 md:mt-6">
+              Credentials
+            </h3>
+            <ul class="grid grid-cols-4 gap-4 justify-start">
+              <li class="col-span-2 md:col-span-4 inline-block">
+                <div class="inline-block">
+                  <a
+                    class="flex items-center highlight-link"
+                    href="https://safeinourworld.org/"
+                    ><image
+                      src="/public/images/logos/safe-in-our-world-logo.png"
+                      alt=""
+                    ></image>
+                    <span class="sr-only">A Safe In Our World Partner</span></a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="pb-6 text-lg">
+          Easy Surf is based in Vancouver, BC on the traditional, ancestral, and
+          unceded traditional territories of the xʷməθkʷəy̓əm (Musqueam),
+          Sḵwx̱wú7mesh (Squamish), and səlilwətaɬ (Tsleil-Waututh) Nations.
+        </p>
+        <p class="pb-6 text-lg">
+          Website design by
+          <a class="underline highlight-link" href="https://www.alekmackie.com/"
+            >Alek Mackie.</a
+          >Website developed by<a
+            class="underline highlight-link"
+            href="https://incluseum.digital"
+            >incluseum.digital.</a
+          >
+        </p>
+        <p class="text-lg">© 2024 Easy Surf. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- END OF FOOTER -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
