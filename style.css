@@ -17,14 +17,15 @@ html {
   background-color: #f8f3e3;
 }
 #team-banner {
-  background-image: url("public/images/team-background.png");
-  background-size: cover;
-  background-position: top;
+  background-image: url("public/images/heroes/BG-Home-Team.webp");
+  background-size:40%;
+  background-position: right;
+  background-repeat:no-repeat;
   padding-left: 0;
   padding-right: 0;
 }
 .home-banner-outer {
-  background-image: url("public/images/heroes/BG-Home.png");
+  background-image: url("public/images/heroes/BG-Home.webp");
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
@@ -42,7 +43,7 @@ html {
   min-height: 720px;
 }
 .home-secondary-outer {
-  background-image: url("public/images/heroes/BG-Home.png");
+  background-image: url("public/images/heroes/BG-Home.webp");
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
@@ -52,16 +53,15 @@ html {
 }
 .home-secondary-inner {
   background-image: url('public/images/heroes/Lines-Game.svg');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
-  background-position-y:180%;
+  background-position: bottom;
   padding-left: 0;
   padding-right: 0;
   min-height:540px;
 }
 .web-banner-outer {
-  background-image: url("public/images/heroes/BG-Web.png");
+  background-image: url("public/images/heroes/BG-Web.webp");
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
@@ -80,7 +80,7 @@ html {
 
 }
 .game-banner-outer {
-  background-image: url("public/images/heroes/BG-Game.png");
+  background-image: url("public/images/heroes/BG-Game.webp");
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
@@ -108,7 +108,7 @@ html {
   min-height: 472px;
 }
 .team-banner-outer {
-  background-image: url("public/images/heroes/BG-Team.png");
+  background-image: url("public/images/heroes/BG-Team.webp");
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
@@ -125,7 +125,7 @@ html {
   padding-right: 0;
 }
 .contact-banner-outer {
-  background-image: url("public/images/heroes/BG-Contact.png");
+  background-image: url("public/images/heroes/BG-Contact.webp");
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
@@ -141,7 +141,7 @@ html {
   padding-right: 0;
 }
 .cta-banner-outer {
-  background-image: url("public/images/heroes/BG-CTA.png");
+  background-image: url("public/images/heroes/BG-CTA.webp");
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
@@ -157,7 +157,7 @@ html {
   padding-right: 0;
 }
 .accessibility-banner-outer {
-  background-image: url("public/images/heroes/BG-Accessibility.png");
+  background-image: url("public/images/heroes/BG-Accessibility.webp");
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
@@ -366,7 +366,7 @@ html {
   border-bottom-right-radius: 30px;
 }
 
-@media (max-width: 763px) {
+@media (max-width: 767px) {
   .rounded-32px {
     border-radius: 32px 32px 0 0;
   }
@@ -378,6 +378,22 @@ html {
   }
   .rounded-b-var-30px {
     border-radius: 0px 0px 0px 0px
+  }
+  #team-banner {
+    background-image: url("public/images/heroes/BG-Home-Team.webp");
+    background-size:40%;
+    background-position: top right;
+    background-position: calc(100% - 10px) 30px; 
+    padding-top: 40%;
+    background-repeat:no-repeat;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .home-secondary-inner {
+    background-image: url('public/images/heroes/Lines-Web.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
 }
 
