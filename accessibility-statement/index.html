@@ -20,8 +20,24 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <meta property="og:image" content="https://easysurf.ca/public/images/og-image.png">
+    <meta
+      property="og:image"
+      content="https://easysurf.ca/public/images/og-image.png"
+    />
   </head>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-8CE1PX9HMT"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-8CE1PX9HMT");
+  </script>
 
   <body>
     <!-- NAV TO BE INCLUDED ON EACH PAGE -->
@@ -302,9 +318,7 @@
               </p>
               <div class="grid grid-cols-10 gap-4">
                 <div class="col-span-10 md:col-span-4">
-                  <h3
-                    class="text-2xl font-extrabold mb-22 mr-12 pt-6"
-                  >
+                  <h3 class="text-2xl font-extrabold mb-22 mr-12 pt-6">
                     Perspectives
                   </h3>
                 </div>
@@ -320,9 +334,7 @@
               </div>
               <div class="grid grid-cols-10 gap-4">
                 <div class="col-span-10 md:col-span-4">
-                  <h3
-                    class="text-2xl font-extrabold mb-22 mr-12 pt-6"
-                  >
+                  <h3 class="text-2xl font-extrabold mb-22 mr-12 pt-6">
                     Assistive technologies
                   </h3>
                 </div>
@@ -492,9 +504,7 @@
               <li><a class="underline highlight-link" href="/">Home</a></li>
 
               <li>
-                <a class="underline highlight-link" href="/web-services"
-                  >Web</a
-                >
+                <a class="underline highlight-link" href="/web-services">Web</a>
               </li>
               <li>
                 <a class="underline highlight-link" href="/game-services"
@@ -517,9 +527,7 @@
                 >
               </li>
               <li>
-                <a
-                  class="underline highlight-link"
-                  href="/terms-and-conditions"
+                <a class="underline highlight-link" href="/terms-and-conditions"
                   >Terms and conditions</a
                 >
               </li>
