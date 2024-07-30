@@ -239,22 +239,19 @@ html {
   background-color: rgb(230, 230, 230);
   box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.4),
     inset 0 3px 0 0 rgba(255, 255, 255, 0.4);
-  padding-top: 17px;
-  padding-bottom: 15px;
+  
 }
 
 .custom-hover-yellow:hover {
   box-shadow: inset 0 3px 0 0 #d96e06;
   background-color: #e7bb40 !important;
-  padding-top: 17px;
-  padding-bottom: 15px;
+ 
 }
 
 .custom-hover-blue:hover {
   background-color: #033249 !important;
   box-shadow: inset 0 -3px 0 0 #104e69, inset 0 3px 0 0 #03749b;
-  padding-top: 17px;
-  padding-bottom: 15px;
+
 }
 
 .active-link {
@@ -279,7 +276,8 @@ html {
 
 .highlight-card {
   border: rgba(255, 255, 255, 0) 2px solid;
-  border-radius: 32px;
+  border-radius: 16px;
+  padding: 32px;
 }
 
 .highlight-card:hover,
@@ -287,7 +285,7 @@ html {
 .highlight-card:focus-visible {
   background-color: #fcca46 !important;
   border: #923b0e 2px solid !important;
-  border-radius: 32px;
+  border-radius: 16px;
 }
 
 .bg-primary-brand {
@@ -525,7 +523,8 @@ html {
 }
 
 #errors a {
-  @apply text-red-500 text-lg;
+  color: #f56565;
+  font-size: 1.125rem;
 }
 
 .custom-input-outline {
